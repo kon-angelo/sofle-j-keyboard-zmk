@@ -77,6 +77,7 @@
 
         #binding-cells = <2>;
         tapping-term-ms = <190>;
+        flavor = "tap-preferred";
     };
 
     lt_repeat: lt_repeat {
@@ -192,7 +193,7 @@
 &kp LEFT_BRACKET  &kp Q         &kp W            &kp E             &kp R         &kp T              &kp DOWN_ARROW   &kp Y        &kp U         &kp I                  &kp O          &kp P             &kp RIGHT_BRACKET
 &sl 3             &kp A         &kp S            &kp D             &kp F         &kp G              &kp LEFT_ARROW   &kp H        &kp J         &kp K                  &kp L          &kp SEMICOLON     &kp APOS
 &kp TAB           &hml LCTRL Z  &hml LEFT_ALT X  &hml LEFT_META C  &hml LSHFT V  &kp B              &kp RIGHT_ARROW  &kp N        &hmr RSHFT M  &hmr RIGHT_META COMMA  &hmr RALT DOT  &hmr RCTRL SLASH  &kp BACKSLASH
-&kp C_MUTE        &none         &kp ESCAPE       &kp ESCAPE        &mo 1         &lt 2 BACKSPACE    &kp ENTER        &lt 2 ENTER  &kp SPACE     &kp BACKSPACE          &kp BACKSPACE  &key_repeat
+&kp C_MUTE        &none         &kp ESCAPE       &kp ESCAPE        &sl 1         &lt 2 BACKSPACE    &kp ENTER        &lt 2 ENTER  &kp SPACE     &kp BACKSPACE          &kp BACKSPACE  &key_repeat
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
