@@ -154,26 +154,31 @@
 
         l_bracket {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <47 48>;
+            key-positions = <21 22>;
         };
 
         rbkt {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <47 49>;
+            key-positions = <21 23>;
         };
 
         cmb_minus {
             bindings = <&kp MINUS>;
-            key-positions = <21 22>;
+            key-positions = <34 35>;
         };
 
         cmb_plus {
             bindings = <&kp EQUAL>;
-            key-positions = <21 23>;
+            key-positions = <34 36>;
         };
 
         cmb_backslash {
             bindings = <&kp BACKSLASH>;
+            key-positions = <34 37>;
+        };
+
+        cmb_grave {
+            bindings = <&kp GRAVE>;
             key-positions = <21 24>;
         };
     };
@@ -183,11 +188,11 @@
 
         layer0 {
             bindings = <
-&kp LA(LC(LEFT_META))  &as N1        &as N2           &as N3            &as N4             &as N5          &kp UP_ARROW     &as N6       &as N7              &as N8             &as N9           &as N0                &to 0
-&kp ESCAPE             &kp Q         &kp W            &kp E             &kp R              &kp T           &kp DOWN_ARROW   &kp Y        &kp U               &kp I              &kp O            &kp P                 &bckspc_dlt
-&lt 3 TAB              &hml LCTRL A  &hml LEFT_ALT S  &hml LEFT_META D  &hml LEFT_SHIFT F  &kp G           &kp LEFT_ARROW   &kp H        &hmr RIGHT_SHIFT J  &hmr RIGHT_META K  &hmr LEFT_ALT L  &hmr RCTRL SEMICOLON  &kp APOS
-&sl 1                  &kp Z         &kp X            &kp C             &kp V              &kp B           &kp RIGHT_ARROW  &kp N        &kp M               &kp COMMA          &kp DOT          &kp FSLH              &kp BACKSLASH
-&kp C_MUTE             &none         &kp ESCAPE       &bckspc_dlt       &mo 1              &layer_tap 2    &kp ENTER        &lt 2 ENTER  &kp SPACE           &kp BACKSPACE      &kp ESCAPE       &none
+&kp MINUS         &as N1        &as N2           &as N3            &as N4        &as N5             &kp UP_ARROW     &as N6       &as N7        &as N8                 &as N9         &as N0            &kp EQUAL
+&kp LEFT_BRACKET  &kp Q         &kp W            &kp E             &kp R         &kp T              &kp DOWN_ARROW   &kp Y        &kp U         &kp I                  &kp O          &kp P             &kp RIGHT_BRACKET
+&sl 3             &kp A         &kp S            &kp D             &kp F         &kp G              &kp LEFT_ARROW   &kp H        &kp J         &kp K                  &kp L          &kp SEMICOLON     &kp APOS
+&kp TAB           &hml LCTRL Z  &hml LEFT_ALT X  &hml C LEFT_META  &hml LSHFT V  &kp B              &kp RIGHT_ARROW  &kp N        &hmr RSHFT M  &hmr RIGHT_META COMMA  &hmr RALT DOT  &hmr RCTRL SLASH  &kp BACKSLASH
+&kp C_MUTE        &none         &kp ESCAPE       &kp ESCAPE        &mo 1         &lt 2 BACKSPACE    &kp ENTER        &lt 2 ENTER  &kp SPACE     &kp BACKSPACE          &kp BACKSPACE  &key_repeat
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -196,11 +201,11 @@
 
         Lower {
             bindings = <
-&kp F1  &kp F2                &kp F3                 &kp F4                &kp F5             &kp F6        &trans  &kp F7            &kp F8                  &kp F9                &kp F10            &kp F11           &kp F12
-&none   &kp LS(NUMBER_1)      &kp LS(NUMBER_2)       &kp LS(NUMBER_3)      &kp LS(NUMBER_4)   &kp LS(N5)    &trans  &kp LS(NUMBER_6)  &kp LS(N7)              &kp LS(N8)            &kp LS(N9)         &kp LS(N0)        &bckspc_dlt
-&none   &sk RCTRL             &sk LALT               &sk LGUI              &sk LSHFT          &none         &trans  &none             &hmr RIGHT_SHIFT MINUS  &hmr LEFT_META EQUAL  &hmr LEFT_ALT SQT  &hmr LCTRL GRAVE  &none
-&none   &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp LS(LEFT_BRACKET)  &kp RIGHT_BRACKET  &none         &trans  &none             &kp LS(MINUS)           &kp LS(EQUAL)         &kp LS(SQT)        &kp LS(GRAVE)     &bckspc_dlt
-&none   &none                 &trans                 &trans                &trans             &trans        &trans  &kp RET           &kp SPACE               &trans                &trans             &none
+&none   &none                        &none                        &none                    &none                          &none     &trans  &none    &none      &none      &none     &none     &none
+&kp F1  &kp F2                       &kp F3                       &kp F4                   &kp F5                         &kp F6    &trans  &kp F7   &kp F8     &kp F9     &kp F10   &kp F11   &kp F12
+&none   &as N1                       &as N2                       &as N3                   &as N4                         &as N5    &trans  &as N6   &as N7     &as N8     &as N9    &as N0    &none
+&none   &hml LCTRL LS(LEFT_BRACKET)  &hml LALT LS(RIGHT_BRACKET)  &hml LMETA LEFT_BRACKET  &hml LEFT_SHIFT RIGHT_BRACKET  &none     &trans  &none    &as MINUS  &as EQUAL  &as BSLH  &as FSLH  &bckspc_dlt
+&none   &none                        &trans                       &trans                   &trans                         &trans    &trans  &kp RET  &kp SPACE  &trans     &trans    &none
             >;
 
             sensor-bindings = <&inc_dec_kp LG(EQUAL) LG(MINUS)>;
@@ -220,11 +225,11 @@
 
         Numpad {
             bindings = <
-&none  &none      &none         &none          &none           &none    &mmv MOVE_UP     &none       &kp SLASH     &kp ASTERISK  &kp MINUS     &kp EQUAL  &bckspc_dlt
-&none  &none      &none         &none          &none           &none    &mmv MOVE_DOWN   &none       &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp N0     &bckspc_dlt
-&none  &sk LCTRL  &sk LEFT_ALT  &sk LEFT_META  &sk LEFT_SHIFT  &none    &mmv MOVE_LEFT   &kp MINUS   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL  &kp BACKSPACE
-&none  &none      &none         &none          &none           &none    &mmv MOVE_RIGHT  &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA  &kp BACKSPACE
-&none  &none      &none         &kp BACKSPACE  &none           &none    &mkp LCLK        &kp ENTER   &kp SPACE     &kp PERIOD    &kp COMMA     &none
+&none  &none      &none         &none          &none           &none            &mmv MOVE_UP     &none       &kp SLASH     &kp ASTERISK   &kp MINUS     &kp EQUAL   &bckspc_dlt
+&none  &none      &none         &none          &none           &none            &mmv MOVE_DOWN   &none       &as N7        &as NUMBER_8   &as NUMBER_9  &kp N0      &bckspc_dlt
+&none  &sk LCTRL  &sk LEFT_ALT  &sk LEFT_META  &sk LEFT_SHIFT  &none            &mmv MOVE_LEFT   &as MINUS   &as NUMBER_4  &as N5         &as NUMBER_6  &as EQUAL   &kp BACKSPACE
+&none  &none      &none         &none          &none           &none            &mmv MOVE_RIGHT  &kp PERIOD  &as NUMBER_1  &as NUMBER_2   &as NUMBER_3  &kp COMMA   &kp BACKSPACE
+&none  &none      &none         &none          &none           &kp BACKSPACE    &mkp LCLK        &kp ENTER   &kp SPACE     &kp BACKSPACE  &kp COMMA     &kp PERIOD
             >;
         };
 
