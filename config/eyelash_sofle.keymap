@@ -189,6 +189,11 @@
             bindings = <&kp ESCAPE>;
             key-positions = <30 29>;
         };
+
+        cmb_esc2 {
+            bindings = <&kp ESCAPE>;
+            key-positions = <27 37>;
+        };
     };
 
     keymap {
@@ -196,11 +201,11 @@
 
         layer0 {
             bindings = <
-&none           &as N1        &as N2           &as N3            &as N4        &as N5         &kp UP_ARROW     &as N6       &as N7        &as N8                 &as N9         &as N0            &kp DELETE
+&kp ESC         &as N1        &as N2           &as N3            &as N4        &as N5         &kp UP_ARROW     &as N6       &as N7        &as N8                 &as N9         &as N0            &kp DELETE
 &kp ESCAPE      &kp Q         &kp W            &kp E             &kp R         &kp T          &kp DOWN_ARROW   &kp Y        &kp U         &kp I                  &kp O          &kp P             &kp BACKSPACE
 &kp TAB         &kp A         &kp S            &kp D             &kp F         &kp G          &kp LEFT_ARROW   &kp H        &kp J         &kp K                  &kp L          &kp SEMICOLON     &kp APOS
 &kp LEFT_SHIFT  &hml LCTRL Z  &hml LEFT_ALT X  &hml LEFT_META C  &hml LSHFT V  &kp B          &kp RIGHT_ARROW  &kp N        &hmr RSHFT M  &hmr RIGHT_META COMMA  &hmr RALT DOT  &hmr RCTRL SLASH  &kp ENTER
-&kp C_MUTE      &kp LCTRL     &kp LALT         &kp LMETA         &sl 1         &lt 2 ENTER    &kp ENTER        &lt 1 SPACE  &lt 3 SPACE   &kp BACKSPACE          &none          &none
+&kp C_MUTE      &kp LCTRL     &kp LALT         &kp LMETA         &sl 2         &lt 1 ENTER    &kp ENTER        &lt 1 ENTER  &lt 3 SPACE   &kp BACKSPACE          &none          &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
