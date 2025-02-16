@@ -76,7 +76,7 @@
         bindings = <&shifted>, <&kp>;
 
         #binding-cells = <2>;
-        tapping-term-ms = <190>;
+        tapping-term-ms = <220>;
         flavor = "tap-preferred";
     };
 
@@ -153,61 +153,64 @@
     combos {
         compatible = "zmk,combos";
 
-        l_bracket {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <21 22>;
-            timeout-ms = <35>;
-        };
-
-        rbkt {
-            bindings = <&kp SQT>;
-            key-positions = <21 23>;
-            timeout-ms = <35>;
-        };
-
         cmb_r_h1 {
             bindings = <&kp ESCAPE>;
             key-positions = <34 35>;
         };
 
         cmb_r_h2 {
-            bindings = <&kp MINUS>;
+            bindings = <&kp SQT>;
             key-positions = <34 36>;
         };
 
         cmb_r_h3 {
-            bindings = <&kp EQUAL>;
+            bindings = <&kp BACKSLASH>;
             key-positions = <34 37>;
         };
 
-        cmb_grave {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <21 24>;
+        cmb_r_b1 {
+            bindings = <&kp MINUS>;
+            key-positions = <22 21>;
+        };
+
+        cmb_r_b2 {
+            bindings = <&kp EQUAL>;
+            key-positions = <22 34>;
+        };
+
+        cmb_l_ta {
+            bindings = <&sk LS(LA(LC(LGUI)))>;
+            key-positions = <17 16 15>;
         };
 
         cmb_l_h1 {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <30 29>;
+            bindings = <&kp LBKT>;
+            key-positions = <16 17>;
         };
 
         cmb_l_h2 {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <30 28>;
-        };
-
-        cmb_l_h3 {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <30 27>;
+            key-positions = <30 29>;
         };
 
-        cmb_r_d1 {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <34 48>;
+        cmb_r_t3 {
+            bindings = <&kp GRAVE>;
+            key-positions = <21 24>;
         };
 
-        cmb_r_d2 {
-            bindings = <&kp SQT>;
-            key-positions = <34 22>;
+        cmb_l_m1 {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <15 17>;
+        };
+
+        cmb_l_m2 {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <28 30>;
+        };
+
+        plus_extra {
+            bindings = <&kp EQUAL>;
+            key-positions = <21 23>;
         };
     };
 
@@ -218,9 +221,9 @@
             bindings = <
 &kp ESC         &as N1        &as N2           &as N3            &as N4        &as N5         &kp UP_ARROW     &as N6       &as N7        &as N8                 &as N9         &as N0            &kp DELETE
 &kp ESCAPE      &kp Q         &kp W            &kp E             &kp R         &kp T          &kp DOWN_ARROW   &kp Y        &kp U         &kp I                  &kp O          &kp P             &kp BACKSPACE
-&lt 3 TAB       &kp A         &kp S            &kp D             &kp F         &kp G          &kp LEFT_ARROW   &kp H        &kp J         &kp K                  &kp L          &kp SEMICOLON     &kp APOS
+&lt 3 TAB       &kp A         &kp S            &kp D             &lt 3 F       &kp G          &kp LEFT_ARROW   &kp H        &kp J         &kp K                  &kp L          &kp SEMICOLON     &kp APOS
 &kp LEFT_SHIFT  &hml LCTRL Z  &hml LEFT_ALT X  &hml LEFT_META C  &hml LSHFT V  &kp B          &kp RIGHT_ARROW  &kp N        &hmr RSHFT M  &hmr RIGHT_META COMMA  &hmr RALT DOT  &hmr RCTRL SLASH  &kp ENTER
-&kp C_MUTE      &kp LCTRL     &kp LALT         &kp LMETA         &sl 2         &lt 1 ENTER    &kp ENTER        &lt 1 ENTER  &lt 3 SPACE   &kp BACKSPACE          &none          &none
+&kp C_MUTE      &kp LCTRL     &kp LALT         &kp LMETA         &sl 6         &lt 1 ENTER    &kp ENTER        &lt 1 ENTER  &kp SPACE     &kp BACKSPACE          &none          &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -229,11 +232,11 @@
 
         Navigation {
             bindings = <
-&trans         &none           &none         &none         &none           &none     &mmv MOVE_UP     &none        &none      &none         &none      &none          &trans
-&trans         &kp F12         &kp F9        &kp F8        &kp F7          &none     &mmv MOVE_DOWN   &none        &kp HOME   &kp UP_ARROW  &kp END    &none          &trans
-&trans         &kp F11         &kp F6        &kp F5        &kp F4          &none     &mmv MOVE_LEFT   &kp PAGE_UP  &kp DOWN   &kp UP_ARROW  &kp RIGHT  &kp PAGE_DOWN  &trans
-&trans         &hml LCTRL F10  &hml LALT F3  &hml LGUI F2  &hml LSHIFT F1  &none     &mmv MOVE_RIGHT  &none        &sk LSHFT  &sk LGUI      &sk LALT   &sk LCTRL      &trans
-&kp C_AC_ZOOM  &trans          &trans        &trans        &trans          &trans    &mkp MB1         &trans       &trans     &trans        &none      &none
+&trans         &none           &none         &none         &none           &none     &mmv MOVE_UP     &none        &none           &none         &none      &none          &trans
+&trans         &kp F12         &kp F9        &kp F8        &kp F7          &none     &mmv MOVE_DOWN   &none        &kp HOME        &kp UP_ARROW  &kp END    &none          &trans
+&trans         &kp F11         &kp F6        &kp F5        &kp F4          &none     &mmv MOVE_LEFT   &kp PAGE_UP  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &trans
+&trans         &hml LCTRL F10  &hml LALT F3  &hml LGUI F2  &hml LSHIFT F1  &none     &mmv MOVE_RIGHT  &none        &sk LSHFT       &sk LGUI      &sk LALT   &sk LCTRL      &trans
+&kp C_AC_ZOOM  &trans          &trans        &trans        &trans          &trans    &mkp MB1         &trans       &trans          &trans        &none      &none
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PG_UP>;
@@ -241,11 +244,11 @@
 
         Numv2 {
             bindings = <
-&trans  &trans     &trans    &trans    &trans     &trans       &trans  &trans    &trans            &trans           &trans                &trans           &trans
-&trans  &as N1     &as N2    &as N3    &as N4     &as N5       &trans  &as N6    &as N7            &as N8           &as N9                &as N0           &trans
-&trans  &as COMMA  &as DOT   &as RBKT  &as LBKT   &as GRAVE    &trans  &kp LEFT  &kp DOWN          &kp UP           &kp RIGHT             &as BSLH         &trans
-&trans  &sk LCTRL  &sk LALT  &sk LGUI  &sk LSHFT  &none        &trans  &trans    &hmr RSHFT MINUS  &hmr RGUI EQUAL  &hmr RALT UNDERSCORE  &hmr RCTRL PLUS  &trans
-&trans  &trans     &trans    &trans    &trans     &trans       &trans  &trans    &trans            &trans           &trans                &trans
+&trans  &trans      &trans     &trans    &trans     &trans       &trans  &trans    &trans            &trans           &trans           &trans             &trans
+&trans  &as N1      &as N2     &as N3    &as N4     &as N5       &trans  &as N6    &as N7            &as N8           &as N9           &as N0             &trans
+&trans  &as PERIOD  &as COMMA  &as RBKT  &as LBKT   &as GRAVE    &trans  &kp LEFT  &kp DOWN          &kp UP           &kp RIGHT        &as BSLH           &trans
+&trans  &sk LCTRL   &sk LALT   &sk LGUI  &sk LSHFT  &none        &trans  &trans    &hmr RSHFT MINUS  &hmr RGUI EQUAL  &hmr RALT COMMA  &hmr RCTRL PERIOD  &trans
+&trans  &trans      &trans     &trans    &trans     &trans       &trans  &trans    &trans            &trans           &trans           &trans
             >;
         };
 
@@ -282,14 +285,24 @@
 &none   &trans    &trans  &trans     &trans     &trans    &mkp LCLK        &trans     &trans        &trans        &trans        &trans
             >;
         };
+
+        layer_6 {
+            bindings = <
+&trans  &trans     &trans    &trans    &trans     &trans    &trans  &trans    &trans            &trans           &trans           &trans             &trans
+&trans  &kp GRAVE  &kp BSLH  &kp RBKT  &kp LBKT   &none     &trans  &kp LEFT  &kp DOWN          &kp UP           &kp RIGHT        &none              &trans
+&trans  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5    &trans  &kp N6    &kp N7            &kp N8           &kp N9           &kp N0             &trans
+&trans  &sk LCTRL  &sk LALT  &sk LGUI  &sk LSHFT  &none     &trans  &trans    &hmr RSHFT MINUS  &hmr RGUI EQUAL  &hmr RALT COMMA  &hmr RCTRL PERIOD  &trans
+&trans  &trans     &trans    &trans    &trans     &trans    &trans  &trans    &trans            &trans           &trans           &trans
+            >;
+        };
     };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
         System {
-            if-layers = <1 6>;
-            then-layer = <5>;
+            if-layers = <6 1>;
+            then-layer = <4>;
         };
     };
 };
