@@ -30,7 +30,7 @@ layers:
   - A
   - S
   - D
-  - F
+  - {t: F, h: Vi}
   - G
   - $$mdi:arrow-left-bold$$
   - H
@@ -56,11 +56,11 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - LMETA
-  - {t: Numv2, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '6', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:keyboard-return$$', h: Navigation}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', h: Navigation}
-  - {t: '$$mdi:keyboard-space$$', h: Vi}
+  - $$mdi:keyboard-space$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -99,8 +99,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - PgUp
+  - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
   - PgDn
   - {t: '$$mdi:transfer$$', type: trans}
@@ -157,8 +157,8 @@ layers:
   - '&as N0'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - '&as PERIOD'
   - '&as COMMA'
-  - '&as DOT'
   - '&as RBKT'
   - '&as LBKT'
   - '&as GRAVE'
@@ -179,14 +179,14 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '-', h: '$$mdi:apple-keyboard-shift$$', s: _}
   - {t: '=', h: RGUI, s: +}
-  - {t: _, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: +, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: ',', h: '$$mdi:apple-keyboard-option$$', s: <}
+  - {t: ., h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -225,7 +225,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -255,7 +255,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -389,26 +389,93 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  '6':
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '`', s: '~'}
+  - {t: \, s: '|'}
+  - {t: ']', s: '}'}
+  - {t: '[', s: '{'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '6', s: ^}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: LGUI, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '-', h: '$$mdi:apple-keyboard-shift$$', s: _}
+  - {t: '=', h: RGUI, s: +}
+  - {t: ',', h: '$$mdi:apple-keyboard-option$$', s: <}
+  - {t: ., h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [21, 22]
-  k: {t: '[', s: '{'}
-- p: [21, 23]
-  k: {t: '''', s: '"'}
 - p: [34, 35]
   k: $$mdi:keyboard-esc$$
 - p: [34, 36]
-  k: {t: '-', s: _}
-- p: [34, 37]
-  k: {t: '=', s: +}
-- p: [21, 24]
-  k: {t: ']', s: '}'}
-- p: [30, 29]
-  k: {t: '[', s: '{'}
-- p: [30, 28]
-  k: {t: \, s: '|'}
-- p: [30, 27]
-  k: {t: ']', s: '}'}
-- p: [34, 48]
-  k: {t: \, s: '|'}
-- p: [34, 22]
   k: {t: '''', s: '"'}
+- p: [34, 37]
+  k: {t: \, s: '|'}
+- p: [22, 21]
+  k: {t: '-', s: _}
+- p: [22, 34]
+  k: {t: '=', s: +}
+- p: [17, 16, 15]
+  k: {t: Meh+LGUI, h: '$$mdi:gesture-tap-hold$$'}
+- p: [16, 17]
+  k: {t: '[', s: '{'}
+- p: [30, 29]
+  k: {t: ']', s: '}'}
+- p: [21, 24]
+  k: {t: '`', s: '~'}
+- p: [15, 17]
+  k: (
+- p: [28, 30]
+  k: )
+- p: [21, 23]
+  k: {t: '=', s: +}
