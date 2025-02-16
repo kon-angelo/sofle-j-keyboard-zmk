@@ -160,39 +160,54 @@
         };
 
         rbkt {
-            bindings = <&kp RIGHT_BRACKET>;
+            bindings = <&kp SQT>;
             key-positions = <21 23>;
             timeout-ms = <35>;
         };
 
-        cmb_minus {
-            bindings = <&kp MINUS>;
+        cmb_r_h1 {
+            bindings = <&kp ESCAPE>;
             key-positions = <34 35>;
         };
 
-        cmb_plus {
-            bindings = <&kp EQUAL>;
+        cmb_r_h2 {
+            bindings = <&kp MINUS>;
             key-positions = <34 36>;
         };
 
-        cmb_backslash {
-            bindings = <&kp BACKSLASH>;
+        cmb_r_h3 {
+            bindings = <&kp EQUAL>;
             key-positions = <34 37>;
         };
 
         cmb_grave {
-            bindings = <&kp GRAVE>;
+            bindings = <&kp RIGHT_BRACKET>;
             key-positions = <21 24>;
         };
 
-        cmb_esc {
-            bindings = <&kp ESCAPE>;
+        cmb_l_h1 {
+            bindings = <&kp LEFT_BRACKET>;
             key-positions = <30 29>;
         };
 
-        cmb_esc2 {
-            bindings = <&kp ESCAPE>;
-            key-positions = <27 37>;
+        cmb_l_h2 {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <30 28>;
+        };
+
+        cmb_l_h3 {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <30 27>;
+        };
+
+        cmb_r_d1 {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <34 48>;
+        };
+
+        cmb_r_d2 {
+            bindings = <&kp SQT>;
+            key-positions = <34 22>;
         };
     };
 
@@ -203,7 +218,7 @@
             bindings = <
 &kp ESC         &as N1        &as N2           &as N3            &as N4        &as N5         &kp UP_ARROW     &as N6       &as N7        &as N8                 &as N9         &as N0            &kp DELETE
 &kp ESCAPE      &kp Q         &kp W            &kp E             &kp R         &kp T          &kp DOWN_ARROW   &kp Y        &kp U         &kp I                  &kp O          &kp P             &kp BACKSPACE
-&kp TAB         &kp A         &kp S            &kp D             &kp F         &kp G          &kp LEFT_ARROW   &kp H        &kp J         &kp K                  &kp L          &kp SEMICOLON     &kp APOS
+&lt 3 TAB       &kp A         &kp S            &kp D             &kp F         &kp G          &kp LEFT_ARROW   &kp H        &kp J         &kp K                  &kp L          &kp SEMICOLON     &kp APOS
 &kp LEFT_SHIFT  &hml LCTRL Z  &hml LEFT_ALT X  &hml LEFT_META C  &hml LSHFT V  &kp B          &kp RIGHT_ARROW  &kp N        &hmr RSHFT M  &hmr RIGHT_META COMMA  &hmr RALT DOT  &hmr RCTRL SLASH  &kp ENTER
 &kp C_MUTE      &kp LCTRL     &kp LALT         &kp LMETA         &sl 2         &lt 1 ENTER    &kp ENTER        &lt 1 ENTER  &lt 3 SPACE   &kp BACKSPACE          &none          &none
             >;
@@ -214,33 +229,33 @@
 
         Navigation {
             bindings = <
-&trans         &none     &none      &none           &none      &none     &mmv MOVE_UP     &none   &none           &none           &none      &none      &trans
-&trans         &none     &mkp MB1   &kp UP_ARROW    &mkp MB2   &none     &mmv MOVE_DOWN   &none   &mkp MB1        &kp UP_ARROW    &mkp MB2   &none      &trans
-&trans         &none     &kp LEFT   &kp DOWN_ARROW  &kp RIGHT  &none     &mmv MOVE_LEFT   &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &none      &trans
-&trans         &sk HOME  &sk PG_UP  &sk PG_DN       &sk END    &none     &mmv MOVE_RIGHT  &none   &sk RSHFT       &sk LGUI        &sk LALT   &sk LCTRL  &trans
-&kp C_AC_ZOOM  &trans    &trans     &trans          &trans     &trans    &mkp MB1         &trans  &trans          &trans          &none      &none
+&trans         &none           &none         &none         &none           &none     &mmv MOVE_UP     &none        &none      &none         &none      &none          &trans
+&trans         &kp F12         &kp F9        &kp F8        &kp F7          &none     &mmv MOVE_DOWN   &none        &kp HOME   &kp UP_ARROW  &kp END    &none          &trans
+&trans         &kp F11         &kp F6        &kp F5        &kp F4          &none     &mmv MOVE_LEFT   &kp PAGE_UP  &kp DOWN   &kp UP_ARROW  &kp RIGHT  &kp PAGE_DOWN  &trans
+&trans         &hml LCTRL F10  &hml LALT F3  &hml LGUI F2  &hml LSHIFT F1  &none     &mmv MOVE_RIGHT  &none        &sk LSHFT  &sk LGUI      &sk LALT   &sk LCTRL      &trans
+&kp C_AC_ZOOM  &trans          &trans        &trans        &trans          &trans    &mkp MB1         &trans       &trans     &trans        &none      &none
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PG_UP>;
         };
 
-        Numpad {
+        Numv2 {
             bindings = <
-&trans  &none      &none     &none     &none      &none     &mmv MOVE_UP     &none      &kp SLASH     &kp ASTERISK  &kp MINUS     &kp EQUAL   &trans
-&trans  &none      &none     &none     &none      &none     &mmv MOVE_DOWN   &none      &as N7        &as NUMBER_8  &as NUMBER_9  &kp N0      &trans
-&trans  &none      &none     &kp LBKT  &kp RBKT   &none     &mmv MOVE_LEFT   &as MINUS  &as NUMBER_4  &as N5        &as NUMBER_6  &as EQUAL   &none
-&trans  &sk RCTRL  &sk LALT  &sk LGUI  &sk LSHFT  &none     &mmv MOVE_RIGHT  &as COMMA  &as NUMBER_1  &as NUMBER_2  &as NUMBER_3  &as PERIOD  &trans
-&none   &trans     &trans    &trans    &trans     &trans    &mkp LCLK        &trans     &trans        &trans        &trans        &trans
+&trans  &trans     &trans    &trans    &trans     &trans       &trans  &trans    &trans            &trans           &trans                &trans           &trans
+&trans  &as N1     &as N2    &as N3    &as N4     &as N5       &trans  &as N6    &as N7            &as N8           &as N9                &as N0           &trans
+&trans  &as COMMA  &as DOT   &as RBKT  &as LBKT   &as GRAVE    &trans  &kp LEFT  &kp DOWN          &kp UP           &kp RIGHT             &as BSLH         &trans
+&trans  &sk LCTRL  &sk LALT  &sk LGUI  &sk LSHFT  &none        &trans  &trans    &hmr RSHFT MINUS  &hmr RGUI EQUAL  &hmr RALT UNDERSCORE  &hmr RCTRL PLUS  &trans
+&trans  &trans     &trans    &trans    &trans     &trans       &trans  &trans    &trans            &trans           &trans                &trans
             >;
         };
 
-        Fn {
+        Vi {
             bindings = <
-&none  &none   &none    &none    &none    &none     &trans  &none   &none      &none     &none     &none      &trans
-&none  &kp F1  &kp F2   &kp F3   &kp F4   &none     &trans  &none   &none      &none     &none     &none      &trans
-&none  &kp F5  &kp F6   &kp F7   &kp F8   &none     &trans  &none   &none      &none     &none     &none      &trans
-&none  &kp F9  &kp F10  &kp F11  &kp F12  &none     &trans  &none   &sk LSHFT  &sk LGUI  &sk LALT  &sk LCTRL  &trans
-&none  &trans  &trans   &trans   &trans   &trans    &trans  &trans  &trans     &trans    &trans    &trans
+&none  &none   &none   &none   &none   &none     &trans  &none   &none                     &none       &none                      &none   &trans
+&none  &none   &none   &none   &none   &none     &trans  &none   &kp LG(LEFT_BRACKET)      &kp RC(T)   &kp LG(RIGHT_BRACKET)      &none   &trans
+&none  &none   &none   &none   &none   &none     &trans  &none   &kp LC(RIGHT_BRACKET)     &kp LC(I)   &kp LC(O)                  &none   &trans
+&none  &none   &none   &none   &none   &none     &trans  &none   &kp LG(LS(LEFT_BRACKET))  &kp LS(F6)  &kp LS(LG(RIGHT_BRACKET))  &none   &trans
+&none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans                    &trans      &trans                     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LG(EQUAL) LG(MINUS)>;
@@ -257,14 +272,24 @@
 
             label = "System";
         };
+
+        Numpad {
+            bindings = <
+&trans  &none     &none   &none      &none      &none     &mmv MOVE_UP     &none      &none         &none         &none         &none       &trans
+&trans  &kp N1    &kp N2  &kp RBKT   &kp LBKT   &none     &mmv MOVE_DOWN   &kp GRAVE  &as N7        &as NUMBER_8  &as NUMBER_9  &kp N0      &trans
+&trans  &kp FSLH  &kp N8  &kp MINUS  &kp EQUAL  &none     &mmv MOVE_LEFT   &as MINUS  &as NUMBER_4  &as N5        &as NUMBER_6  &as EQUAL   &none
+&trans  &kp N5    &kp N6  &kp COMMA  &kp DOT    &none     &mmv MOVE_RIGHT  &as COMMA  &as NUMBER_1  &as NUMBER_2  &as NUMBER_3  &as PERIOD  &trans
+&none   &trans    &trans  &trans     &trans     &trans    &mkp LCLK        &trans     &trans        &trans        &trans        &trans
+            >;
+        };
     };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
         System {
-            if-layers = <1 2>;
-            then-layer = <4>;
+            if-layers = <1 6>;
+            then-layer = <5>;
         };
     };
 };
