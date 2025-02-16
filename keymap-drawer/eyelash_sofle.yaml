@@ -29,8 +29,8 @@ layers:
   - {t: '$$mdi:keyboard-tab$$', h: Vi}
   - A
   - S
-  - D
-  - {t: F, h: Vi}
+  - {t: G, h: Vi}
+  - {t: F, h: Navigation}
   - G
   - $$mdi:arrow-left-bold$$
   - H
@@ -95,7 +95,7 @@ layers:
   - F11
   - F6
   - F5
-  - F4
+  - {t: F4, type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - PgUp
@@ -122,7 +122,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {type: held alternate}
   - '&mkp MB1'
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -224,8 +224,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -410,10 +410,10 @@ layers:
   - {t: '[', s: '{'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-up-bold$$
-  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '-', s: _}
+  - {t: '=', s: +}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -437,10 +437,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '-', h: '$$mdi:apple-keyboard-shift$$', s: _}
-  - {t: '=', h: RGUI, s: +}
-  - {t: ',', h: '$$mdi:apple-keyboard-option$$', s: <}
-  - {t: ., h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: ',', h: RGUI, s: <}
+  - {t: ., h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
