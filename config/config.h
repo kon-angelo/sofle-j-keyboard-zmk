@@ -1,1 +1,1 @@
-define ZMK_COMBO_TERM 42
+define ZMK_COMBO_TERM 38
