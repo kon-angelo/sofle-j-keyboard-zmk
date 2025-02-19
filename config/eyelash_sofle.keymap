@@ -89,16 +89,6 @@
         tapping-term-ms = <200>;
     };
 
-    bckspc_dlt: bckspc_dlt {
-        compatible = "zmk,behavior-mod-morph";
-        label = "BCKSPC_DLT";
-        bindings = <&kp BACKSPACE>, <&kp DELETE>;
-
-        #binding-cells = <0>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-        keep-mods = <(MOD_RSFT)>;
-    };
-
     mo_tap_layer: mo_tap_layer {
         compatible = "zmk,behavior-hold-tap";
         label = "MO_TAP_LAYER";
@@ -159,7 +149,7 @@
         };
 
         cmb_r_h2 {
-            bindings = <&kp SQT>;
+            bindings = <&kp GRAVE>;
             key-positions = <34 36>;
         };
 
@@ -170,47 +160,37 @@
 
         cmb_r_b1 {
             bindings = <&kp MINUS>;
-            key-positions = <22 21>;
+            key-positions = <22 34>;
         };
 
         cmb_r_b2 {
             bindings = <&kp EQUAL>;
-            key-positions = <22 34>;
+            key-positions = <34 23>;
         };
 
         cmb_l_ta {
-            bindings = <&sk LS(LA(LC(LGUI)))>;
+            bindings = <&sk LC(LA(LS(LGUI)))>;
             key-positions = <17 16 15>;
         };
 
         cmb_l_h1 {
             bindings = <&kp LBKT>;
-            key-positions = <16 17>;
+            key-positions = <30 29>;
         };
 
         cmb_l_h2 {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <30 29>;
-        };
-
-        cmb_r_t3 {
-            bindings = <&kp GRAVE>;
-            key-positions = <21 24>;
+            key-positions = <30 28>;
         };
 
         cmb_l_m1 {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <15 17>;
+            key-positions = <30 16>;
         };
 
         cmb_l_m2 {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <28 30>;
-        };
-
-        plus_extra {
-            bindings = <&kp EQUAL>;
-            key-positions = <21 23>;
+            key-positions = <30 15>;
         };
     };
 
@@ -221,9 +201,9 @@
             bindings = <
 &kp ESC         &as N1        &as N2           &as N3            &as N4        &as N5         &kp UP_ARROW     &as N6       &as N7        &as N8                 &as N9         &as N0            &kp DELETE
 &kp ESCAPE      &kp Q         &kp W            &kp E             &kp R         &kp T          &kp DOWN_ARROW   &kp Y        &kp U         &kp I                  &kp O          &kp P             &kp BACKSPACE
-&lt 2 TAB       &kp A         &kp S            &lt 2 D           &lt 1 F       &kp G          &kp LEFT_ARROW   &kp H        &kp J         &kp K                  &kp L          &kp SEMICOLON     &kp APOS
+&sk TAB         &kp A         &kp S            &lt 2 D           &lt 1 F       &kp G          &kp LEFT_ARROW   &kp H        &kp J         &kp K                  &kp L          &kp SEMICOLON     &kp APOS
 &kp LEFT_SHIFT  &hml LCTRL Z  &hml LEFT_ALT X  &hml LEFT_META C  &hml LSHFT V  &kp B          &kp RIGHT_ARROW  &kp N        &hmr RSHFT M  &hmr RIGHT_META COMMA  &hmr RALT DOT  &hmr RCTRL SLASH  &kp ENTER
-&kp C_MUTE      &kp LCTRL     &kp LALT         &kp LMETA         &sl 3         &lt 1 ENTER    &kp ENTER        &lt 1 ENTER  &kp SPACE     &kp BACKSPACE          &none          &none
+&kp C_MUTE      &kp LCTRL     &kp LALT         &kp LMETA         &kp ENTER     &lt 3 ENTER    &kp ENTER        &lt 1 ENTER  &kp SPACE     &kp BACKSPACE          &none          &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
