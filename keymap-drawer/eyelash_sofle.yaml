@@ -26,7 +26,7 @@ layers:
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:gesture-tap-hold$$'}
+  - $$mdi:keyboard-tab$$
   - A
   - S
   - {t: D, h: Vi}
