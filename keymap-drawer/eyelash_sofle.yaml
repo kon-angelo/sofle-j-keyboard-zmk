@@ -26,7 +26,7 @@ layers:
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:keyboard-tab$$', h: Vi}
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:gesture-tap-hold$$'}
   - A
   - S
   - {t: D, h: Vi}
@@ -56,8 +56,8 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - LMETA
-  - {t: Numpad, h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:keyboard-return$$', h: Navigation}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:keyboard-return$$', h: Numpad}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', h: Navigation}
   - $$mdi:keyboard-space$$
@@ -122,7 +122,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - '&mkp MB1'
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -156,10 +156,10 @@ layers:
   - {t: 'Gui+]', s: 'Gui+}'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -251,8 +251,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -316,7 +316,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
@@ -393,24 +393,20 @@ combos:
 - p: [34, 35]
   k: $$mdi:keyboard-esc$$
 - p: [34, 36]
-  k: {t: '''', s: '"'}
+  k: {t: '`', s: '~'}
 - p: [34, 37]
   k: {t: \, s: '|'}
-- p: [22, 21]
-  k: {t: '-', s: _}
 - p: [22, 34]
+  k: {t: '-', s: _}
+- p: [34, 23]
   k: {t: '=', s: +}
 - p: [17, 16, 15]
   k: {t: Meh+LGUI, h: '$$mdi:gesture-tap-hold$$'}
-- p: [16, 17]
-  k: {t: '[', s: '{'}
 - p: [30, 29]
+  k: {t: '[', s: '{'}
+- p: [30, 28]
   k: {t: ']', s: '}'}
-- p: [21, 24]
-  k: {t: '`', s: '~'}
-- p: [15, 17]
+- p: [30, 16]
   k: (
-- p: [28, 30]
+- p: [30, 15]
   k: )
-- p: [21, 23]
-  k: {t: '=', s: +}
