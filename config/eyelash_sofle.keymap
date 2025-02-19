@@ -201,7 +201,7 @@
             bindings = <
 &kp ESC         &as N1        &as N2           &as N3            &as N4        &as N5         &kp UP_ARROW     &as N6       &as N7        &as N8                 &as N9         &as N0            &kp DELETE
 &kp ESCAPE      &kp Q         &kp W            &kp E             &kp R         &kp T          &kp DOWN_ARROW   &kp Y        &kp U         &kp I                  &kp O          &kp P             &kp BACKSPACE
-&sk TAB         &kp A         &kp S            &lt 2 D           &lt 1 F       &kp G          &kp LEFT_ARROW   &kp H        &kp J         &kp K                  &kp L          &kp SEMICOLON     &kp APOS
+&kp TAB         &kp A         &kp S            &lt 2 D           &lt 1 F       &kp G          &kp LEFT_ARROW   &kp H        &kp J         &kp K                  &kp L          &kp SEMICOLON     &kp APOS
 &kp LEFT_SHIFT  &hml LCTRL Z  &hml LEFT_ALT X  &hml LEFT_META C  &hml LSHFT V  &kp B          &kp RIGHT_ARROW  &kp N        &hmr RSHFT M  &hmr RIGHT_META COMMA  &hmr RALT DOT  &hmr RCTRL SLASH  &kp ENTER
 &kp C_MUTE      &kp LCTRL     &kp LALT         &kp LMETA         &kp ENTER     &lt 3 ENTER    &kp ENTER        &lt 1 ENTER  &kp SPACE     &kp BACKSPACE          &none          &none
             >;
