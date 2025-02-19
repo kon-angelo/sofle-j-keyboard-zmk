@@ -165,7 +165,7 @@
 
         cmb_r_b2 {
             bindings = <&kp EQUAL>;
-            key-positions = <34 23>;
+            key-positions = <34 48>;
         };
 
         cmb_l_ta {
@@ -185,12 +185,12 @@
 
         cmb_l_m1 {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <30 16>;
+            key-positions = <16 17>;
         };
 
         cmb_l_m2 {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <30 15>;
+            key-positions = <15 17>;
         };
     };
 
