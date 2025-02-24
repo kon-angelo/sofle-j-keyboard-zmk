@@ -199,11 +199,11 @@
 
         layer0 {
             bindings = <
-&kp ESC         &as N1        &as N2           &as N3            &as N4        &as N5         &kp UP_ARROW     &as N6       &as N7        &as N8                 &as N9         &as N0            &kp DELETE
-&kp ESCAPE      &kp Q         &kp W            &kp E             &kp R         &kp T          &kp DOWN_ARROW   &kp Y        &kp U         &kp I                  &kp O          &kp P             &kp BACKSPACE
-&kp TAB         &kp A         &kp S            &lt 2 D           &lt 3 F       &kp G          &kp LEFT_ARROW   &kp H        &kp J         &kp K                  &kp L          &kp SEMICOLON     &kp APOS
-&kp LEFT_SHIFT  &hml LCTRL Z  &hml LEFT_ALT X  &hml LEFT_META C  &hml LSHFT V  &kp B          &kp RIGHT_ARROW  &kp N        &hmr RSHFT M  &hmr RIGHT_META COMMA  &hmr RALT DOT  &hmr RCTRL SLASH  &kp ENTER
-&kp C_MUTE      &kp LCTRL     &kp LALT         &kp LMETA         &lt 1 ENTER   &lt 1 ENTER    &kp ENTER        &lt 3 ENTER  &lt 3 SPACE   &kp BACKSPACE          &none          &none
+&kp ESC         &as N1        &as N2           &as N3        &as N4            &as N5         &kp UP_ARROW     &as N6       &as N7             &as N8                  &as N9         &as N0            &kp DELETE
+&kp ESCAPE      &kp Q         &kp W            &kp E         &kp R             &kp T          &kp DOWN_ARROW   &kp Y        &kp U              &kp I                   &kp O          &kp P             &kp BACKSPACE
+&kp TAB         &kp A         &kp S            &lt 2 D       &lt 3 F           &kp G          &kp LEFT_ARROW   &kp H        &kp J              &kp K                   &kp L          &kp SEMICOLON     &kp APOS
+&kp LEFT_SHIFT  &hml LCTRL Z  &hml LEFT_ALT X  &hml LSHFT C  &hml LEFT_META V  &kp B          &kp RIGHT_ARROW  &kp N        &hmr RIGHT_META M  &hmr RIGHT_SHIFT COMMA  &hmr RALT DOT  &hmr RCTRL SLASH  &kp ENTER
+&kp C_MUTE      &kp LCTRL     &kp LALT         &kp LMETA     &lt 1 ENTER       &lt 1 ENTER    &kp ENTER        &lt 3 ENTER  &lt 3 SPACE        &kp BACKSPACE           &none          &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -212,21 +212,21 @@
 
         Numpad {
             bindings = <
-&trans  &none      &none     &none             &none              &none     &mmv MOVE_UP     &none   &none                &none               &none               &none      &trans
-&trans  &none      &none     &as RBKT          &as LBKT           &none     &mmv MOVE_DOWN   &none   &kp N7               &kp N8              &kp N9              &kp N0     &trans
-&trans  &as GRAVE  &as BSLH  &as EQUAL         &as MINUS          &none     &mmv MOVE_LEFT   &none   &kp N4               &kp N5              &kp N6              &none      &none
-&trans  &sk LCTRL  &sk LALT  &hml LGUI PERIOD  &hml LSHIFT COMMA  &none     &mmv MOVE_RIGHT  &none   &hmr RSHFT NUMBER_1  &hmr RGUI NUMBER_2  &hmr RALT NUMBER_3  &sk RCTRL  &trans
-&none   &trans     &trans    &trans            &trans             &trans    &mkp LCLK        &trans  &trans               &trans              &trans              &trans
+&trans  &none      &none     &none                  &none                  &none     &mmv MOVE_UP     &none   &none                    &none                     &none               &none      &trans
+&trans  &none      &none     &as RBKT               &as LBKT               &none     &mmv MOVE_DOWN   &none   &kp N7                   &kp N8                    &kp N9              &kp N0     &trans
+&trans  &as GRAVE  &as BSLH  &as EQUAL              &as MINUS              &none     &mmv MOVE_LEFT   &none   &kp N4                   &kp N5                    &kp N6              &none      &none
+&trans  &sk LCTRL  &sk LALT  &hml LEFT_SHIFT COMMA  &hml LEFT_META PERIOD  &none     &mmv MOVE_RIGHT  &none   &hmr LEFT_META NUMBER_1  &hmr LEFT_SHIFT NUMBER_2  &hmr RALT NUMBER_3  &sk RCTRL  &trans
+&none   &trans     &trans    &trans                 &trans                 &trans    &mkp LCLK        &trans  &trans                   &trans                    &trans              &trans
             >;
         };
 
         Vi {
             bindings = <
-&none  &none   &none   &none   &none   &none     &trans  &none   &none                     &none       &none                      &none       &trans
-&none  &none   &none   &none   &none   &none     &trans  &none   &kp LG(LEFT_BRACKET)      &kp RC(T)   &kp LG(RIGHT_BRACKET)      &none       &trans
-&none  &none   &none   &none   &none   &none     &trans  &none   &kp LC(RIGHT_BRACKET)     &kp LC(I)   &kp LC(O)                  &kp LS(F6)  &trans
-&none  &none   &none   &none   &none   &none     &trans  &none   &kp LG(LS(LEFT_BRACKET))  &kp LS(F6)  &kp LS(LG(RIGHT_BRACKET))  &none       &trans
-&none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans                    &trans      &trans                     &trans
+&none  &none   &none   &none   &none          &none     &trans  &none   &none                     &none       &none                      &none       &trans
+&none  &none   &none   &none   &none          &none     &trans  &none   &kp LG(LEFT_BRACKET)      &kp RC(T)   &kp LG(RIGHT_BRACKET)      &none       &trans
+&none  &none   &none   &none   &kp LS(SPACE)  &none     &trans  &none   &kp LC(RIGHT_BRACKET)     &kp LC(I)   &kp LC(O)                  &kp LS(F6)  &trans
+&none  &none   &none   &none   &none          &none     &trans  &none   &kp LG(LS(LEFT_BRACKET))  &kp LS(F6)  &kp LS(LG(RIGHT_BRACKET))  &none       &trans
+&none  &trans  &trans  &trans  &trans         &trans    &trans  &trans  &trans                    &trans      &trans                     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LG(EQUAL) LG(MINUS)>;
@@ -234,11 +234,11 @@
 
         Navigation {
             bindings = <
-&trans         &none           &none         &none         &none           &none             &mmv MOVE_UP     &none      &none           &none         &none      &none          &trans
-&trans         &kp F12         &kp F9        &kp F8        &kp F7          &none             &mmv MOVE_DOWN   &kp PG_UP  &kp HOME        &kp UP_ARROW  &kp END    &kp PAGE_DOWN  &trans
-&trans         &kp F11         &kp F6        &kp F5        &kp F4          &msc SCRL_UP      &mmv MOVE_LEFT   &mkp MB1   &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &trans
-&trans         &hml LCTRL F10  &hml LALT F3  &hml LGUI F2  &hml LSHIFT F1  &msc SCRL_DOWN    &mmv MOVE_RIGHT  &mkp MB2   &sk LSHFT       &sk LGUI      &sk LALT   &sk LCTRL      &trans
-&kp C_AC_ZOOM  &trans          &trans        &trans        &trans          &trans            &mkp MB1         &trans     &trans          &trans        &none      &none
+&trans         &none           &none         &none           &none          &none             &mmv MOVE_UP     &none      &none           &none            &none      &none          &trans
+&trans         &kp F12         &kp F9        &kp F8          &kp F7         &none             &mmv MOVE_DOWN   &kp PG_UP  &kp HOME        &kp UP_ARROW     &kp END    &kp PAGE_DOWN  &trans
+&trans         &kp F11         &kp F6        &kp F5          &kp F4         &msc SCRL_UP      &mmv MOVE_LEFT   &mkp MB1   &kp LEFT_ARROW  &kp DOWN         &kp RIGHT  &kp PAGE_DOWN  &trans
+&trans         &hml LCTRL F10  &hml LALT F3  &hml LSHIFT F2  &hml LMETA F1  &msc SCRL_DOWN    &mmv MOVE_RIGHT  &mkp MB2   &sk LEFT_META   &sk RIGHT_SHIFT  &sk LALT   &sk LCTRL      &trans
+&kp C_AC_ZOOM  &trans          &trans        &trans          &trans         &trans            &mkp MB1         &trans     &trans          &trans           &none      &none
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PG_UP>;
@@ -258,11 +258,11 @@
 
         layer_6 {
             bindings = <
-&trans  &trans     &trans    &trans    &trans     &trans    &trans  &trans  &trans                &trans           &trans            &trans             &trans
-&trans  &none      &none     &none     &none      &none     &trans  &none   &kp MINUS             &kp EQUAL        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
-&trans  &as N1     &as N2    &as N3    &as N4     &as N5    &trans  &as N6  &as N7                &as N8           &as N9            &as N0             &trans
-&trans  &sk LCTRL  &sk LALT  &sk LGUI  &sk LSHFT  &none     &trans  &trans  &hmr LSHFT BACKSLASH  &hmr RGUI COMMA  &hmr RALT PERIOD  &hmr RCTRL GRAVE   &sk RSHFT
-&trans  &trans     &trans    &trans    &trans     &trans    &trans  &trans  &trans                &trans           &trans            &trans
+&trans  &trans     &trans    &trans     &trans         &trans    &trans  &trans  &trans                    &trans                  &trans            &trans             &trans
+&trans  &none      &none     &none      &none          &none     &trans  &none   &kp MINUS                 &kp EQUAL               &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+&trans  &as N1     &as N2    &as N3     &as N4         &as N5    &trans  &as N6  &as N7                    &as N8                  &as N9            &as N0             &trans
+&trans  &sk LCTRL  &sk LALT  &sk LSHFT  &sk LEFT_META  &none     &trans  &trans  &hmr LEFT_META BACKSLASH  &hmr RIGHT_SHIFT COMMA  &hmr RALT PERIOD  &hmr RCTRL GRAVE   &sk RSHFT
+&trans  &trans     &trans    &trans     &trans         &trans    &trans  &trans  &trans                    &trans                  &trans            &trans
             >;
         };
     };
