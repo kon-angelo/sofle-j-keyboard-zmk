@@ -224,7 +224,7 @@
             bindings = <
 &none  &none   &none   &none   &none          &none     &trans  &none   &none                     &none       &none                      &none       &trans
 &none  &none   &none   &none   &none          &none     &trans  &none   &kp LG(LEFT_BRACKET)      &kp RC(T)   &kp LG(RIGHT_BRACKET)      &none       &trans
-&none  &none   &none   &none   &kp LS(SPACE)  &none     &trans  &none   &kp LC(RIGHT_BRACKET)     &kp LC(I)   &kp LC(O)                  &kp LS(F6)  &trans
+&none  &none   &none   &none   &kp LC(SPACE)  &none     &trans  &none   &kp LC(RIGHT_BRACKET)     &kp LC(I)   &kp LC(O)                  &kp LS(F6)  &trans
 &none  &none   &none   &none   &none          &none     &trans  &none   &kp LG(LS(LEFT_BRACKET))  &kp LS(F6)  &kp LS(LG(RIGHT_BRACKET))  &none       &trans
 &none  &trans  &trans  &trans  &trans         &trans    &trans  &trans  &trans                    &trans      &trans                     &trans
             >;
