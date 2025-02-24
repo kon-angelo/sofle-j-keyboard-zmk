@@ -42,13 +42,13 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: Z, h: '$$mdi:apple-keyboard-control$$'}
   - {t: X, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: C, h: LEFT META}
-  - {t: V, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: C, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: V, h: LEFT META}
   - B
   - $$mdi:arrow-right-bold$$
   - N
-  - {t: M, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: ',', h: RIGHT META, s: <}
+  - {t: M, h: RIGHT META}
+  - {t: ',', h: '$$mdi:apple-keyboard-shift$$', s: <}
   - {t: ., h: '$$mdi:apple-keyboard-option$$', s: '>'}
   - {t: /, h: '$$mdi:apple-keyboard-control$$', s: '?'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
@@ -107,13 +107,13 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: ., h: LGUI}
   - {t: ',', h: '$$mdi:apple-keyboard-shift$$', s: <}
+  - {t: ., h: LEFT META}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '1', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '2', h: RGUI}
+  - {t: '1', h: LEFT META}
+  - {t: '2', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '3', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -160,7 +160,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Sft+$$mdi:keyboard-space$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -237,13 +237,13 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: F10, h: '$$mdi:apple-keyboard-control$$'}
   - {t: F3, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: F2, h: LGUI}
-  - {t: F1, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: F2, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: F1, h: LMETA}
   - $$mdi:pan-down$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - '&mkp MB2'
+  - {t: LEFT META, h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: LGUI, h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -367,13 +367,13 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: LGUI, h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: LEFT META, h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: \, h: '$$mdi:apple-keyboard-shift$$', s: '|'}
-  - {t: ',', h: RGUI, s: <}
+  - {t: \, h: LEFT META, s: '|'}
+  - {t: ',', h: '$$mdi:apple-keyboard-shift$$', s: <}
   - {t: ., h: '$$mdi:apple-keyboard-option$$'}
   - {t: '`', h: '$$mdi:apple-keyboard-control$$', s: '~'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
