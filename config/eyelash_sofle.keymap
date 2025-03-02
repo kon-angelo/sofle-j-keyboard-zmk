@@ -203,7 +203,7 @@
             bindings = <
 &kp ESC         &as N1        &as N2           &as N3        &as N4        &as N5         &kp UP_ARROW     &as N6       &as N7         &as N8            &as N9         &as N0            &kp DELETE
 &kp ESCAPE      &kp Q         &kp W            &kp E         &kp R         &kp T          &kp DOWN_ARROW   &kp Y        &kp U          &kp I             &kp O          &kp P             &kp BACKSPACE
-&kp TAB         &lt 2 A       &kp S            &lt 1 D       &lt 3 F       &kp G          &kp LEFT_ARROW   &kp H        &kp J          &kp K             &kp L          &kp SEMICOLON     &kp APOS
+&kp TAB         &kp A         &lt 2 S          &lt 1 D       &lt 3 F       &kp G          &kp LEFT_ARROW   &kp H        &kp J          &kp K             &kp L          &lt 6 SEMICOLON   &kp APOS
 &kp LEFT_SHIFT  &hml LCTRL Z  &hml LEFT_ALT X  &hml LMETA C  &hml LSHFT V  &kp B          &kp RIGHT_ARROW  &kp N        &hmr RSHIFT M  &hmr RMETA COMMA  &hmr RALT DOT  &hmr RCTRL SLASH  &kp ENTER
 &kp C_MUTE      &kp LCTRL     &kp LALT         &kp LMETA     &lt 1 ENTER   &lt 1 ENTER    &kp ENTER        &lt 3 ENTER  &kp SPACE      &kp BACKSPACE     &none          &none
             >;
@@ -236,11 +236,11 @@
 
         Navigation {
             bindings = <
-&trans         &none           &none         &none              &none               &none             &mmv MOVE_UP     &none      &none            &none           &none      &none          &trans
-&trans         &kp F12         &kp F9        &kp F8             &kp F7              &none             &mmv MOVE_DOWN   &kp PG_UP  &kp HOME         &kp UP_ARROW    &kp END    &kp PAGE_DOWN  &trans
-&trans         &kp F11         &kp F6        &kp F5             &kp F4              &msc SCRL_UP      &mmv MOVE_LEFT   &mkp MB1   &kp LEFT_ARROW   &kp DOWN        &kp RIGHT  &kp PAGE_DOWN  &trans
-&trans         &hml LCTRL F10  &hml LALT F3  &hml LEFT_META F2  &hml LEFT_SHIFT F1  &msc SCRL_DOWN    &mmv MOVE_RIGHT  &mkp MB2   &sk RIGHT_SHIFT  &sk RIGHT_META  &sk LALT   &sk LCTRL      &trans
-&kp C_AC_ZOOM  &trans          &trans        &trans             &trans              &trans            &mkp MB1         &trans     &trans           &trans          &none      &none
+&trans         &none                        &none                        &none                 &none               &none            &mmv MOVE_UP     &none      &none            &none           &none      &none          &trans
+&trans         &kp PERCENT                  &kp AMPERSAND                &kp RBKT              &kp LBKT            &kp LS(CARET)    &mmv MOVE_DOWN   &kp PG_UP  &kp HOME         &kp UP_ARROW    &kp END    &kp PAGE_DOWN  &trans
+&trans         &kp AT_SIGN                  &kp EXCLAMATION              &kp EQUAL             &kp MINUS           &kp LS(STAR)     &mmv MOVE_LEFT   &mkp MB1   &kp LEFT_ARROW   &kp DOWN        &kp RIGHT  &kp PAGE_DOWN  &trans
+&trans         &hml LCTRL LEFT_PARENTHESIS  &hml LALT RIGHT_PARENTHESIS  &hml LEFT_META COMMA  &hml LSHIFT PERIOD  &kp POUND        &mmv MOVE_RIGHT  &mkp MB2   &sk RIGHT_SHIFT  &sk RIGHT_META  &sk LALT   &sk LCTRL      &trans
+&kp C_AC_ZOOM  &trans                       &trans                       &trans                &trans              &trans           &mkp MB1         &trans     &trans           &trans          &none      &none
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PG_UP>;
@@ -256,6 +256,18 @@
             >;
 
             label = "System";
+        };
+
+        FN {
+            bindings = <
+&trans         &none           &none         &none              &none               &none             &mmv MOVE_UP     &none      &none            &none           &none      &none          &trans
+&trans         &kp F12         &kp F9        &kp F8             &kp F7              &none             &mmv MOVE_DOWN   &kp PG_UP  &kp HOME         &kp UP_ARROW    &kp END    &kp PAGE_DOWN  &trans
+&trans         &kp F11         &kp F6        &kp F5             &kp F4              &msc SCRL_UP      &mmv MOVE_LEFT   &mkp MB1   &kp LEFT_ARROW   &kp DOWN        &kp RIGHT  &kp PAGE_DOWN  &trans
+&trans         &hml LCTRL F10  &hml LALT F3  &hml LEFT_META F2  &hml LEFT_SHIFT F1  &msc SCRL_DOWN    &mmv MOVE_RIGHT  &mkp MB2   &sk RIGHT_SHIFT  &sk RIGHT_META  &sk LALT   &sk LCTRL      &trans
+&kp C_AC_ZOOM  &trans          &trans        &trans             &trans              &trans            &mkp MB1         &trans     &trans           &trans          &none      &none
+            >;
+
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PG_UP>;
         };
 
         layer_6 {
