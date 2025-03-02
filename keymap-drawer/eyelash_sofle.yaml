@@ -37,7 +37,7 @@ layers:
   - J
   - K
   - L
-  - {t: ;, h: '6', s: ':'}
+  - {t: ;, h: FN, s: ':'}
   - .
   - $$mdi:apple-keyboard-shift$$
   - {t: Z, h: '$$mdi:apple-keyboard-control$$'}
@@ -362,7 +362,7 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - PgDn
+  - {t: PgDn, type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: F10, h: '$$mdi:apple-keyboard-control$$'}
@@ -427,7 +427,7 @@ layers:
   - '&as N7'
   - '&as N8'
   - '&as N9'
-  - {t: '&as N0', type: held}
+  - '&as N0'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
