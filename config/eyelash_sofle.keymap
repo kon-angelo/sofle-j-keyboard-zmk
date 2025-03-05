@@ -206,23 +206,13 @@
             bindings = <
 &kp ESC         &as N1        &as N2           &as N3        &as N4        &as N5         &kp UP_ARROW     &as N6       &as N7         &as N8            &as N9         &as N0            &kp DELETE
 &kp ESCAPE      &kp Q         &kp W            &kp E         &kp R         &kp T          &kp DOWN_ARROW   &kp Y        &kp U          &kp I             &kp O          &kp P             &kp BACKSPACE
-&kp TAB         &kp A         &lt 2 S          &lt 1 D       &lt 3 F       &kp G          &kp LEFT_ARROW   &kp H        &kp J          &kp K             &kp L          &lt 4 SEMICOLON   &kp APOS
+&kp TAB         &kp A         &lt 1 S          &lt 3 D       &lt 2 F       &kp G          &kp LEFT_ARROW   &kp H        &kp J          &kp K             &kp L          &lt 4 SEMICOLON   &kp APOS
 &kp LEFT_SHIFT  &hml LCTRL Z  &hml LEFT_ALT X  &hml LMETA C  &hml LSHFT V  &kp B          &kp RIGHT_ARROW  &kp N        &hmr RSHIFT M  &hmr RMETA COMMA  &hmr RALT DOT  &hmr RCTRL SLASH  &kp ENTER
 &kp C_MUTE      &kp LCTRL     &kp LALT         &kp LMETA     &kp LSHFT     &lt 5 ENTER    &kp ENTER        &lt 5 ENTER  &kp SPACE      &kp BACKSPACE     &none          &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
             display-name = "LAYER0";
-        };
-
-        Numpad {
-            bindings = <
-&trans  &none      &none     &none     &none      &none     &mmv MOVE_UP     &none      &none   &none   &none   &none      &trans
-&trans  &none      &none     &none     &none      &none     &mmv MOVE_DOWN   &none      &as N7  &as N8  &as N9  &as N0     &trans
-&trans  &none      &none     &none     &none      &none     &mmv MOVE_LEFT   &as MINUS  &as N4  &as N5  &as N6  &as DOT    &kp SLASH
-&trans  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &none     &mmv MOVE_RIGHT  &as EQUAL  &as N1  &as N2  &as N3  &as COMMA  &trans
-&none   &trans     &trans    &trans    &trans     &trans    &mkp LCLK        &trans     &trans  &trans  &trans  &trans
-            >;
         };
 
         Vi {
@@ -239,23 +229,33 @@
 
         Navigation {
             bindings = <
-&trans         &none      &none     &none     &none      &none     &mmv MOVE_UP     &none      &none            &none           &none      &none          &trans
-&trans         &none      &none     &none     &none      &none     &mmv MOVE_DOWN   &kp PG_UP  &kp HOME         &kp UP_ARROW    &kp END    &kp PAGE_DOWN  &trans
-&trans         &none      &none     &none     &none      &none     &mmv MOVE_LEFT   &mkp MB1   &kp LEFT_ARROW   &kp DOWN        &kp RIGHT  &none          &trans
-&trans         &sk LCTRL  &sk LALT  &sk LGUI  &sk LSHFT  &none     &mmv MOVE_RIGHT  &mkp MB2   &sk RIGHT_SHIFT  &sk RIGHT_META  &sk LALT   &sk LCTRL      &trans
-&kp C_AC_ZOOM  &trans     &trans    &trans    &trans     &trans    &mkp MB1         &trans     &trans           &trans          &none      &none
+&trans         &none      &none     &none     &none      &none        &mmv MOVE_UP     &none      &none            &none           &none      &none          &trans
+&trans         &none      &none     &none     &none      &none        &mmv MOVE_DOWN   &kp PG_UP  &kp HOME         &kp UP_ARROW    &kp END    &kp PAGE_DOWN  &trans
+&trans         &none      &none     &none     &none      &none        &mmv MOVE_LEFT   &mkp MB1   &kp LEFT_ARROW   &kp DOWN        &kp RIGHT  &none          &trans
+&trans         &sk LCTRL  &sk LALT  &sk LGUI  &sk LSHFT  &none        &mmv MOVE_RIGHT  &mkp MB2   &sk RIGHT_SHIFT  &sk RIGHT_META  &sk LALT   &sk LCTRL      &trans
+&kp C_AC_ZOOM  &trans     &trans    &trans    &trans     &kp LSHFT    &mkp MB1         &trans     &trans           &trans          &none      &none
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PG_UP>;
         };
 
+        Numpad {
+            bindings = <
+&trans  &none      &none     &none     &none      &none            &mmv MOVE_UP     &none      &none   &none   &none   &none      &trans
+&trans  &none      &none     &none     &none      &none            &mmv MOVE_DOWN   &none      &as N7  &as N8  &as N9  &as N0     &trans
+&trans  &none      &none     &none     &none      &none            &mmv MOVE_LEFT   &as MINUS  &as N4  &as N5  &as N6  &as DOT    &kp SLASH
+&trans  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &none            &mmv MOVE_RIGHT  &as EQUAL  &as N1  &as N2  &as N3  &as COMMA  &trans
+&none   &trans     &trans    &trans    &trans     &kp LEFT_META    &mkp LCLK        &trans     &trans  &trans  &trans  &trans
+            >;
+        };
+
         FN {
             bindings = <
-&trans         &none    &none   &none   &none   &none     &mmv MOVE_UP     &none      &none            &none           &none     &none      &trans
-&trans         &kp F12  &kp F9  &kp F8  &kp F7  &none     &mmv MOVE_DOWN   &none      &none            &none           &none     &none      &trans
-&trans         &kp F11  &kp F6  &kp F5  &kp F4  &trans    &mmv MOVE_LEFT   &none      &none            &none           &none     &none      &trans
-&trans         &kp F10  &kp F3  &kp F2  &kp F1  &trans    &mmv MOVE_RIGHT  &none      &sk RIGHT_SHIFT  &sk RIGHT_META  &sk LALT  &sk LCTRL  &trans
-&kp C_AC_ZOOM  &trans   &trans  &trans  &trans  &trans    &mkp MB1         &kp LCTRL  &trans           &trans          &none     &none
+&trans         &none    &none   &none   &none   &none        &mmv MOVE_UP     &none      &none            &none           &none     &none      &trans
+&trans         &kp F12  &kp F9  &kp F8  &kp F7  &none        &mmv MOVE_DOWN   &none      &none            &none           &none     &none      &trans
+&trans         &kp F11  &kp F6  &kp F5  &kp F4  &trans       &mmv MOVE_LEFT   &none      &none            &none           &none     &none      &trans
+&trans         &kp F10  &kp F3  &kp F2  &kp F1  &trans       &mmv MOVE_RIGHT  &none      &sk RIGHT_SHIFT  &sk RIGHT_META  &sk LALT  &sk LCTRL  &trans
+&kp C_AC_ZOOM  &trans   &trans  &trans  &trans  &kp SPACE    &mkp MB1         &kp LCTRL  &trans           &trans          &none     &none
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PG_UP>;
