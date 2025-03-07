@@ -263,11 +263,11 @@
 
         Symbol {
             bindings = <
-&trans  &trans                   &trans           &trans             &trans                     &trans         &trans  &trans          &trans            &trans         &trans         &trans         &trans
-&trans  &kp APOS                 &shifted MINUS   &shifted LS(SQT)   &kp COMMA                  &kp DOT        &trans  &shifted N7     &kp DOT           &kp LBKT       &kp RBKT       &shifted N5    &trans
-&trans  &shifted N1              &kp EQUAL        &shifted EQUAL     &kp MINUS                  &shifted N3    &trans  &shifted BSLH   &shifted SEMI     &shifted N9    &shifted N0    &shifted FSLH  &trans
-&trans  &hml LCTRL LS(NUMBER_6)  &hml LALT SLASH  &hml LMETA LS(N8)  &hml LEFT_SHIFT BACKSLASH  &none          &trans  &shifted GRAVE  &kp LS(NUMBER_4)  &shifted LBKT  &shifted RBKT  &shifted N2    &trans
-&trans  &trans                   &trans           &trans             &trans                     &trans         &trans  &trans          &trans            &trans         &trans         &trans
+&trans  &trans                &trans               &trans                   &trans                &trans         &trans  &trans         &trans             &trans                     &trans                      &trans             &trans
+&trans  &kp BACKSLASH         &kp QUESTION         &kp GRAVE                &kp SQT               &kp HASH       &trans  &shifted AMPS  &kp DOUBLE_QUOTES  &kp LBKT                   &kp RBKT                    &shifted AT        &trans
+&trans  &kp EXCLAMATION       &kp SLASH            &kp COLON                &kp EQUAL             &kp PERCENT    &trans  &kp PIPE       &shifted MINUS     &shifted LEFT_PARENTHESIS  &shifted RIGHT_PARENTHESIS  &kp ASTERISK       &trans
+&trans  &hml LCTRL SEMICOLON  &hml LALT LESS_THAN  &hml LMETA GREATER_THAN  &hml LEFT_SHIFT PLUS  &kp GRAVE      &trans  &kp TILDE      &hmr RSHIFT CARET  &hmr RMETA LEFT_BRACE      &hmr RALT RIGHT_BRACE       &hmr RCTRL DOLLAR  &trans
+&trans  &trans                &trans               &trans                   &trans                &trans         &trans  &trans         &trans             &trans                     &trans                      &trans
             >;
         };
 
