@@ -339,43 +339,43 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - .
-  - '&shifted MINUS'
-  - '&shifted LS(SQT)'
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
+  - {t: \, s: '|'}
+  - '?'
+  - {t: '`', s: '~'}
+  - {t: '''', s: '"'}
+  - '#'
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&shifted N7'
-  - {t: ., s: '>'}
+  - '&shifted AMPS'
+  - '"'
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - '&shifted N5'
+  - '&shifted AT'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&shifted N1'
+  - '!'
+  - {t: /, s: '?'}
+  - ':'
   - {t: '=', s: +}
-  - '&shifted EQUAL'
-  - {t: '-', s: _}
-  - '&shifted N3'
+  - '%'
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&shifted BSLH'
-  - '&shifted SEMI'
-  - '&shifted N9'
-  - '&shifted N0'
-  - '&shifted FSLH'
+  - '|'
+  - '&shifted MINUS'
+  - '&shifted LEFT_PARENTHESIS'
+  - '&shifted RIGHT_PARENTHESIS'
+  - '*'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Sft+6, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: /, h: '$$mdi:apple-keyboard-option$$', s: '?'}
-  - {t: Sft+8, h: LMETA, s: Sft+*}
-  - {t: \, h: '$$mdi:apple-keyboard-shift$$', s: '|'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: ':'}
+  - {t: <, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '>', h: LMETA}
+  - {t: +, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&shifted GRAVE'
-  - Sft+4
-  - '&shifted LBKT'
-  - '&shifted RBKT'
-  - '&shifted N2'
+  - '~'
+  - {t: ^, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '{', h: RMETA}
+  - {t: '}', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: $, h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
