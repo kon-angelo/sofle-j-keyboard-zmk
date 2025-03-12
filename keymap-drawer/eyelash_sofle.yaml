@@ -81,8 +81,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Ctl+Sft+O
+  - {t: Gui+`, s: Gui+~}
+  - Gui+$$mdi:keyboard-tab$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -150,11 +150,11 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - PG UP
-  - HOME
   - $$mdi:arrow-up-bold$$
-  - END
   - PgDn
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -177,10 +177,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - '&mkp MB2'
-  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: RIGHT META, h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - HOME
+  - END
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - AC ZOOM
   - {t: '$$mdi:transfer$$', type: trans}
@@ -215,7 +215,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: /, s: '?'}
   - '&as N7'
   - '&as N8'
   - '&as N9'
@@ -233,7 +233,7 @@ layers:
   - '&as N5'
   - '&as N6'
   - '&as DOT'
-  - {t: /, s: '?'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
@@ -339,43 +339,43 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: \, s: '|'}
-  - '?'
-  - {t: '`', s: '~'}
-  - {t: '''', s: '"'}
   - <
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '&shifted AMPS'
-  - '"'
+  - '{'
   - {t: '[', s: '{'}
+  - (
+  - '~'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '''', s: '"'}
+  - )
   - {t: ']', s: '}'}
-  - '@'
+  - '}'
+  - '>'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - +
   - '!'
-  - {t: /, s: '?'}
   - ':'
   - {t: '=', s: +}
   - _
   - {t: '$$mdi:transfer$$', type: trans}
   - '|'
   - {t: '-', s: _}
-  - '&shifted LEFT_PARENTHESIS'
-  - '&shifted RIGHT_PARENTHESIS'
-  - '*'
+  - '"'
+  - '&shifted GRAVE'
+  - _
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: ':'}
+  - {t: '?', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '#', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '%', h: LMETA}
-  - {t: +, h: '$$mdi:apple-keyboard-shift$$'}
-  - '>'
+  - {t: '&', h: '$$mdi:apple-keyboard-shift$$'}
+  - <
   - {t: '$$mdi:transfer$$', type: trans}
-  - '~'
-  - {t: ^, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '{', h: RMETA}
-  - {t: '}', h: '$$mdi:apple-keyboard-option$$'}
-  - {t: $, h: '$$mdi:apple-keyboard-control$$'}
+  - '>'
+  - {t: '*', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: ^, h: RMETA}
+  - {t: $, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '@', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
