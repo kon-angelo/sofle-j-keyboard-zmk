@@ -229,11 +229,11 @@
 
         Navigation {
             bindings = <
-&trans         &none      &none     &none           &none     &none        &mmv MOVE_UP     &none     &none           &none         &none      &none          &trans
-&trans         &none      &none     &none           &none     &none        &mmv MOVE_DOWN   &none     &none           &kp UP_ARROW  &none      &none          &trans
-&trans         &none      &none     &none           &none     &mkp MB3     &mmv MOVE_LEFT   &mkp MB1  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &none          &trans
-&trans         &sk LCTRL  &sk LALT  &sk LEFT_SHIFT  &sk LGUI  &none        &mmv MOVE_RIGHT  &mkp MB2  &kp PAGE_UP     &kp HOME      &kp END    &kp PAGE_DOWN  &trans
-&kp C_AC_ZOOM  &trans     &trans    &trans          &trans    &kp LSHFT    &mkp MB1         &trans    &trans          &trans        &none      &none
+&trans         &none      &none     &none           &none                  &none        &mmv MOVE_UP     &none     &none           &none         &none      &none          &trans
+&trans         &none      &none     &none           &kp LA(LC(LEFT_META))  &none        &mmv MOVE_DOWN   &none     &none           &kp UP_ARROW  &none      &none          &trans
+&trans         &none      &none     &none           &none                  &mkp MB3     &mmv MOVE_LEFT   &mkp MB1  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &none          &trans
+&trans         &sk LCTRL  &sk LALT  &sk LEFT_SHIFT  &sk LGUI               &none        &mmv MOVE_RIGHT  &mkp MB2  &kp PAGE_UP     &kp HOME      &kp END    &kp PAGE_DOWN  &trans
+&kp C_AC_ZOOM  &trans     &trans    &trans          &trans                 &kp LSHFT    &mkp MB1         &trans    &trans          &trans        &none      &none
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PG_UP>;
@@ -265,7 +265,7 @@
             bindings = <
 &trans  &trans               &trans           &trans              &trans                     &trans            &trans  &trans            &trans                 &trans             &trans            &trans              &trans
 &trans  &kp LESS_THAN        &kp LEFT_BRACE   &kp LEFT_BRACKET    &kp LEFT_PARENTHESIS       &kp TILDE         &trans  &kp SQT           &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE   &kp GREATER_THAN    &trans
-&trans  &kp PLUS             &kp EXCLAMATION  &kp COLON           &kp EQUAL                  &kp UNDERSCORE    &trans  &kp PIPE          &kp MINUS              &kp DOUBLE_QUOTES  &shifted GRAVE    &kp UNDERSCORE      &trans
+&trans  &kp PLUS             &kp EXCLAMATION  &kp COLON           &kp EQUAL                  &kp UNDERSCORE    &trans  &kp PIPE          &kp MINUS              &kp DOUBLE_QUOTES  &kp GRAVE         &kp UNDERSCORE      &trans
 &trans  &hml LCTRL QUESTION  &hml LALT HASH   &hml LMETA PERCENT  &hml LEFT_SHIFT AMPERSAND  &kp LESS_THAN     &trans  &kp GREATER_THAN  &hmr RSHIFT ASTERISK   &hmr RMETA CARET   &hmr RALT DOLLAR  &hmr RCTRL AT_SIGN  &trans
 &trans  &trans               &trans           &trans              &trans                     &trans            &trans  &trans            &trans                 &trans             &trans            &trans
             >;
