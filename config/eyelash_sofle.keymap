@@ -21,7 +21,12 @@
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
 
-&sk { /delete-property/ ignore-modifiers; };
+&sk {
+    /delete-property/ ignore-modifiers;
+
+    quick-release;
+    lazy;
+};
 
 / {
     behaviors {
@@ -36,6 +41,22 @@
             time-to-max-speed-ms = <400>;      // 500
             delay-ms = <0>;                   //   10
         };
+
+        num_word: num_word {
+          compatible = "zmk,behavior-auto-layer";
+          #binding-cells = <0>;
+          layers = 3; // Replace NUM by index of numbers layer
+          continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
+          ignore-numbers;
+        };
+
+        nav_auto: nav_auto {
+          compatible = "zmk,behavior-auto-layer";
+          #binding-cells = <0>;
+          layers = 2; // Replace NUM by index of numbers layer
+          continue-list = <DOWN UP LEFT RIGHT HOME END PAGE_UP PAGE_DOWN>;
+          ignore-modifiers;
+        }
     };
 
     scroll_encoder: scroll_encoder {
@@ -89,15 +110,6 @@
         tapping-term-ms = <200>;
     };
 
-    mo_tap_layer: mo_tap_layer {
-        compatible = "zmk,behavior-hold-tap";
-        label = "MO_TAP_LAYER";
-        bindings = <&mo>, <&tog>;
-
-        #binding-cells = <2>;
-        tapping-term-ms = <200>;
-    };
-
     macros {
         shifted: shifted {
             compatible = "zmk,behavior-macro-one-param";
@@ -124,19 +136,6 @@
                 <&macro_param_1to1 &macro_param_1to2 &as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
 
             label = "AS";
-        };
-
-        layer_tap: layer_tap {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings =
-                <&macro_tap>,
-                <&macro_param_1to1 &macro_param_1to2 &mo_tap_layer MACRO_PLACEHOLDER MACRO_PLACEHOLDER>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&macro_param_1to1 &macro_param_1to2 &mo_tap_layer MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
-
-            label = "LAYER_TAP";
         };
     };
 
@@ -168,34 +167,14 @@
             key-positions = <34 23>;
         };
 
-        cmb_l_ta {
-            bindings = <&sk LC(LA(LS(LGUI)))>;
-            key-positions = <17 16 15>;
-        };
-
-        cmb_l_h1 {
-            bindings = <&kp LBKT>;
-            key-positions = <30 29>;
-        };
-
-        cmb_l_h2 {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <30 28>;
-        };
-
-        cmb_l_m1 {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <16 30>;
-        };
-
-        cmb_l_m2 {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <30 42>;
-        };
-
         secret_layer {
             bindings = <&mo 6>;
             key-positions = <57 59>;
+        };
+
+        cmb_tab {
+            bindings = <&kp TAB>;
+            key-positions = <29 30>;
         };
     };
 
@@ -204,11 +183,11 @@
 
         layer0 {
             bindings = <
-&kp ESC         &as N1        &as N2           &as N3        &as N4        &as N5         &kp UP_ARROW     &as N6       &as N7         &as N8            &as N9         &as N0            &kp DELETE
-&kp ESCAPE      &kp Q         &kp W            &kp E         &kp R         &kp T          &kp DOWN_ARROW   &kp Y        &kp U          &kp I             &kp O          &kp P             &kp BACKSPACE
-&kp TAB         &kp A         &lt 1 S          &lt 2 D       &lt 3 F       &kp G          &kp LEFT_ARROW   &kp H        &kp J          &kp K             &kp L          &lt 4 SEMICOLON   &kp APOS
-&kp LEFT_SHIFT  &hml LCTRL Z  &hml LEFT_ALT X  &hml LMETA C  &hml LSHFT V  &kp B          &kp RIGHT_ARROW  &kp N        &hmr RSHIFT M  &hmr RMETA COMMA  &hmr RALT DOT  &hmr RCTRL SLASH  &kp ENTER
-&kp C_MUTE      &kp LCTRL     &kp LALT         &kp LMETA     &sk LSHFT     &lt 5 ENTER    &kp ENTER        &lt 5 ENTER  &kp SPACE      &kp BACKSPACE     &none          &none
+&kp ESC         &as N1        &as N2           &as N3        &as N4        &as N5    &kp UP_ARROW     &as N6       &as N7         &as N8            &as N9         &as N0            &kp DELETE
+&kp ESCAPE      &kp Q         &kp W            &kp E         &kp R         &kp T     &kp DOWN_ARROW   &kp Y        &kp U          &kp I             &kp O          &kp P             &kp BACKSPACE
+&kp TAB         &kp A         &kp S            &lt 1 D       &lt 2 F       &kp G     &kp LEFT_ARROW   &kp H        &kp J          &kp K             &kp L          &lt 4 SEMICOLON   &kp APOS
+&kp LEFT_SHIFT  &hml LCTRL Z  &hml LEFT_ALT X  &hml LMETA C  &hml LSHFT V  &kp B     &kp RIGHT_ARROW  &kp N        &hmr RSHIFT M  &hmr RMETA COMMA  &hmr RALT DOT  &hmr RCTRL SLASH  &kp ENTER
+&kp C_MUTE      &kp LCTRL     &kp LALT         &kp LMETA     &sk LSHFT     &sl 5     &kp ENTER        &lt 3 ENTER  &kp SPACE      &kp BACKSPACE     &none          &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -241,11 +220,11 @@
 
         Numpad {
             bindings = <
-&trans  &none      &none     &none     &none      &none         &mmv MOVE_UP     &none      &none   &none   &none   &none      &trans
-&trans  &none      &none     &none     &none      &none         &mmv MOVE_DOWN   &kp SLASH  &as N7  &as N8  &as N9  &as N0     &trans
-&trans  &none      &none     &none     &none      &none         &mmv MOVE_LEFT   &as MINUS  &as N4  &as N5  &as N6  &as DOT    &trans
-&trans  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &none         &mmv MOVE_RIGHT  &as EQUAL  &as N1  &as N2  &as N3  &as COMMA  &trans
-&none   &trans     &trans    &trans    &trans     &kp LSHIFT    &mkp LCLK        &trans     &trans  &trans  &trans  &trans
+&trans  &none      &none     &none     &none      &none        &mmv MOVE_UP     &none      &none   &none   &none   &none      &trans
+&trans  &none      &none     &none     &none      &none        &mmv MOVE_DOWN   &kp SLASH  &as N7  &as N8  &as N9  &as N0     &trans
+&trans  &none      &none     &none     &none      &none        &mmv MOVE_LEFT   &as MINUS  &as N4  &as N5  &as N6  &as DOT    &trans
+&trans  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &none        &mmv MOVE_RIGHT  &as EQUAL  &as N1  &as N2  &as N3  &as COMMA  &trans
+&none   &trans     &trans    &trans    &kp SPACE  &kp ENTER    &mkp LCLK        &trans     &trans  &trans  &trans  &trans
             >;
         };
 
@@ -263,11 +242,11 @@
 
         Symbol {
             bindings = <
-&trans  &trans               &trans           &trans              &trans                     &trans            &trans  &trans            &trans                 &trans             &trans            &trans              &trans
-&trans  &kp LESS_THAN        &kp LEFT_BRACE   &kp LEFT_BRACKET    &kp LEFT_PARENTHESIS       &kp TILDE         &trans  &kp SQT           &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE   &kp GREATER_THAN    &trans
-&trans  &kp PLUS             &kp EXCLAMATION  &kp COLON           &kp EQUAL                  &kp UNDERSCORE    &trans  &kp PIPE          &kp MINUS              &kp DOUBLE_QUOTES  &kp GRAVE         &kp UNDERSCORE      &trans
-&trans  &hml LCTRL QUESTION  &hml LALT HASH   &hml LMETA PERCENT  &hml LEFT_SHIFT AMPERSAND  &kp LESS_THAN     &trans  &kp GREATER_THAN  &hmr RSHIFT ASTERISK   &hmr RMETA CARET   &hmr RALT DOLLAR  &hmr RCTRL AT_SIGN  &trans
-&trans  &trans               &trans           &trans              &trans                     &trans            &trans  &trans            &trans                 &trans             &trans            &trans
+&trans  &trans               &trans                 &trans              &trans                     &trans       &trans  &trans         &trans                &trans             &trans                &trans              &trans
+&trans  &kp GREATER_THAN     &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE     &kp RIGHT_BRACKET          &kp TILDE    &trans  &kp QUESTION   &kp LEFT_BRACKET      &kp LEFT_BRACE     &kp LEFT_PARENTHESIS  &kp LESS_THAN       &trans
+&trans  &kp PLUS             &kp EXCLAMATION        &kp COLON           &kp EQUAL                  &kp GRAVE    &trans  &kp PIPE       &kp MINUS             &kp DOUBLE_QUOTES  &kp SQT               &kp UNDERSCORE      &trans
+&trans  &hml LCTRL QUESTION  &hml LALT HASH         &hml LMETA PERCENT  &hml LEFT_SHIFT AMPERSAND  &none        &trans  &kp BACKSLASH  &hmr RSHIFT ASTERISK  &hmr RMETA CARET   &hmr RALT DOLLAR      &hmr RCTRL AT_SIGN  &trans
+&trans  &trans               &trans                 &trans              &trans                     &trans       &trans  &trans         &trans                &trans             &trans                &trans
             >;
         };
 
