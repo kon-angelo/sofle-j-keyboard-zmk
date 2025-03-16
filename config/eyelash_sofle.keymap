@@ -164,6 +164,11 @@
             bindings = <&kp TAB>;
             key-positions = <29 30>;
         };
+
+        foo {
+            bindings = <&sk LEFT_SHIFT>;
+            key-positions = <31 30>;
+        };
     };
 
     keymap {
@@ -171,11 +176,11 @@
 
         layer0 {
             bindings = <
-&kp ESC         &as N1        &as N2           &as N3        &as N4        &as N5    &kp UP_ARROW     &as N6       &as N7         &as N8            &as N9         &as N0            &kp DELETE
-&kp ESCAPE      &kp Q         &kp W            &kp E         &kp R         &kp T     &kp DOWN_ARROW   &kp Y        &kp U          &kp I             &kp O          &kp P             &kp BACKSPACE
-&kp TAB         &kp A         &kp S            &lt 1 D       &lt 2 F       &kp G     &kp LEFT_ARROW   &kp H        &kp J          &kp K             &kp L          &lt 4 SEMICOLON   &kp APOS
-&kp LEFT_SHIFT  &hml LCTRL Z  &hml LEFT_ALT X  &hml LMETA C  &hml LSHFT V  &kp B     &kp RIGHT_ARROW  &kp N        &hmr RSHIFT M  &hmr RMETA COMMA  &hmr RALT DOT  &hmr RCTRL SLASH  &kp ENTER
-&kp C_MUTE      &kp LCTRL     &kp LALT         &kp LMETA     &sk LSHFT     &sl 3     &kp ENTER        &lt 5 ENTER  &kp SPACE      &kp BACKSPACE     &none          &none
+&kp ESC     &as N1        &as N2           &as N3        &as N4        &as N5    &kp UP_ARROW     &as N6       &as N7         &as N8            &as N9         &as N0            &kp DELETE
+&kp ESCAPE  &kp Q         &kp W            &kp E         &kp R         &kp T     &kp DOWN_ARROW   &kp Y        &kp U          &kp I             &kp O          &kp P             &kp BACKSPACE
+&kp TAB     &kp A         &lt 1 S          &kp D         &lt 2 F       &kp G     &kp LEFT_ARROW   &kp H        &kp J          &kp K             &kp L          &lt 4 SEMICOLON   &kp APOS
+&sl 7       &hml LCTRL Z  &hml LEFT_ALT X  &hml LMETA C  &hml LSHFT V  &kp B     &kp RIGHT_ARROW  &kp N        &hmr RSHIFT M  &hmr RMETA COMMA  &hmr RALT DOT  &hmr RCTRL SLASH  &kp ENTER
+&kp C_MUTE  &kp LCTRL     &kp LALT         &kp LMETA     &sk LSHFT     &sl 5     &kp ENTER        &lt 7 ENTER  &kp SPACE      &kp BACKSPACE     &none          &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -248,6 +253,16 @@
             >;
 
             label = "System";
+        };
+
+        layer_7 {
+            bindings = <
+&trans  &none      &none   &none   &none      &none        &mmv MOVE_UP     &none   &none      &none     &none     &none      &trans
+&trans  &kp FSLH   &kp N7  &kp N8  &kp N9     &kp N0       &mmv MOVE_DOWN   &none   &none      &none     &none     &none      &trans
+&trans  &as DOT    &kp N4  &kp N5  &kp N6     &as MINUS    &mmv MOVE_LEFT   &none   &none      &none     &none     &none      &trans
+&trans  &as COMMA  &kp N1  &kp N2  &kp N3     &as EQUAL    &mmv MOVE_RIGHT  &none   &kp LSHFT  &kp LGUI  &kp LALT  &kp LCTRL  &trans
+&none   &trans     &trans  &trans  &kp SPACE  &kp ENTER    &mkp LCLK        &trans  &trans     &trans    &trans    &trans
+            >;
         };
     };
 
