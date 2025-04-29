@@ -176,11 +176,11 @@
 
         layer0 {
             bindings = <
-&kp ESC         &as N1        &as N2           &as N3        &as N4        &as N5    &kp UP_ARROW     &as N6     &as N7         &as N8            &as N9         &as N0            &kp DELETE
-&kp ESCAPE      &kp Q         &kp W            &kp E         &kp R         &kp T     &kp DOWN_ARROW   &kp Y      &kp U          &kp I             &kp O          &kp P             &kp BACKSPACE
-&kp TAB         &kp A         &lt 1 S          &kp D         &lt 2 F       &kp G     &kp LEFT_ARROW   &kp H      &kp J          &kp K             &kp L          &lt 4 SEMICOLON   &kp APOS
-&sk LEFT_SHIFT  &hml LCTRL Z  &hml LEFT_ALT X  &hml LMETA C  &hml LSHFT V  &kp B     &kp RIGHT_ARROW  &kp N      &hmr RSHIFT M  &hmr RMETA COMMA  &hmr RALT DOT  &hmr RCTRL SLASH  &kp ENTER
-&kp C_MUTE      &none         &none            &sl 3         &sk LSHFT     &sl 5     &kp ENTER        &kp ENTER  &kp SPACE      &kp BACKSPACE     &none          &none
+&kp ESC         &as N1        &as N2           &as N3        &as N4        &as N5    &kp UP_ARROW     &as N6       &as N7         &as N8            &as N9         &as N0            &kp DELETE
+&kp ESCAPE      &kp Q         &kp W            &kp E         &kp R         &kp T     &kp DOWN_ARROW   &kp Y        &kp U          &kp I             &kp O          &kp P             &kp BACKSPACE
+&kp TAB         &kp A         &lt 1 S          &kp D         &lt 2 F       &kp G     &kp LEFT_ARROW   &kp H        &kp J          &kp K             &kp L          &lt 4 SEMICOLON   &kp APOS
+&sk LEFT_SHIFT  &hml LCTRL Z  &hml LEFT_ALT X  &hml LMETA C  &hml LSHFT V  &kp B     &kp RIGHT_ARROW  &kp N        &hmr RSHIFT M  &hmr RMETA COMMA  &hmr RALT DOT  &hmr RCTRL SLASH  &kp ENTER
+&kp C_MUTE      &none         &none            &sl 3         &sk LSHFT     &sl 5     &kp ENTER        &lt 3 ENTER  &kp SPACE      &kp BACKSPACE     &none          &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -201,11 +201,11 @@
 
         Navigation {
             bindings = <
-&trans         &none      &none     &none           &none     &none        &mmv MOVE_UP     &none     &none           &none         &none      &none          &trans
-&trans         &none      &none     &none           &none     &none        &mmv MOVE_DOWN   &none     &none           &kp UP_ARROW  &none      &none          &trans
-&trans         &none      &none     &none           &none     &mkp MB3     &mmv MOVE_LEFT   &mkp MB1  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &none          &trans
-&trans         &sk LCTRL  &sk LALT  &sk LEFT_SHIFT  &sk LGUI  &none        &mmv MOVE_RIGHT  &mkp MB2  &kp PAGE_UP     &kp HOME      &kp END    &kp PAGE_DOWN  &trans
-&kp C_AC_ZOOM  &trans     &trans    &trans          &trans    &kp LSHFT    &mkp MB1         &trans    &trans          &trans        &none      &none
+&trans         &none      &none     &none             &none           &none             &mmv MOVE_UP     &none     &none           &none         &none      &none          &trans
+&trans         &none      &none     &none             &none           &none             &mmv MOVE_DOWN   &none     &none           &kp UP_ARROW  &none      &none          &trans
+&trans         &none      &none     &none             &none           &mkp MB3          &mmv MOVE_LEFT   &mkp MB1  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &none          &trans
+&trans         &sk LCTRL  &sk LALT  &sk LEFT_COMMAND  &sk LEFT_SHIFT  &none             &mmv MOVE_RIGHT  &mkp MB2  &kp PAGE_UP     &kp HOME      &kp END    &kp PAGE_DOWN  &trans
+&kp C_AC_ZOOM  &trans     &trans    &trans            &trans          &kp LEFT_SHIFT    &mkp MB1         &trans    &trans          &trans        &none      &none
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PG_UP>;
