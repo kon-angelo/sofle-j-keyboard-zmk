@@ -186,22 +186,22 @@
         };
 
         par1 {
-            bindings = <&kp LEFT_PARENTHESIS>;
+            bindings = <&kp LEFT_BRACE>;
             key-positions = <33 33 34>;
         };
 
         par2 {
-            bindings = <&kp RIGHT_PARENTHESIS>;
+            bindings = <&kp RIGHT_BRACE>;
             key-positions = <30 31>;
         };
 
         mus1 {
-            bindings = <&kp LEFT_BRACE>;
+            bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <46 47>;
         };
 
         mus2 {
-            bindings = <&kp RIGHT_BRACE>;
+            bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <43 44>;
         };
     };
@@ -211,11 +211,11 @@
 
         layer0 {
             bindings = <
-&kp GRAVE       &as N1        &as N2           &as N3        &as N4        &as N5    &kp UP_ARROW     &as N6       &as N7         &as N8            &as N9         &as N0            &kp DELETE
+&kp GRAVE       &as N1        &as N2           &as N3        &as N4        &as N5    &kp UP_ARROW     &as N6       &as N7         &as N8            &as N9         &as N0            &kp BACKSPACE
 &kp ESCAPE      &kp Q         &kp W            &kp E         &kp R         &kp T     &kp DOWN_ARROW   &kp Y        &kp U          &kp I             &kp O          &kp P             &kp BACKSPACE
-&kp TAB         &kp A         &lt 1 S          &kp D         &lt 2 F       &kp G     &kp LEFT_ARROW   &kp H        &kp J          &kp K             &kp L          &lt 4 SEMICOLON   &kp APOS
+&kp TAB         &kp A         &lt 1 S          &kp D         &lt 2 F       &kp G     &kp LEFT_ARROW   &kp H        &kp J          &kp K             &kp L          &lt 2 SEMICOLON   &kp APOS
 &sk LEFT_SHIFT  &hml LCTRL Z  &hml LEFT_ALT X  &hml LMETA C  &hml LSHFT V  &kp B     &kp RIGHT_ARROW  &kp N        &hmr RSHIFT M  &hmr RMETA COMMA  &hmr RALT DOT  &hmr RCTRL SLASH  &kp ENTER
-&kp C_MUTE      &sk LCTRL     &sk LALT         &sk LGUI      &sk LSHFT     &sl 4     &kp ENTER        &lt 2 ENTER  &kp SPACE      &kp BACKSPACE     &none          &none
+&kp C_MUTE      &sk LCTRL     &sk LALT         &sk LGUI      &sk LSHFT     &sl 3     &kp ENTER        &lt 2 ENTER  &kp SPACE      &kp BACKSPACE     &none          &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -236,11 +236,11 @@
 
         Navigation {
             bindings = <
-&trans         &none           &none         &none                 &none               &none             &mmv MOVE_UP     &none     &none                    &none                   &none              &none                 &trans
-&trans         &kp F12         &kp F7        &kp F8                &kp F9              &none             &mmv MOVE_DOWN   &none     &none                    &kp UP_ARROW            &none              &none                 &trans
-&trans         &kp F11         &kp F4        &kp F5                &kp F6              &mkp MB3          &mmv MOVE_LEFT   &mkp MB1  &kp LEFT_ARROW           &kp DOWN                &kp RIGHT          &none                 &trans
-&trans         &hml LCTRL F10  &hml LALT F1  &hml LEFT_COMMAND F2  &hml LEFT_SHIFT F3  &none             &mmv MOVE_RIGHT  &mkp MB2  &hmr LEFT_SHIFT PAGE_UP  &hmr LEFT_COMMAND HOME  &hmr LEFT_ALT END  &hmr LCTRL PAGE_DOWN  &trans
-&kp C_AC_ZOOM  &trans          &trans        &trans                &trans              &kp LEFT_SHIFT    &mkp MB1         &trans    &trans                   &trans                  &none              &none
+&trans         &none           &none         &none                 &none               &none             &mmv MOVE_UP     &none       &none                    &none                   &none              &none                 &trans
+&trans         &kp F12         &kp F7        &kp F8                &kp F9              &none             &mmv MOVE_DOWN   &kp DELETE  &none                    &kp UP_ARROW            &none              &none                 &trans
+&trans         &kp F11         &kp F4        &kp F5                &kp F6              &mkp MB3          &mmv MOVE_LEFT   &mkp MB1    &kp LEFT_ARROW           &kp DOWN                &kp RIGHT          &none                 &trans
+&trans         &hml LCTRL F10  &hml LALT F1  &hml LEFT_COMMAND F2  &hml LEFT_SHIFT F3  &none             &mmv MOVE_RIGHT  &mkp MB2    &hmr LEFT_SHIFT PAGE_UP  &hmr LEFT_COMMAND HOME  &hmr LEFT_ALT END  &hmr LCTRL PAGE_DOWN  &trans
+&kp C_AC_ZOOM  &trans          &trans        &trans                &trans              &kp LEFT_SHIFT    &mkp MB1         &trans      &trans                   &trans                  &none              &none
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PG_UP>;
@@ -248,21 +248,21 @@
 
         NUM {
             bindings = <
-&trans  &none      &none     &none     &none      &none             &mmv MOVE_UP     &none      &none   &none   &none   &none      &trans
-&trans  &none      &none     &none     &none      &none             &mmv MOVE_DOWN   &kp SLASH  &as N7  &as N8  &as N9  &as N0     &trans
-&trans  &none      &none     &none     &none      &none             &mmv MOVE_LEFT   &as MINUS  &as N4  &as N5  &as N6  &as DOT    &trans
-&trans  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &none             &mmv MOVE_RIGHT  &as EQUAL  &as N1  &as N2  &as N3  &as COMMA  &trans
-&none   &trans     &trans    &trans    &kp SPACE  &sk LEFT_SHIFT    &mkp LCLK        &trans     &trans  &trans  &trans  &trans
+&trans  &none                  &none                   &none                  &none                 &none        &mmv MOVE_UP     &none          &none   &none   &none   &none      &trans
+&trans  &none                  &none                   &kp DOUBLE_QUOTES      &kp SINGLE_QUOTE      &none        &mmv MOVE_DOWN   &kp SLASH      &as N7  &as N8  &as N9  &as N0     &trans
+&trans  &none                  &kp COLON               &as EQUAL              &as MINUS             &kp TILDE    &mmv MOVE_LEFT   &as PIPE       &as N4  &as N5  &as N6  &as DOT    &trans
+&trans  &mt LCTRL RIGHT_BRACE  &mt LALT RIGHT_BRACKET  &mt LGUI LEFT_BRACKET  &mt LSHFT LEFT_BRACE  &kp GRAVE    &mmv MOVE_RIGHT  &as BACKSLASH  &as N1  &as N2  &as N3  &as COMMA  &trans
+&none   &trans                 &trans                  &trans                 &trans                &trans       &mkp LCLK        &trans         &trans  &trans  &trans  &trans
             >;
         };
 
         SymV2 {
             bindings = <
-&trans  &trans          &trans               &trans                      &trans          &trans              &trans  &trans             &trans                       &trans                           &trans               &trans           &trans
-&trans  &kp N1          &kp N2               &kp N3                      &kp N4          &kp N5              &trans  &kp N6             &kp N7                       &kp N8                           &kp N9               &kp N0           &trans
-&trans  &shifted N1     &shifted N2          &shifted N3                 &shifted N4     &shifted N5         &trans  &shifted N6        &shifted N7                  &shifted N8                      &shifted N9          &shifted N0      &trans
-&trans  &mt LCTRL PLUS  &mt LALT UNDERSCORE  &mt LEFT_COMMAND BACKSLASH  &mt LSHFT PIPE  &kp SINGLE_QUOTE    &trans  &kp DOUBLE_QUOTES  &mt LEFT_SHIFT LEFT_BRACKET  &mt RIGHT_COMMAND RIGHT_BRACKET  &mt RIGHT_ALT MINUS  &mt RCTRL EQUAL  &trans
-&trans  &sk LCTRL       &sk LALT             &sk LGUI                    &trans          &trans              &trans  &trans             &trans                       &trans                           &trans               &trans
+&trans  &trans          &trans               &trans                      &trans          &trans              &trans  &trans             &trans                &trans                          &trans                       &trans           &trans
+&trans  &kp N1          &kp N2               &kp N3                      &kp N4          &kp N5              &trans  &kp N6             &kp N7                &kp N8                          &kp N9                       &kp N0           &trans
+&trans  &shifted N1     &shifted N2          &shifted N3                 &shifted N4     &shifted N5         &trans  &shifted N6        &shifted N7           &shifted N8                     &shifted N9                  &shifted N0      &trans
+&trans  &mt LCTRL PLUS  &mt LALT UNDERSCORE  &mt LEFT_COMMAND BACKSLASH  &mt LSHFT PIPE  &kp SINGLE_QUOTE    &trans  &kp DOUBLE_QUOTES  &mt LEFT_SHIFT MINUS  &mt RIGHT_COMMAND LEFT_BRACKET  &mt RIGHT_ALT RIGHT_BRACKET  &mt RCTRL EQUAL  &trans
+&trans  &sk LCTRL       &sk LALT             &sk LGUI                    &trans          &trans              &trans  &trans             &trans                &trans                          &trans                       &trans
             >;
         };
 
