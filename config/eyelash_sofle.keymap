@@ -54,7 +54,7 @@
     hml: homerow_mods_left {
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_MODS_LEFT_HAND";
-        bindings = <&kp>, <&kp>;
+        bindings = <&sk>, <&kp>;
 
         #binding-cells = <2>;
         hold-trigger-key-positions = <7 8 9 10 11 12 20 21 22 23 24 25 33 34 35 36 37 38 46 47 48 49 50 51 60 61 62 63 59>;
@@ -68,7 +68,7 @@
     hmr: homerow_mods_right {
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_MODS_RIGHT_HAND";
-        bindings = <&kp>, <&kp>;
+        bindings = <&sk>, <&kp>;
 
         #binding-cells = <2>;
         hold-trigger-key-positions = <0 1 2 3 4 5 13 14 15 16 17 18 26 27 28 29 30 31 39 40 41 42 43 44 53 54 55 56 57>;
@@ -136,12 +136,12 @@
         };
 
         cmb_r_h2 {
-            bindings = <&kp GRAVE>;
+            bindings = <&kp BACKSLASH>;
             key-positions = <34 36>;
         };
 
         cmb_r_h3 {
-            bindings = <&kp BACKSLASH>;
+            bindings = <&kp GRAVE>;
             key-positions = <34 37>;
         };
 
@@ -156,7 +156,7 @@
         };
 
         secret_layer {
-            bindings = <&mo 6>;
+            bindings = <&mo 8>;
             key-positions = <57 59>;
         };
 
@@ -169,6 +169,41 @@
             bindings = <&sk LEFT_SHIFT>;
             key-positions = <31 30>;
         };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <34 48>;
+        };
+
+        brc1 {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <20 21>;
+        };
+
+        brc2 {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <17 18>;
+        };
+
+        par1 {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <33 33 34>;
+        };
+
+        par2 {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <30 31>;
+        };
+
+        mus1 {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <46 47>;
+        };
+
+        mus2 {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <43 44>;
+        };
     };
 
     keymap {
@@ -176,11 +211,11 @@
 
         layer0 {
             bindings = <
-&kp ESC         &as N1        &as N2           &as N3        &as N4        &as N5    &kp UP_ARROW     &as N6       &as N7         &as N8            &as N9         &as N0            &kp DELETE
+&kp GRAVE       &as N1        &as N2           &as N3        &as N4        &as N5    &kp UP_ARROW     &as N6       &as N7         &as N8            &as N9         &as N0            &kp DELETE
 &kp ESCAPE      &kp Q         &kp W            &kp E         &kp R         &kp T     &kp DOWN_ARROW   &kp Y        &kp U          &kp I             &kp O          &kp P             &kp BACKSPACE
 &kp TAB         &kp A         &lt 1 S          &kp D         &lt 2 F       &kp G     &kp LEFT_ARROW   &kp H        &kp J          &kp K             &kp L          &lt 4 SEMICOLON   &kp APOS
 &sk LEFT_SHIFT  &hml LCTRL Z  &hml LEFT_ALT X  &hml LMETA C  &hml LSHFT V  &kp B     &kp RIGHT_ARROW  &kp N        &hmr RSHIFT M  &hmr RMETA COMMA  &hmr RALT DOT  &hmr RCTRL SLASH  &kp ENTER
-&kp C_MUTE      &none         &none            &sl 3         &sk LSHFT     &sl 5     &kp ENTER        &lt 3 ENTER  &kp SPACE      &kp BACKSPACE     &none          &none
+&kp C_MUTE      &sk LCTRL     &sk LALT         &sk LGUI      &sk LSHFT     &sl 4     &kp ENTER        &lt 2 ENTER  &kp SPACE      &kp BACKSPACE     &none          &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -201,11 +236,11 @@
 
         Navigation {
             bindings = <
-&trans         &none      &none     &none             &none           &none             &mmv MOVE_UP     &none     &none           &none         &none      &none          &trans
-&trans         &none      &none     &none             &none           &none             &mmv MOVE_DOWN   &none     &none           &kp UP_ARROW  &none      &none          &trans
-&trans         &none      &none     &none             &none           &mkp MB3          &mmv MOVE_LEFT   &mkp MB1  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &none          &trans
-&trans         &sk LCTRL  &sk LALT  &sk LEFT_COMMAND  &sk LEFT_SHIFT  &none             &mmv MOVE_RIGHT  &mkp MB2  &kp PAGE_UP     &kp HOME      &kp END    &kp PAGE_DOWN  &trans
-&kp C_AC_ZOOM  &trans     &trans    &trans            &trans          &kp LEFT_SHIFT    &mkp MB1         &trans    &trans          &trans        &none      &none
+&trans         &none           &none         &none                 &none               &none             &mmv MOVE_UP     &none     &none                    &none                   &none              &none                 &trans
+&trans         &kp F12         &kp F7        &kp F8                &kp F9              &none             &mmv MOVE_DOWN   &none     &none                    &kp UP_ARROW            &none              &none                 &trans
+&trans         &kp F11         &kp F4        &kp F5                &kp F6              &mkp MB3          &mmv MOVE_LEFT   &mkp MB1  &kp LEFT_ARROW           &kp DOWN                &kp RIGHT          &none                 &trans
+&trans         &hml LCTRL F10  &hml LALT F1  &hml LEFT_COMMAND F2  &hml LEFT_SHIFT F3  &none             &mmv MOVE_RIGHT  &mkp MB2  &hmr LEFT_SHIFT PAGE_UP  &hmr LEFT_COMMAND HOME  &hmr LEFT_ALT END  &hmr LCTRL PAGE_DOWN  &trans
+&kp C_AC_ZOOM  &trans          &trans        &trans                &trans              &kp LEFT_SHIFT    &mkp MB1         &trans    &trans                   &trans                  &none              &none
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PG_UP>;
@@ -221,25 +256,13 @@
             >;
         };
 
-        FN {
+        SymV2 {
             bindings = <
-&trans         &none    &none   &none   &none   &none        &mmv MOVE_UP     &none      &none            &none           &none     &none      &trans
-&trans         &kp F12  &kp F9  &kp F8  &kp F7  &none        &mmv MOVE_DOWN   &none      &none            &none           &none     &none      &trans
-&trans         &kp F11  &kp F6  &kp F5  &kp F4  &trans       &mmv MOVE_LEFT   &none      &none            &none           &none     &none      &trans
-&trans         &kp F10  &kp F3  &kp F2  &kp F1  &trans       &mmv MOVE_RIGHT  &none      &sk RIGHT_SHIFT  &sk RIGHT_META  &sk LALT  &sk LCTRL  &trans
-&kp C_AC_ZOOM  &trans   &trans  &trans  &trans  &kp SPACE    &mkp MB1         &kp LCTRL  &trans           &trans          &none     &none
-            >;
-
-            sensor-bindings = <&inc_dec_kp PAGE_DOWN PG_UP>;
-        };
-
-        Symbol {
-            bindings = <
-&trans  &trans               &trans                 &trans              &trans                     &trans       &trans  &trans         &trans                &trans             &trans                &trans              &trans
-&trans  &kp GREATER_THAN     &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE     &kp RIGHT_BRACKET          &kp TILDE    &trans  &kp QUESTION   &kp LEFT_BRACKET      &kp LEFT_BRACE     &kp LEFT_PARENTHESIS  &kp LESS_THAN       &trans
-&trans  &kp PLUS             &kp EXCLAMATION        &kp COLON           &kp EQUAL                  &kp GRAVE    &trans  &kp PIPE       &kp MINUS             &kp DOUBLE_QUOTES  &kp SQT               &kp UNDERSCORE      &trans
-&trans  &hml LCTRL QUESTION  &hml LALT HASH         &hml LMETA PERCENT  &hml LEFT_SHIFT AMPERSAND  &none        &trans  &kp BACKSLASH  &hmr RSHIFT ASTERISK  &hmr RMETA CARET   &hmr RALT DOLLAR      &hmr RCTRL AT_SIGN  &trans
-&trans  &trans               &trans                 &trans              &trans                     &trans       &trans  &trans         &trans                &trans             &trans                &trans
+&trans  &trans          &trans               &trans                      &trans          &trans              &trans  &trans             &trans                       &trans                           &trans               &trans           &trans
+&trans  &kp N1          &kp N2               &kp N3                      &kp N4          &kp N5              &trans  &kp N6             &kp N7                       &kp N8                           &kp N9               &kp N0           &trans
+&trans  &shifted N1     &shifted N2          &shifted N3                 &shifted N4     &shifted N5         &trans  &shifted N6        &shifted N7                  &shifted N8                      &shifted N9          &shifted N0      &trans
+&trans  &mt LCTRL PLUS  &mt LALT UNDERSCORE  &mt LEFT_COMMAND BACKSLASH  &mt LSHFT PIPE  &kp SINGLE_QUOTE    &trans  &kp DOUBLE_QUOTES  &mt LEFT_SHIFT LEFT_BRACKET  &mt RIGHT_COMMAND RIGHT_BRACKET  &mt RIGHT_ALT MINUS  &mt RCTRL EQUAL  &trans
+&trans  &sk LCTRL       &sk LALT             &sk LGUI                    &trans          &trans              &trans  &trans             &trans                       &trans                           &trans               &trans
             >;
         };
 
@@ -255,13 +278,25 @@
             label = "System";
         };
 
-        layer_7 {
+        FN {
             bindings = <
-&trans  &none      &none   &none   &none      &none        &mmv MOVE_UP     &none   &none      &none     &none     &none      &trans
-&trans  &as N0     &as N9  &as N8  &as N7     &as FSLH     &mmv MOVE_DOWN   &none   &none      &none     &none     &none      &trans
-&trans  &as DOT    &as N6  &as N5  &as N4     &as MINUS    &mmv MOVE_LEFT   &none   &none      &none     &none     &none      &trans
-&trans  &as COMMA  &as N3  &as N2  &as N1     &as EQUAL    &mmv MOVE_RIGHT  &none   &kp LSHFT  &kp LGUI  &kp LALT  &kp LCTRL  &trans
-&none   &trans     &trans  &trans  &kp SPACE  &kp ENTER    &mkp LCLK        &trans  &trans     &trans    &trans    &trans
+&trans         &none    &none   &none   &none   &none        &mmv MOVE_UP     &none      &none            &none           &none     &none      &trans
+&trans         &kp F12  &kp F7  &kp F8  &kp F9  &none        &mmv MOVE_DOWN   &none      &none            &none           &none     &none      &trans
+&trans         &kp F11  &kp F4  &kp F5  &kp F6  &trans       &mmv MOVE_LEFT   &none      &none            &none           &none     &none      &trans
+&trans         &kp F10  &kp F1  &kp F2  &kp F3  &trans       &mmv MOVE_RIGHT  &none      &sk RIGHT_SHIFT  &sk RIGHT_META  &sk LALT  &sk LCTRL  &trans
+&kp C_AC_ZOOM  &trans   &trans  &trans  &trans  &kp SPACE    &mkp MB1         &kp LCTRL  &trans           &trans          &none     &none
+            >;
+
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PG_UP>;
+        };
+
+        Symbol {
+            bindings = <
+&trans  &trans               &trans                 &trans              &trans                     &trans       &trans  &trans         &trans                &trans             &trans                &trans              &trans
+&trans  &kp GREATER_THAN     &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE     &kp RIGHT_BRACKET          &kp TILDE    &trans  &kp QUESTION   &kp LEFT_BRACKET      &kp LEFT_BRACE     &kp LEFT_PARENTHESIS  &kp LESS_THAN       &trans
+&trans  &kp PLUS             &kp EXCLAMATION        &kp COLON           &kp EQUAL                  &kp GRAVE    &trans  &kp PIPE       &kp MINUS             &kp DOUBLE_QUOTES  &kp SQT               &kp UNDERSCORE      &trans
+&trans  &hml LCTRL QUESTION  &hml LALT HASH         &hml LMETA PERCENT  &hml LEFT_SHIFT AMPERSAND  &none        &trans  &kp BACKSLASH  &hmr RSHIFT ASTERISK  &hmr RMETA CARET   &hmr RALT DOLLAR      &hmr RCTRL AT_SIGN  &trans
+&trans  &trans               &trans                 &trans              &trans                     &trans       &trans  &trans         &trans                &trans             &trans                &trans
             >;
         };
     };
