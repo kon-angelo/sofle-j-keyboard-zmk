@@ -156,7 +156,7 @@
         };
 
         secret_layer {
-            bindings = <&mo 8>;
+            bindings = <&mo 5>;
             key-positions = <57 59>;
         };
 
@@ -214,7 +214,7 @@
 &kp GRAVE       &as N1        &as N2           &as N3        &as N4        &as N5    &kp UP_ARROW     &as N6       &as N7         &as N8            &as N9         &as N0            &kp BACKSPACE
 &kp ESCAPE      &kp Q         &kp W            &kp E         &kp R         &kp T     &kp DOWN_ARROW   &kp Y        &kp U          &kp I             &kp O          &kp P             &kp BACKSPACE
 &kp TAB         &kp A         &lt 1 S          &kp D         &lt 2 F       &kp G     &kp LEFT_ARROW   &kp H        &kp J          &kp K             &kp L          &lt 2 SEMICOLON   &kp APOS
-&sk LEFT_SHIFT  &hml LCTRL Z  &hml LEFT_ALT X  &hml LMETA C  &hml LSHFT V  &kp B     &kp RIGHT_ARROW  &kp N        &hmr RSHIFT M  &hmr RMETA COMMA  &hmr RALT DOT  &hmr RCTRL SLASH  &kp ENTER
+&sk LEFT_SHIFT  &hml LCTRL Z  &hml LEFT_ALT X  &hml LMETA C  &hml LSHFT V  &kp B     &kp RIGHT_ARROW  &kp N        &hmr RSHIFT M  &hmr RMETA COMMA  &hmr RALT DOT  &hmr RCTRL SLASH  &sk RIGHT_SHIFT
 &kp C_MUTE      &sk LCTRL     &sk LALT         &sk LGUI      &sk LSHFT     &sl 3     &kp ENTER        &lt 2 ENTER  &kp SPACE      &kp BACKSPACE     &none          &none
             >;
 
