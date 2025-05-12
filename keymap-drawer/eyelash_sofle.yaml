@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
-  LAYER0:
+  Base:
   - {t: '`', s: '~'}
   - '&as N1'
   - '&as N2'
@@ -29,7 +29,7 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-tab$$
   - A
-  - {t: S, h: Vi}
+  - {t: S, h: VI}
   - D
   - {t: F, h: Navigation}
   - G
@@ -65,7 +65,7 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  Vi:
+  VI:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -211,7 +211,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '''', s: '"'}
   - '"'
   - {t: '''', s: '"'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -227,22 +227,22 @@ layers:
   - ':'
   - '&as EQUAL'
   - '&as MINUS'
-  - '~'
+  - {t: '`', s: '~'}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - '&as PIPE'
+  - '|'
   - '&as N4'
   - '&as N5'
   - '&as N6'
   - '&as DOT'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '}', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: ']', h: '$$mdi:apple-keyboard-option$$', s: '}'}
-  - {t: '[', h: LGUI, s: '{'}
-  - {t: '{', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '`', s: '~'}
+  - {t: ']', h: '$$mdi:apple-keyboard-control$$', s: '}'}
+  - {t: '}', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '{', h: LGUI}
+  - {t: '[', h: '$$mdi:apple-keyboard-shift$$', s: '{'}
+  - '~'
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - '&as BACKSLASH'
+  - {t: \, s: '|'}
   - '&as N1'
   - '&as N2'
   - '&as N3'
@@ -256,75 +256,10 @@ layers:
   - {type: held}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  SymV2:
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '&shifted N1'
-  - '&shifted N2'
-  - '&shifted N3'
-  - '&shifted N4'
-  - '&shifted N5'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '&shifted N6'
-  - '&shifted N7'
-  - '&shifted N8'
-  - '&shifted N9'
-  - '&shifted N0'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: +, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: _, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: \, h: '$$mdi:apple-keyboard-command$$', s: '|'}
-  - {t: '|', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '''', s: '"'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '"'
-  - {t: '-', h: '$$mdi:apple-keyboard-shift$$', s: _}
-  - {t: '[', h: '$$mdi:apple-keyboard-command$$', s: '{'}
-  - {t: ']', h: '$$mdi:apple-keyboard-option$$', s: '}'}
-  - {t: '=', h: '$$mdi:apple-keyboard-control$$', s: +}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: LGUI, h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
   System:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -390,136 +325,6 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  FN:
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - F12
-  - F7
-  - F8
-  - F9
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - F11
-  - F4
-  - F5
-  - F6
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - F10
-  - F1
-  - F2
-  - F3
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: RIGHT META, h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - AC ZOOM
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:keyboard-space$$
-  - '&mkp MB1'
-  - $$mdi:apple-keyboard-control$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  Symbol:
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '>'
-  - )
-  - '}'
-  - {t: ']', s: '}'}
-  - '~'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '?'
-  - {t: '[', s: '{'}
-  - '{'
-  - (
-  - <
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - +
-  - '!'
-  - ':'
-  - {t: '=', s: +}
-  - {t: '`', s: '~'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '|'
-  - {t: '-', s: _}
-  - '"'
-  - {t: '''', s: '"'}
-  - _
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '?', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '#', h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '%', h: LMETA}
-  - {t: '&', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: \, s: '|'}
-  - {t: '*', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: ^, h: RMETA}
-  - {t: $, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '@', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [34, 35]
   k: $$mdi:keyboard-esc$$
@@ -535,19 +340,19 @@ combos:
   k: System
 - p: [29, 30]
   k: $$mdi:keyboard-tab$$
-- p: [31, 30]
-  k: {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
+- p: [21, 22]
+  k: +
 - p: [34, 48]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
-- p: [20, 21]
+- p: [22, 23]
   k: {t: '[', s: '{'}
-- p: [17, 18]
+- p: [15, 16]
   k: {t: ']', s: '}'}
-- p: [33, 33, 34]
+- p: [21, 24]
   k: '{'
-- p: [30, 31]
+- p: [17, 14]
   k: '}'
-- p: [46, 47]
+- p: [21, 22, 23]
   k: (
-- p: [43, 44]
+- p: [17, 16, 15]
   k: )
