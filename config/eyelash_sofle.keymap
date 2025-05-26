@@ -219,16 +219,16 @@
 &kp C_AC_ZOOM  &trans          &trans        &trans                &trans              &kp LEFT_SHIFT    &mkp MB1         &trans      &trans                &trans                   &none              &none
             >;
 
-            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
         };
 
         NUM {
             bindings = <
-&trans  &none                    &none                 &none                &none                   &none        &mmv MOVE_UP     &none      &none           &none     &none     &none      &trans
-&trans  &none                    &kp GRAVE             &kp DOUBLE_QUOTES    &kp SINGLE_QUOTE        &none        &mmv MOVE_DOWN   &kp SLASH  &as N7          &as N8    &as N9    &as N0     &trans
-&trans  &none                    &kp COLON             &as EQUAL            &as MINUS               &kp GRAVE    &mmv MOVE_LEFT   &kp PIPE   &as N4          &as N5    &as N6    &as DOT    &trans
-&trans  &mt LCTRL RIGHT_BRACKET  &mt LALT RIGHT_BRACE  &mt LGUI LEFT_BRACE  &mt LSHFT LEFT_BRACKET  &kp TILDE    &mmv MOVE_RIGHT  &kp BSLH   &as N1          &as N2    &as N3    &as COMMA  &trans
-&none   &trans                   &trans                &trans               &trans                  &trans       &mkp LCLK        &trans     &sk LEFT_SHIFT  &sk LGUI  &sk LALT  &sk LCTRL
+&trans  &none                         &none                    &none                   &none                        &none           &mmv MOVE_UP     &none      &none                      &none                    &none                    &none             &trans
+&trans  &none                         &kp GRAVE                &kp APOS                &kp SLASH                    &none           &mmv MOVE_DOWN   &kp SLASH  &as N7                     &as N8                   &as N9                   &as N0            &trans
+&trans  &none                         &kp COLON                &as EQUAL               &as MINUS                    &kp QUESTION    &mmv MOVE_LEFT   &kp PIPE   &as N4                     &as N5                   &as N6                   &as DOT           &trans
+&trans  &hml LCTRL RIGHT_PARENTHESIS  &hml LALT RIGHT_BRACKET  &hml LGUI LEFT_BRACKET  &hml LSHFT LEFT_PARENTHESIS  &kp TILDE       &mmv MOVE_RIGHT  &kp BSLH   &hmr RIGHT_SHIFT NUMBER_1  &hmr RIGHT_GUI NUMBER_2  &hmr RIGHT_ALT NUMBER_3  &hmr RCTRL COMMA  &trans
+&none   &trans                        &trans                   &trans                  &trans                       &trans          &mkp LCLK        &trans     &sk LEFT_SHIFT             &sk LGUI                 &sk LALT                 &sk LCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_NEXT C_PREVIOUS>;
