@@ -109,7 +109,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: 'Gui+$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -178,10 +178,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - '&mkp MB2'
-  - {t: PgUp, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: HOME, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: HOME, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: PG UP, h: '$$mdi:apple-keyboard-command$$'}
   - {t: END, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: PgDn, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: END, h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - AC ZOOM
   - {t: '$$mdi:transfer$$', type: trans}
@@ -211,7 +211,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '''', s: '"'}
+  - {t: '`', s: '~'}
   - '"'
   - {t: '''', s: '"'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -337,22 +337,12 @@ combos:
 - p: [34, 23]
   k: {t: '=', s: +}
 - p: [57, 59]
-  k: System
+  k: {t: System, h: '$$mdi:gesture-tap-hold$$'}
 - p: [29, 30]
   k: $$mdi:keyboard-tab$$
 - p: [21, 22]
-  k: +
+  k: {t: '[', s: '{'}
 - p: [34, 48]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
-- p: [22, 23]
-  k: {t: '[', s: '{'}
-- p: [15, 16]
+- p: [22, 23, 21]
   k: {t: ']', s: '}'}
-- p: [21, 24]
-  k: '{'
-- p: [17, 14]
-  k: '}'
-- p: [21, 22, 23]
-  k: (
-- p: [17, 16, 15]
-  k: )
