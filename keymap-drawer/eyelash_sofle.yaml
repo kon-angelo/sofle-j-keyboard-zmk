@@ -212,8 +212,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '`', s: '~'}
-  - '"'
-  - {t: '''', s: '"'}
+  - .
+  - {t: /, s: '?'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: /, s: '?'}
@@ -227,7 +227,7 @@ layers:
   - ':'
   - '&as EQUAL'
   - '&as MINUS'
-  - {t: '`', s: '~'}
+  - '?'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - '|'
   - '&as N4'
@@ -236,17 +236,17 @@ layers:
   - '&as DOT'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: ']', h: '$$mdi:apple-keyboard-control$$', s: '}'}
-  - {t: '}', h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '{', h: LGUI}
-  - {t: '[', h: '$$mdi:apple-keyboard-shift$$', s: '{'}
+  - {t: ), h: '$$mdi:apple-keyboard-control$$'}
+  - {t: ']', h: '$$mdi:apple-keyboard-option$$', s: '}'}
+  - {t: '[', h: LGUI, s: '{'}
+  - {t: (, h: '$$mdi:apple-keyboard-shift$$'}
   - '~'
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: \, s: '|'}
-  - '&as N1'
-  - '&as N2'
-  - '&as N3'
-  - '&as COMMA'
+  - {t: '1', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '2', h: RIGHT GUI}
+  - {t: '3', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: ',', h: '$$mdi:apple-keyboard-control$$', s: <}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
