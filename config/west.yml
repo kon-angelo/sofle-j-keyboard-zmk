@@ -6,24 +6,30 @@ manifest:
       # See:
       # - https://zmk.dev/docs/features/modules
       # - https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#projects
-    - name: gpeye
-      url-base: https://github.com/GPeye
-    - name: urob
-      url-base: https://github.com/urob
+    - name: dsifry 
+      url-base: https://github.com/dsifry 
+    # - name: gpeye
+    # url-base: https://github.com/GPeye
+    #- name: urob
+    #  url-base: https://github.com/urob
   projects:
     - name: eyelash_sofle
       url: https://github.com/a741725193/zmk-sofle
-      revision: refactor
+      #revision: refactor
+      revision: main
     #- name: mario-peripheral-animation
-    - name: hammerbeam-slideshow
-      remote: gpeye
-      revision: main 
+    #- name: hammerbeam-slideshow
+    #  remote: gpeye
+    #  revision: main 
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: zmk-auto-layer
-      remote: urob
-      revision: main
+    # - name: zmk-auto-layer
+    #   remote: urob
+    #   revision: main
+    - name: nice-view-mod #new entry
+      remote: dsifry #new entry
+      revision: main #new entry
   self:
     path: config
