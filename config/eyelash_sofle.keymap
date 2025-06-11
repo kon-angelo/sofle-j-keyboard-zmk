@@ -28,7 +28,12 @@
     lazy;
 };
 
-&mmv { acceleration-exponent = <0>; };
+&mmv {
+    acceleration-exponent = <0>;
+    x-input-code = <20>;
+    y-input-code = <20>;
+    time-to-max-speed-ms = <0>;
+};
 
 / {
     behaviors {
@@ -138,7 +143,7 @@
         };
 
         cmb_r_h2 {
-            bindings = <&kp BACKSLASH>;
+            bindings = <&kp SQT>;
             key-positions = <28 29>;
         };
 
@@ -163,18 +168,23 @@
         };
 
         foo {
-            bindings = <&kp LEFT_BRACKET>;
+            bindings = <&kp ENTER>;
             key-positions = <21 22>;
         };
 
         enter {
-            bindings = <&kp ENTER>;
+            bindings = <&kp LEFT_BRACKET>;
             key-positions = <30 16>;
         };
 
         brc1 {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <22 23 21>;
+            key-positions = <30 15>;
+        };
+
+        foo2 {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <42 41>;
         };
     };
 
@@ -187,7 +197,7 @@
 &kp ESCAPE      &kp Q         &kp W            &kp E         &kp R         &kp T     &kp DOWN_ARROW   &kp Y        &kp U          &kp I             &kp O          &kp P             &kp BACKSPACE
 &kp TAB         &kp A         &lt 1 S          &kp D         &lt 2 F       &kp G     &kp LEFT_ARROW   &kp H        &kp J          &kp K             &kp L          &kp SEMICOLON     &kp APOS
 &kp LEFT_SHIFT  &hml LCTRL Z  &hml LEFT_ALT X  &hml LMETA C  &hml LSHFT V  &kp B     &kp RIGHT_ARROW  &kp N        &hmr RSHIFT M  &hmr RMETA COMMA  &hmr RALT DOT  &hmr RCTRL SLASH  &sk RIGHT_SHIFT
-&kp C_MUTE      &sk LCTRL     &sk LALT         &kp LGUI      &sk LSHFT     &sl 3     &kp ENTER        &lt 2 ENTER  &kp SPACE      &kp BACKSPACE     &none          &mo 4
+&kp C_MUTE      &sk LCTRL     &sk LALT         &kp LGUI      &sk LSHFT     &sl 3     &kp ENTER        &lt 3 ENTER  &lt 2 SPACE    &kp BACKSPACE     &none          &mo 4
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -241,6 +251,7 @@
             >;
 
             label = "System";
+            sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
         };
     };
 
