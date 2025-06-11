@@ -60,8 +60,8 @@ layers:
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: NUM, h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-return$$', h: Navigation}
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-return$$', h: NUM}
+  - {t: '$$mdi:keyboard-space$$', h: Navigation}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - System
@@ -190,8 +190,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-shift$$
   - '&mkp MB1'
-  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -255,7 +255,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: LGUI, h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
@@ -329,7 +329,7 @@ combos:
 - p: [34, 35]
   k: $$mdi:keyboard-esc$$
 - p: [28, 29]
-  k: {t: \, s: '|'}
+  k: {t: '''', s: '"'}
 - p: [15, 16]
   k: {t: '`', s: '~'}
 - p: [22, 34]
@@ -339,8 +339,10 @@ combos:
 - p: [29, 30]
   k: $$mdi:keyboard-tab$$
 - p: [21, 22]
-  k: {t: '[', s: '{'}
-- p: [30, 16]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
-- p: [22, 23, 21]
+- p: [30, 16]
+  k: {t: '[', s: '{'}
+- p: [30, 15]
   k: {t: ']', s: '}'}
+- p: [42, 41]
+  k: {t: \, s: '|'}
