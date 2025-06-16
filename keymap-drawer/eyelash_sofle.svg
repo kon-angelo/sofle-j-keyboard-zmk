@@ -706,11 +706,6 @@ rect.held, rect.combo.held {
 <text x="196" y="119" class="combo tap">]</text>
 <text x="196" y="108" class="combo shifted">}</text>
 </g>
-<g class="combo combopos-9">
-<rect rx="6" ry="6" x="154" y="186" width="28" height="26" class="combo"/>
-<text x="168" y="200" class="combo tap">\</text>
-<text x="168" y="188" class="combo shifted">|</text>
-</g>
 </g>
 </g>
 <g transform="translate(40, 388)" class="layer-VI">
@@ -1091,11 +1086,6 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="182" y="106" width="28" height="26" class="combo"/>
 <text x="196" y="119" class="combo tap">]</text>
 <text x="196" y="108" class="combo shifted">}</text>
-</g>
-<g class="combo combopos-9">
-<rect rx="6" ry="6" x="154" y="186" width="28" height="26" class="combo"/>
-<text x="168" y="200" class="combo tap">\</text>
-<text x="168" y="188" class="combo shifted">|</text>
 </g>
 </g>
 </g>
@@ -1488,11 +1478,6 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="182" y="106" width="28" height="26" class="combo"/>
 <text x="196" y="119" class="combo tap">]</text>
 <text x="196" y="108" class="combo shifted">}</text>
-</g>
-<g class="combo combopos-9">
-<rect rx="6" ry="6" x="154" y="186" width="28" height="26" class="combo"/>
-<text x="168" y="200" class="combo tap">\</text>
-<text x="168" y="188" class="combo shifted">|</text>
 </g>
 </g>
 </g>
@@ -1906,11 +1891,6 @@ rect.held, rect.combo.held {
 <text x="196" y="119" class="combo tap">]</text>
 <text x="196" y="108" class="combo shifted">}</text>
 </g>
-<g class="combo combopos-9">
-<rect rx="6" ry="6" x="154" y="186" width="28" height="26" class="combo"/>
-<text x="168" y="200" class="combo tap">\</text>
-<text x="168" y="188" class="combo shifted">|</text>
-</g>
 </g>
 </g>
 <g transform="translate(40, 1553)" class="layer-System">
@@ -2302,11 +2282,6 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="182" y="106" width="28" height="26" class="combo"/>
 <text x="196" y="119" class="combo tap">]</text>
 <text x="196" y="108" class="combo shifted">}</text>
-</g>
-<g class="combo combopos-9">
-<rect rx="6" ry="6" x="154" y="186" width="28" height="26" class="combo"/>
-<text x="168" y="200" class="combo tap">\</text>
-<text x="168" y="188" class="combo shifted">|</text>
 </g>
 </g>
 </g>
