@@ -144,12 +144,12 @@
 
         cmb_r_h2 {
             bindings = <&kp SQT>;
-            key-positions = <28 29>;
+            key-positions = <15 16>;
         };
 
         cmb_r_h3 {
             bindings = <&kp GRAVE>;
-            key-positions = <15 16>;
+            key-positions = <34 37>;
         };
 
         cmb_r_b1 {
