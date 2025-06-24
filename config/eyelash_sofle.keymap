@@ -29,10 +29,8 @@
 };
 
 &mmv {
-    acceleration-exponent = <0>;
     x-input-code = <20>;
     y-input-code = <20>;
-    time-to-max-speed-ms = <0>;
 };
 
 / {
