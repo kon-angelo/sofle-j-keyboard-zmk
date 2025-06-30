@@ -212,7 +212,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '`', s: '~'}
-  - .
+  - {t: ., type: held alternate}
   - ':'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
@@ -226,7 +226,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - ':'
   - '&as EQUAL'
-  - '&as MINUS'
+  - {t: '&as MINUS', type: held alternate}
   - '?'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - '|'
@@ -253,7 +253,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', type: held}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -329,7 +329,7 @@ combos:
 - p: [34, 35]
   k: $$mdi:keyboard-esc$$
 - p: [15, 16]
-  k: {t: '''', s: '"'}
+  k: '"'
 - p: [34, 37]
   k: {t: '`', s: '~'}
 - p: [22, 34]
@@ -341,6 +341,6 @@ combos:
 - p: [21, 22]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
 - p: [30, 16]
-  k: {t: '[', s: '{'}
-- p: [30, 15]
-  k: {t: ']', s: '}'}
+  k: {t: NUM, h: '$$mdi:gesture-tap-hold$$'}
+- p: [29, 28]
+  k: '&shifted_layer 3'
