@@ -130,6 +130,13 @@
 
             label = "AS";
         };
+
+        shifted_layer: shifted_layer {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&macro_param_1to1 &sl MACRO_PLACEHOLDER &macro_param_1to1 &shifted MACRO_PLACEHOLDER>;
+            label = "SHIFTED_LAYER";
+        };
     };
 
     combos {
@@ -141,7 +148,7 @@
         };
 
         cmb_r_h2 {
-            bindings = <&kp SQT>;
+            bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <15 16>;
         };
 
@@ -171,13 +178,13 @@
         };
 
         enter {
-            bindings = <&kp LEFT_BRACKET>;
+            bindings = <&sl 3>;
             key-positions = <30 16>;
         };
 
-        brc1 {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <30 15>;
+        f-oas {
+            bindings = <&shifted_layer 3>;
+            key-positions = <29 28>;
         };
     };
 
@@ -224,11 +231,11 @@
 
         NUM {
             bindings = <
-&trans  &none                         &none                    &none                   &none                        &none           &mmv MOVE_UP     &none           &none                      &none                    &none                    &none             &kp DELETE
-&trans  &none                         &kp GRAVE                &kp APOS                &kp COLON                    &none           &mmv MOVE_DOWN   &kp SLASH       &as N7                     &as N8                   &as N9                   &as N0            &trans
-&trans  &none                         &kp COLON                &as EQUAL               &as MINUS                    &kp QUESTION    &mmv MOVE_LEFT   &kp PIPE        &as N4                     &as N5                   &as N6                   &as DOT           &trans
-&trans  &hml LCTRL RIGHT_PARENTHESIS  &hml LALT RIGHT_BRACKET  &hml LGUI LEFT_BRACKET  &hml LSHFT LEFT_PARENTHESIS  &kp TILDE       &mmv MOVE_RIGHT  &kp BSLH        &hmr RIGHT_SHIFT NUMBER_1  &hmr RIGHT_GUI NUMBER_2  &hmr RIGHT_ALT NUMBER_3  &hmr RCTRL COMMA  &trans
-&none   &trans                        &trans                   &trans                  &trans                       &trans          &mkp LCLK        &sk LEFT_SHIFT  &trans                     &sk LGUI                 &sk LALT                 &sk LCTRL
+&trans  &none                         &none                    &none                   &none                        &none             &mmv MOVE_UP     &none           &none                      &none                    &none                    &none             &kp DELETE
+&trans  &none                         &kp GRAVE                &kp APOS                &kp COLON                    &none             &mmv MOVE_DOWN   &kp SLASH       &as N7                     &as N8                   &as N9                   &as N0            &trans
+&trans  &none                         &kp COLON                &as EQUAL               &as MINUS                    &kp QUESTION      &mmv MOVE_LEFT   &kp PIPE        &as N4                     &as N5                   &as N6                   &as DOT           &trans
+&trans  &hml LCTRL RIGHT_PARENTHESIS  &hml LALT RIGHT_BRACKET  &hml LGUI LEFT_BRACKET  &hml LSHFT LEFT_PARENTHESIS  &kp TILDE         &mmv MOVE_RIGHT  &kp BSLH        &hmr RIGHT_SHIFT NUMBER_1  &hmr RIGHT_GUI NUMBER_2  &hmr RIGHT_ALT NUMBER_3  &hmr RCTRL COMMA  &trans
+&none   &trans                        &trans                   &trans                  &trans                       &sk LEFT_SHIFT    &mkp LCLK        &sk LEFT_SHIFT  &trans                     &sk LGUI                 &sk LALT                 &sk LCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_NEXT C_PREVIOUS>;
