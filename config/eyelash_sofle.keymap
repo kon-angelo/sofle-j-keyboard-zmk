@@ -28,11 +28,6 @@
     lazy;
 };
 
-&mmv {
-    x-input-code = <20>;
-    y-input-code = <20>;
-};
-
 / {
     behaviors {
         mmv {
