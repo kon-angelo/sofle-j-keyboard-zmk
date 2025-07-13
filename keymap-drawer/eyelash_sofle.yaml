@@ -95,7 +95,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Alt+Ctl+LGUI
   - Ctl+$$mdi:keyboard-space$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -108,8 +108,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: 'Gui+$$mdi:keyboard-return$$', type: enter}
+  - Gui+Sft+J
+  - Gui+Sft+$$mdi:keyboard-space$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -190,7 +190,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-shift$$
   - '&mkp MB1'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -212,7 +212,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '`', s: '~'}
-  - {t: ., type: held alternate}
+  - .
   - ':'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
@@ -226,7 +226,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - ':'
   - '&as EQUAL'
-  - {t: '&as MINUS', type: held alternate}
+  - '&as MINUS'
   - '?'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - '|'
@@ -336,11 +336,11 @@ combos:
   k: {t: '-', s: _}
 - p: [34, 23]
   k: {t: '=', s: +}
-- p: [29, 30]
+- p: [21, 20]
   k: $$mdi:keyboard-tab$$
 - p: [21, 22]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
 - p: [30, 16]
-  k: {t: NUM, h: '$$mdi:gesture-tap-hold$$'}
-- p: [29, 28]
-  k: '&shifted_layer 3'
+  k: {t: '[', s: '{'}
+- p: [30, 15]
+  k: {t: ']', s: '}'}
