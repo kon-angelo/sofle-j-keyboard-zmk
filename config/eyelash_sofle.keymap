@@ -164,22 +164,27 @@
 
         cmb_tab {
             bindings = <&kp TAB>;
-            key-positions = <29 30>;
+            key-positions = <21 20>;
+            timeout-ms = <10>;
+            require-prior-idle-ms = <30>;
         };
 
         foo {
             bindings = <&kp ENTER>;
             key-positions = <21 22>;
+            timeout-ms = <10>;
+            require-prior-idle-ms = <50>;
         };
 
         enter {
-            bindings = <&sl 3>;
+            bindings = <&kp LEFT_BRACKET>;
             key-positions = <30 16>;
         };
 
         f-oas {
-            bindings = <&shifted_layer 3>;
-            key-positions = <29 28>;
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <30 15>;
+            timeout-ms = <5>;
         };
     };
 
@@ -201,11 +206,11 @@
 
         Vi {
             bindings = <
-&none  &none   &none   &none          &none          &none     &trans  &none   &none                     &none       &none                      &none       &trans
-&none  &none   &none   &kp LG(GRAVE)  &none          &none     &trans  &none   &kp LG(LEFT_BRACKET)      &kp RC(T)   &kp LG(RIGHT_BRACKET)      &none       &trans
-&none  &none   &none   &none          &kp LC(SPACE)  &none     &trans  &none   &kp LC(RIGHT_BRACKET)     &kp LC(I)   &kp LC(O)                  &kp LS(F6)  &trans
-&none  &none   &none   &none          &kp LG(ENTER)  &none     &trans  &none   &kp LG(LS(LEFT_BRACKET))  &kp LS(F6)  &kp LS(LG(RIGHT_BRACKET))  &none       &trans
-&none  &trans  &trans  &trans         &trans         &trans    &trans  &trans  &trans                    &trans      &trans                     &trans
+&none  &none   &none   &none             &none              &none     &trans  &none   &none                     &none       &none                      &none       &trans
+&none  &none   &none   &kp LG(GRAVE)     &none              &none     &trans  &none   &kp LG(LEFT_BRACKET)      &kp RC(T)   &kp LG(RIGHT_BRACKET)      &none       &trans
+&none  &none   &none   &kp LA(LC(LGUI))  &kp LC(SPACE)      &none     &trans  &none   &kp LC(RIGHT_BRACKET)     &kp LC(I)   &kp LC(O)                  &kp LS(F6)  &trans
+&none  &none   &none   &kp LG(LS(J))     &kp LG(LS(SPACE))  &none     &trans  &none   &kp LG(LS(LEFT_BRACKET))  &kp LS(F6)  &kp LS(LG(RIGHT_BRACKET))  &none       &trans
+&none  &trans  &trans  &trans            &trans             &trans    &trans  &trans  &trans                    &trans      &trans                     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LG(EQUAL) LG(MINUS)>;
@@ -218,7 +223,7 @@
 &trans         &kp F12         &kp F7        &kp F8                &kp F9              &none             &mmv MOVE_DOWN   &kp DELETE  &none                 &kp UP_ARROW             &none                    &none           &trans
 &trans         &kp F11         &kp F4        &kp F5                &kp F6              &msc SCRL_UP      &mmv MOVE_LEFT   &mkp MB1    &kp LEFT_ARROW        &kp DOWN                 &kp RIGHT                &none           &trans
 &trans         &hml LCTRL F10  &hml LALT F1  &hml LEFT_COMMAND F2  &hml LEFT_SHIFT F3  &msc SCRL_DOWN    &mmv MOVE_RIGHT  &mkp MB2    &hmr LEFT_SHIFT HOME  &hmr LEFT_COMMAND PG_UP  &hmr LEFT_ALT PAGE_DOWN  &hmr LCTRL END  &trans
-&kp C_AC_ZOOM  &trans          &trans        &trans                &trans              &kp LEFT_SHIFT    &mkp MB1         &trans      &trans                &trans                   &none                    &none
+&kp C_AC_ZOOM  &trans          &trans        &trans                &trans              &kp LEFT_SHIFT    &mkp MB1         &kp ENTER   &trans                &trans                   &none                    &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
