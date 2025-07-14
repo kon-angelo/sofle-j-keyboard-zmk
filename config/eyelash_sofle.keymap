@@ -145,6 +145,8 @@
         cmb_r_h2 {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <15 16>;
+            timeout-ms = <10>;
+            require-prior-idle-ms = <30>;
         };
 
         cmb_r_h3 {
@@ -179,12 +181,15 @@
         enter {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <30 16>;
+            timeout-ms = <10>;
+            require-prior-idle-ms = <30>;
         };
 
         f-oas {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <30 15>;
-            timeout-ms = <5>;
+            timeout-ms = <10>;
+            require-prior-idle-ms = <30>;
         };
     };
 
