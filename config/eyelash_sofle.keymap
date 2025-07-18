@@ -140,6 +140,7 @@
         cmb_r_h1 {
             bindings = <&kp ESCAPE>;
             key-positions = <34 35>;
+            require-prior-idle-ms = <50>;
         };
 
         cmb_r_h2 {
@@ -167,29 +168,29 @@
         cmb_tab {
             bindings = <&kp TAB>;
             key-positions = <21 20>;
-            timeout-ms = <10>;
-            require-prior-idle-ms = <30>;
+            timeout-ms = <35>;
+            require-prior-idle-ms = <35>;
         };
 
         foo {
             bindings = <&kp ENTER>;
             key-positions = <21 22>;
-            timeout-ms = <10>;
+            timeout-ms = <35>;
             require-prior-idle-ms = <50>;
         };
 
         enter {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <30 16>;
-            timeout-ms = <10>;
-            require-prior-idle-ms = <30>;
+            timeout-ms = <35>;
+            require-prior-idle-ms = <35>;
         };
 
         f-oas {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <30 15>;
-            timeout-ms = <10>;
-            require-prior-idle-ms = <30>;
+            timeout-ms = <35>;
+            require-prior-idle-ms = <35>;
         };
     };
 
