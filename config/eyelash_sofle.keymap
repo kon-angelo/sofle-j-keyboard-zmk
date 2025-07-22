@@ -167,7 +167,7 @@
 
         cmb_tab {
             bindings = <&kp TAB>;
-            key-positions = <21 20>;
+            key-positions = <33 34>;
             timeout-ms = <35>;
             require-prior-idle-ms = <35>;
         };
@@ -181,14 +181,14 @@
 
         enter {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <30 16>;
+            key-positions = <18 17>;
             timeout-ms = <35>;
             require-prior-idle-ms = <35>;
         };
 
         f-oas {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <30 15>;
+            key-positions = <31 30>;
             timeout-ms = <35>;
             require-prior-idle-ms = <35>;
         };
