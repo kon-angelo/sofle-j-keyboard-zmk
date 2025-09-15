@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
   Base:
-  - {t: '`', s: '~'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&as N1'
   - '&as N2'
   - '&as N3'
@@ -13,8 +13,8 @@ layers:
   - '&as N8'
   - '&as N9'
   - '&as N0'
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Q
   - W
   - E
@@ -214,9 +214,9 @@ layers:
   - {t: '`', s: '~'}
   - .
   - ':'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '[', s: '{'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: /, s: '?'}
+  - {t: ']', s: '}'}
   - '&as N7'
   - '&as N8'
   - '&as N9'
@@ -227,9 +227,9 @@ layers:
   - ':'
   - '&as EQUAL'
   - '&as MINUS'
-  - '?'
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - '|'
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - '?'
   - '&as N4'
   - '&as N5'
   - '&as N6'
@@ -240,9 +240,9 @@ layers:
   - {t: ']', h: '$$mdi:apple-keyboard-option$$', s: '}'}
   - {t: '[', h: LGUI, s: '{'}
   - {t: (, h: '$$mdi:apple-keyboard-shift$$'}
-  - '~'
+  - \
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - {t: \, s: '|'}
+  - {t: /, s: '?'}
   - {t: '1', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '2', h: RIGHT GUI}
   - {t: '3', h: '$$mdi:apple-keyboard-option$$'}
