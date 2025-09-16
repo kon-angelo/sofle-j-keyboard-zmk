@@ -126,11 +126,18 @@
             label = "AS";
         };
 
-        shifted_layer: shifted_layer {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&macro_param_1to1 &sl MACRO_PLACEHOLDER &macro_param_1to1 &shifted MACRO_PLACEHOLDER>;
-            label = "SHIFTED_LAYER";
+        hyper: hyper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT &kp LCTRL &kp LEFT_GUI &kp LALT>;
+            label = "hyper";
+        };
+
+        meh: meh {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT &kp LALT &kp LCTRL>;
+            label = "MEH";
         };
     };
 
@@ -141,18 +148,6 @@
             bindings = <&kp ESCAPE>;
             key-positions = <34 35>;
             require-prior-idle-ms = <50>;
-        };
-
-        cmb_r_h2 {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <15 16>;
-            timeout-ms = <30>;
-            require-prior-idle-ms = <30>;
-        };
-
-        cmb_r_h3 {
-            bindings = <&kp GRAVE>;
-            key-positions = <34 37>;
         };
 
         cmb_r_b1 {
@@ -178,20 +173,6 @@
             timeout-ms = <35>;
             require-prior-idle-ms = <50>;
         };
-
-        enter {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <18 17>;
-            timeout-ms = <35>;
-            require-prior-idle-ms = <35>;
-        };
-
-        f-oas {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <31 30>;
-            timeout-ms = <35>;
-            require-prior-idle-ms = <35>;
-        };
     };
 
     keymap {
@@ -213,7 +194,7 @@
         Vi {
             bindings = <
 &none  &none   &none   &none             &none              &none     &trans  &none   &none                     &none       &none                      &none       &trans
-&none  &none   &none   &kp LG(GRAVE)     &none              &none     &trans  &none   &kp LG(LEFT_BRACKET)      &kp RC(T)   &kp LG(RIGHT_BRACKET)      &none       &trans
+&none  &none   &none   &kp LG(GRAVE)     &hyper             &meh      &trans  &none   &kp LG(LEFT_BRACKET)      &kp RC(T)   &kp LG(RIGHT_BRACKET)      &none       &trans
 &none  &none   &none   &kp LA(LC(LGUI))  &kp LC(SPACE)      &none     &trans  &none   &kp LC(RIGHT_BRACKET)     &kp LC(I)   &kp LC(O)                  &kp LS(F6)  &trans
 &none  &none   &none   &kp LG(LS(J))     &kp LG(LS(SPACE))  &none     &trans  &none   &kp LG(LS(LEFT_BRACKET))  &kp LS(F6)  &kp LS(LG(RIGHT_BRACKET))  &none       &trans
 &none  &trans  &trans  &trans            &trans             &trans    &trans  &trans  &trans                    &trans      &trans                     &trans
@@ -258,6 +239,26 @@
 
             label = "System";
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans     &trans    &trans    &trans     &trans    &trans  &trans  &trans     &trans         &trans  &trans  &trans
+&trans  &trans     &trans    &hyper    &meh       &trans    &trans  &trans  &trans     &kp DELETE     &trans  &trans  &trans
+&trans  &trans     &trans    &trans    &trans     &trans    &trans  &trans  &kp ENTER  &kp BACKSPACE  &trans  &trans  &trans
+&trans  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &trans    &trans  &trans  &trans     &trans         &trans  &trans  &trans
+&trans  &trans     &trans    &trans    &trans     &trans    &trans  &trans  &trans     &trans         &trans  &trans
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &trans       &trans       &trans       &trans       &trans                  &trans  &trans        &trans       &trans       &trans        &trans       &trans
+&trans  &shifted N1  &shifted N2  &shifted N3  &shifted N4  &shifted N5             &trans  &shifted N6   &shifted N7  &shifted N8  &shifted N9   &shifted N0  &trans
+&trans  &trans       &as GRAVE    &kp LS(SQT)  &as APOS     &kp PIPE                &trans  &kp QUESTION  &as MINUS    &as EQUAL    &kp LS(SEMI)  &trans       &trans
+&trans  &sk LCTRL    &sk LALT     &sk LGUI     &sk LSHFT    &kp NON_US_BACKSLASH    &trans  &kp SLASH     &as LBKT     &as RBKT     &trans        &trans       &trans
+&trans  &trans       &trans       &trans       &trans       &trans                  &trans  &trans        &trans       &trans       &trans        &trans
+            >;
         };
     };
 
