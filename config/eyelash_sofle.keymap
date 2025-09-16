@@ -117,18 +117,28 @@
             label = "AS";
         };
 
+        meh: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LALT &kp LSHFT>,
+                <&macro_pause_for_release>,
+                <&macro_release>;
+
+            label = "NEW_MACRO";
+        };
+
         hyper: hyper {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT &kp LCTRL &kp LEFT_GUI &kp LALT>;
-            label = "hyper";
-        };
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LALT &kp LSHFT &kp LGUI>,
+                <&macro_pause_for_release>,
+                <&macro_release>;
 
-        meh: meh {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT &kp LALT &kp LCTRL>;
-            label = "MEH";
+            label = "HYPER";
         };
     };
 
