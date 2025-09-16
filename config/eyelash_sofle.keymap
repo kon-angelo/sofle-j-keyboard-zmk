@@ -89,15 +89,6 @@
         flavor = "tap-preferred";
     };
 
-    lt_repeat: lt_repeat {
-        compatible = "zmk,behavior-hold-tap";
-        label = "LT_REPEAT";
-        bindings = <&mo>, <&key_repeat>;
-
-        #binding-cells = <2>;
-        tapping-term-ms = <200>;
-    };
-
     macros {
         shifted: shifted {
             compatible = "zmk,behavior-macro-one-param";
@@ -173,6 +164,11 @@
             timeout-ms = <35>;
             require-prior-idle-ms = <50>;
         };
+
+        tab2 {
+            bindings = <&none>;
+            key-positions = <30 29>;
+        };
     };
 
     keymap {
@@ -184,7 +180,7 @@
 &none           &kp Q         &kp W            &kp E         &kp R         &kp T     &kp DOWN_ARROW   &kp Y        &kp U          &kp I             &kp O          &kp P             &kp BACKSPACE
 &kp TAB         &kp A         &lt 1 S          &kp D         &lt 2 F       &kp G     &kp LEFT_ARROW   &kp H        &kp J          &kp K             &kp L          &kp SEMICOLON     &kp APOS
 &kp LEFT_SHIFT  &hml LCTRL Z  &hml LEFT_ALT X  &hml LMETA C  &hml LSHFT V  &kp B     &kp RIGHT_ARROW  &kp N        &hmr RSHIFT M  &hmr RMETA COMMA  &hmr RALT DOT  &hmr RCTRL SLASH  &sk RIGHT_SHIFT
-&kp C_MUTE      &sk LCTRL     &sk LALT         &kp LGUI      &sk LSHFT     &sl 3     &kp ENTER        &lt 3 ENTER  &lt 2 SPACE    &kp BACKSPACE     &none          &mo 4
+&kp C_MUTE      &sk LCTRL     &sk LALT         &kp LGUI      &sk LSHFT     &sl 3     &kp ENTER        &lt 3 ENTER  &lt 4 SPACE    &mo 2             &none          &mo 6
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -228,26 +224,13 @@
             sensor-bindings = <&inc_dec_kp C_NEXT C_PREVIOUS>;
         };
 
-        System {
+        master {
             bindings = <
-&none  &none  &none  &none  &none  &none    &none  &bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &none            &none
-&none  &none  &none  &none  &none  &none    &none  &none            &none            &none            &none            &none            &none
-&none  &none  &none  &none  &none  &none    &none  &none            &rgb_ug RGB_ON   &rgb_ug RGB_EFF  &rgb_ug RGB_OFF  &none            &none
-&none  &none  &none  &none  &none  &none    &none  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD
-&none  &none  &none  &none  &none  &none    &none  &none            &none            &none            &none            &none
-            >;
-
-            label = "System";
-            sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
-        };
-
-        layer_5 {
-            bindings = <
-&trans  &trans     &trans    &trans    &trans     &trans    &trans  &trans  &trans     &trans         &trans  &trans  &trans
-&trans  &trans     &trans    &hyper    &meh       &trans    &trans  &trans  &trans     &kp DELETE     &trans  &trans  &trans
-&trans  &trans     &trans    &trans    &trans     &trans    &trans  &trans  &kp ENTER  &kp BACKSPACE  &trans  &trans  &trans
-&trans  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &trans    &trans  &trans  &trans     &trans         &trans  &trans  &trans
-&trans  &trans     &trans    &trans    &trans     &trans    &trans  &trans  &trans     &trans         &trans  &trans
+&trans  &trans     &trans    &trans    &trans     &trans    &trans  &trans  &trans     &trans         &trans   &trans  &trans
+&trans  &trans     &trans    &hyper    &meh       &trans    &trans  &trans  &trans     &kp DELETE     &trans   &trans  &trans
+&trans  &trans     &trans    &trans    &trans     &trans    &trans  &trans  &kp ENTER  &kp BACKSPACE  &kp TAB  &trans  &trans
+&trans  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &trans    &trans  &trans  &trans     &trans         &trans   &trans  &trans
+&trans  &trans     &trans    &trans    &trans     &hyper    &trans  &trans  &trans     &trans         &trans   &trans
             >;
         };
 
@@ -259,6 +242,19 @@
 &trans  &sk LCTRL    &sk LALT     &sk LGUI     &sk LSHFT    &kp NON_US_BACKSLASH    &trans  &kp SLASH     &as LBKT     &as RBKT     &trans        &trans       &trans
 &trans  &trans       &trans       &trans       &trans       &trans                  &trans  &trans        &trans       &trans       &trans        &trans
             >;
+        };
+
+        System {
+            bindings = <
+&none  &none  &none  &none  &none  &none    &none  &bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &none            &none
+&none  &none  &none  &none  &none  &none    &none  &none            &none            &none            &none            &none            &none
+&none  &none  &none  &none  &none  &none    &none  &none            &rgb_ug RGB_ON   &rgb_ug RGB_EFF  &rgb_ug RGB_OFF  &none            &none
+&none  &none  &none  &none  &none  &none    &none  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD
+&none  &none  &none  &none  &none  &none    &none  &none            &none            &none            &none            &none
+            >;
+
+            label = "System";
+            sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
         };
     };
 
