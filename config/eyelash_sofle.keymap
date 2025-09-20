@@ -235,11 +235,11 @@
 
         NUM {
             bindings = <
-&trans  &none                         &none                    &none                   &none                        &none               &mmv MOVE_UP     &none              &none                      &none                    &none                    &none             &kp DELETE
-&trans  &none                         &as GRAVE                &as APOS                &kp COLON                    &kp LEFT_BRACKET    &mmv MOVE_DOWN   &kp RIGHT_BRACKET  &as N7                     &as N8                   &as N9                   &as N0            &trans
-&trans  &none                         &kp COLON                &as EQUAL               &as MINUS                    &kp QUESTION        &mmv MOVE_LEFT   &kp PIPE           &as N4                     &as N5                   &as N6                   &as DOT           &trans
-&trans  &hml LCTRL RIGHT_PARENTHESIS  &hml LALT RIGHT_BRACKET  &hml LGUI LEFT_BRACKET  &hml LSHFT LEFT_PARENTHESIS  &kp SLASH           &mmv MOVE_RIGHT  &kp BACKSLASH      &hmr RIGHT_SHIFT NUMBER_1  &hmr RIGHT_GUI NUMBER_2  &hmr RIGHT_ALT NUMBER_3  &hmr RCTRL COMMA  &trans
-&none   &trans                        &trans                   &trans                  &trans                       &sk LEFT_SHIFT      &mkp LCLK        &sk LEFT_SHIFT     &trans                     &sk LGUI                 &sk LALT                 &sk LCTRL
+&trans  &none                 &none            &none               &none            &none                   &mmv MOVE_UP     &none                  &none                      &none                    &none                    &none             &kp DELETE
+&trans  &none                 &as GRAVE        &as APOS            &kp COLON        &kp LEFT_BRACE          &mmv MOVE_DOWN   &kp RIGHT_BRACE        &as N7                     &as N8                   &as N9                   &as N0            &trans
+&trans  &none                 &kp COLON        &as EQUAL           &as MINUS        &kp LEFT_BRACKET        &mmv MOVE_LEFT   &kp RIGHT_BRACKET      &as N4                     &as N5                   &as N6                   &as DOT           &trans
+&trans  &hml LCTRL BACKSLASH  &hml LALT SLASH  &hml LGUI QUESTION  &hml LSHFT PIPE  &kp LEFT_PARENTHESIS    &mmv MOVE_RIGHT  &kp RIGHT_PARENTHESIS  &hmr RIGHT_SHIFT NUMBER_1  &hmr RIGHT_GUI NUMBER_2  &hmr RIGHT_ALT NUMBER_3  &hmr RCTRL COMMA  &trans
+&none   &trans                &trans           &trans              &trans           &sk LEFT_SHIFT          &mkp LCLK        &sk LEFT_SHIFT         &trans                     &sk LGUI                 &sk LALT                 &sk LCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_NEXT C_PREVIOUS>;
@@ -247,11 +247,11 @@
 
         master {
             bindings = <
-&none  &none      &none     &none     &none       &none    &none  &none  &none      &none          &none    &none  &none
-&none  &none      &none     &none     &none       &none    &none  &none  &none      &kp DELETE     &none    &none  &none
-&none  &none      &none     &none     &kp LGUI    &none    &none  &none  &kp ENTER  &kp BACKSPACE  &kp TAB  &none  &none
-&none  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT   &none    &none  &none  &none      &none          &none    &none  &none
-&none  &none      &none     &none     &caps_word  &none    &none  &none  &none      &none          &none    &none
+&none  &none      &none      &none      &none       &none    &none  &none  &none              &none              &none    &none  &none
+&none  &none      &kp LG(X)  &kp LG(C)  &kp LG(V)   &none    &none  &none  &none              &kp DELETE         &none    &none  &none
+&none  &none      &none      &none      &kp LGUI    &none    &none  &none  &kp BACKSPACE      &kp BACKSPACE      &kp TAB  &none  &none
+&none  &kp LCTRL  &kp LALT   &kp LGUI   &kp LSHFT   &none    &none  &none  &kp LA(BACKSPACE)  &kp LG(BACKSPACE)  &none    &none  &none
+&none  &none      &none      &none      &caps_word  &none    &none  &none  &none              &none              &none    &none
             >;
         };
 
