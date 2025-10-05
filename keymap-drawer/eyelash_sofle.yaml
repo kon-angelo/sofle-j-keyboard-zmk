@@ -61,8 +61,8 @@ layers:
   - {t: NeoSym, h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: master, h: '$$mdi:gesture-tap-hold$$'}
-  - $$mdi:keyboard-space$$
-  - Navigation
+  - {t: '$$mdi:keyboard-space$$', h: master}
+  - {t: Navigation, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - System
   VI:
@@ -257,7 +257,7 @@ layers:
   - '&mkp MB1'
   - {t: Base, h: toggle}
   - {t: Base, h: toggle}
-  - {t: Navigation, h: toggle, type: held alternate}
+  - {t: Navigation, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   master:
@@ -320,8 +320,8 @@ layers:
   - $$mdi:alpha-w-box$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:keyboard-return$$', type: held}
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:keyboard-space$$', type: held alternate}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -521,9 +521,9 @@ layers:
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
 combos:
-- p: [34, 35]
-  k: '&as ENTER'
 - p: [34, 22]
+  k: '&as ENTER'
+- p: [34, 35]
   k: $$mdi:keyboard-esc$$
 - p: [33, 34]
   k: $$mdi:keyboard-tab$$
