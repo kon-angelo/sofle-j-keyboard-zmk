@@ -52,12 +52,12 @@
 
         esc {
             bindings = <&kp ESC>;
-            key-positions = <34 35>;
+            key-positions = <21 22>;
         };
 
         enter {
             bindings = <&kp ENTER>;
-            key-positions = <21 22>;
+            key-positions = <34 35>;
         };
 
         tab {
@@ -70,14 +70,24 @@
             key-positions = <22 23>;
         };
 
-        tab3 {
-            bindings = <&kp TAB>;
-            key-positions = <30 29>;
+        tog_nav {
+            bindings = <&tog 3>;
+            key-positions = <30 30 34>;
         };
 
-        tog_nav {
-            bindings = <&tog 2>;
-            key-positions = <29 35>;
+        enter2 {
+            bindings = <&kp ESCAPE>;
+            key-positions = <20 21>;
+        };
+
+        hyper {
+            bindings = <&sk LA(LC(LS(LEFT_GUI)))>;
+            key-positions = <17 21>;
+        };
+
+        meh {
+            bindings = <&sk LA(LC(LEFT_GUI))>;
+            key-positions = <16 22>;
         };
     };
 
@@ -181,11 +191,11 @@
 
         Base {
             bindings = <
-&none           &as N1        &as N2           &as N3        &as N4        &as N5    &kp UP_ARROW     &as N6       &as N7         &as N8            &as N9         &as N0            &none
-&none           &kp Q         &kp W            &kp E         &kp R         &kp T     &kp DOWN_ARROW   &kp Y        &kp U          &kp I             &kp O          &kp P             &none
-&none           &kp A         &tap_hml 1 S     &kp D         &tap_hml 2 F  &kp G     &kp LEFT_ARROW   &kp H        &kp J          &kp K             &kp L          &kp SEMICOLON     &kp APOS
-&kp LEFT_SHIFT  &hml LCTRL Z  &hml LEFT_ALT X  &hml LMETA C  &hml LSHFT V  &kp B     &kp RIGHT_ARROW  &kp N        &hmr RSHIFT M  &hmr RMETA COMMA  &hmr RALT DOT  &hmr RCTRL SLASH  &sk RIGHT_SHIFT
-&kp C_MUTE      &none         &none            &sl 7         &sk LSHFT     &sl 3     &kp ENTER        &lt 3 ENTER  &lt 4 SPACE    &mo 2             &none          &mo 5
+&none           &as N1        &as N2           &as N3        &as N4        &as N5    &kp UP_ARROW     &as N6  &as N7         &as N8            &as N9         &as N0            &none
+&none           &kp Q         &kp W            &kp E         &kp R         &kp T     &kp DOWN_ARROW   &kp Y   &kp U          &kp I             &kp O          &kp P             &none
+&none           &kp A         &kp S            &tap_hml 1 D  &tap_hml 3 F  &kp G     &kp LEFT_ARROW   &kp H   &kp J          &kp K             &kp L          &kp SEMICOLON     &kp APOS
+&kp LEFT_SHIFT  &hml LCTRL Z  &hml LEFT_ALT X  &hml LMETA C  &hml LSHFT V  &kp B     &kp RIGHT_ARROW  &kp N   &hmr RSHIFT M  &hmr RMETA COMMA  &hmr RALT DOT  &hmr RCTRL SLASH  &sk RIGHT_SHIFT
+&kp C_MUTE      &none         &none            &sl 5         &sk LSHFT     &sl 2     &kp ENTER        &sl 2   &lt 4 SPACE    &mo 3             &none          &mo 6
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -194,48 +204,58 @@
 
         Vi {
             bindings = <
-&none  &none   &none   &none             &none              &none     &trans  &none   &none                     &none       &none                      &none       &trans
-&none  &none   &none   &kp LG(GRAVE)     &none              &none     &trans  &none   &kp LG(LEFT_BRACKET)      &kp RC(T)   &kp LG(RIGHT_BRACKET)      &none       &trans
-&none  &none   &none   &kp LA(LC(LGUI))  &kp LC(SPACE)      &none     &trans  &none   &kp LC(RIGHT_BRACKET)     &kp LC(I)   &kp LC(O)                  &kp LS(F6)  &trans
-&none  &none   &none   &kp LG(LS(J))     &kp LG(LS(SPACE))  &none     &trans  &none   &kp LG(LS(LEFT_BRACKET))  &kp LS(F6)  &kp LS(LG(RIGHT_BRACKET))  &none       &trans
-&none  &trans  &trans  &trans            &trans             &trans    &trans  &trans  &trans                    &trans      &trans                     &trans
+&none  &none   &none   &none   &none              &none            &trans  &none   &none                     &none       &none                      &none       &trans
+&none  &none   &none   &none   &kp LG(GRAVE)      &none            &trans  &none   &kp LG(LEFT_BRACKET)      &kp RC(T)   &kp LG(RIGHT_BRACKET)      &none       &trans
+&none  &none   &none   &none   &kp LC(SPACE)      &none            &trans  &none   &kp LC(RIGHT_BRACKET)     &kp LC(I)   &kp LC(O)                  &kp LS(F6)  &trans
+&none  &none   &none   &none   &kp LG(LS(SPACE))  &kp LG(LS(J))    &trans  &none   &kp LG(LS(LEFT_BRACKET))  &kp LS(F6)  &kp LS(LG(RIGHT_BRACKET))  &none       &trans
+&none  &trans  &trans  &trans  &trans             &trans           &trans  &trans  &trans                    &trans      &trans                     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LG(EQUAL) LG(MINUS)>;
             label = "VI";
         };
 
+        NeoSym {
+            bindings = <
+&none  &none      &none      &none        &none              &none               &none  &none              &none           &none           &none                 &none               &none
+&none  &as N1     &as N2     &as N3       &as N4             &as N5              &none  &as N6             &as N7          &as N8          &as N9                &as N0              &none
+&none  &none      &as GRAVE  &kp LS(SQT)  &as DOUBLE_QUOTES  &kp LEFT_BRACKET    &none  &kp RIGHT_BRACKET  &as MINUS       &as EQUAL       &kp LS(SEMI)          &none               &none
+&none  &sk LCTRL  &sk LALT   &sk LGUI     &sk LSHFT          &kp BACKSLASH       &none  &kp SLASH          &mt LSHFT PIPE  &mt LGUI COMMA  &mt RIGHT_ALT PERIOD  &mt RCTRL QUESTION  &none
+&none  &none      &none      &none        &none              &sk LEFT_SHIFT      &none  &sk LEFT_SHIFT     &trans          &none           &none                 &none
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_NEXT C_PREV>;
+        };
+
         Navigation {
             bindings = <
-&trans         &none           &none         &none                 &none               &none             &mmv MOVE_UP     &none     &none                 &none         &none              &none      &trans
-&trans         &kp F12         &kp F7        &kp F8                &kp F9              &none             &mmv MOVE_DOWN   &none     &kp PAGE_DOWN         &kp UP_ARROW  &kp PAGE_UP        &none      &trans
-&trans         &kp F11         &kp F4        &kp F5                &kp F6              &msc SCRL_UP      &mmv MOVE_LEFT   &mkp MB1  &kp LEFT_ARROW        &kp DOWN      &kp RIGHT          &none      &trans
-&trans         &hml LCTRL F10  &hml LALT F1  &hml LEFT_COMMAND F2  &hml LEFT_SHIFT F3  &msc SCRL_DOWN    &mmv MOVE_RIGHT  &mkp MB2  &hmr LEFT_SHIFT HOME  &kp LGUI      &hmr LEFT_ALT END  &kp LCTRL  &trans
-&kp C_AC_ZOOM  &trans          &trans        &trans                &trans              &kp LEFT_SHIFT    &mkp MB1         &to 0     &to 0                 &tog 2        &none              &none
+&trans         &none      &none     &none     &none      &none             &mmv MOVE_UP     &none     &none      &none           &none            &none  &trans
+&trans         &none      &none     &none     &none      &none             &mmv MOVE_DOWN   &kp HOME  &kp PG_DN  &kp PG_UP       &kp END          &none  &trans
+&trans         &none      &none     &none     &none      &msc SCRL_UP      &mmv MOVE_LEFT   &kp LEFT  &kp DOWN   &kp RIGHT       &kp RIGHT        &none  &trans
+&trans         &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &msc SCRL_DOWN    &mmv MOVE_RIGHT  &mkp MB1  &mkp MB2   &msc SCRL_LEFT  &msc SCRL_RIGHT  &none  &trans
+&kp C_AC_ZOOM  &trans     &trans    &trans    &trans     &kp LEFT_SHIFT    &mkp MB1         &to 0     &to 0      &tog 3          &none            &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
         };
 
-        NUM {
-            bindings = <
-&trans  &none                 &none            &none               &none            &none                   &mmv MOVE_UP     &none                  &none                      &none                    &none                    &none             &kp DELETE
-&trans  &none                 &as GRAVE        &as APOS            &kp COLON        &kp LEFT_PARENTHESIS    &mmv MOVE_DOWN   &kp RIGHT_PARENTHESIS  &as N7                     &as N8                   &as N9                   &as N0            &trans
-&trans  &none                 &kp COLON        &as EQUAL           &as MINUS        &kp LEFT_BRACKET        &mmv MOVE_LEFT   &kp RIGHT_BRACKET      &as N4                     &as N5                   &as N6                   &as DOT           &trans
-&trans  &hml LCTRL BACKSLASH  &hml LALT SLASH  &hml LGUI QUESTION  &hml LSHFT PIPE  &kp LEFT_BRACE          &mmv MOVE_RIGHT  &kp RIGHT_BRACE        &hmr RIGHT_SHIFT NUMBER_1  &hmr RIGHT_GUI NUMBER_2  &hmr RIGHT_ALT NUMBER_3  &hmr RCTRL COMMA  &trans
-&none   &trans                &trans           &trans              &trans           &sk LEFT_SHIFT          &mkp LCLK        &sk LEFT_SHIFT         &trans                     &sk LGUI                 &sk LALT                 &sk LCTRL
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_NEXT C_PREVIOUS>;
-        };
-
         master {
             bindings = <
-&none  &none      &none      &none      &none         &none            &none  &none  &none              &none              &none    &none  &none
-&none  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)     &none            &none  &none  &none              &kp DELETE         &none    &none  &none
-&none  &kp LG(A)  &none      &none      &kp LG(LGUI)  &none            &none  &none  &kp BACKSPACE      &kp BACKSPACE      &kp TAB  &none  &none
-&none  &kp LCTRL  &kp LALT   &kp LGUI   &kp LSHFT     &none            &none  &none  &kp LG(BACKSPACE)  &kp LA(BACKSPACE)  &none    &none  &none
-&none  &none      &none      &none      &caps_word    &kp LG(ENTER)    &none  &none  &none              &none              &none    &none
+&none  &none      &none      &none                 &none                     &none            &none  &none       &none              &none              &none    &none  &none
+&none  &none      &none      &kp LG(Z)             &kp LG(LS(Z))             &none            &none  &none       &kp LG(ENTER)      &kp ENTER          &none    &none  &none
+&none  &kp LG(A)  &none      &sk LA(LC(LEFT_GUI))  &sk LS(LA(LC(LEFT_GUI)))  &none            &none  &kp DELETE  &kp ENTER          &kp BACKSPACE      &kp TAB  &none  &none
+&none  &kp LG(Z)  &kp LG(X)  &kp LG(C)             &kp LG(V)                 &none            &none  &none       &kp LG(BACKSPACE)  &kp LA(BACKSPACE)  &none    &none  &none
+&none  &none      &none      &none                 &caps_word                &kp LG(ENTER)    &none  &none       &none              &none              &none    &none
+            >;
+        };
+
+        Flayer {
+            bindings = <
+&none  &none      &none     &none     &none      &none    &none  &none  &none   &none   &none   &none    &none
+&none  &none      &none     &none     &none      &none    &none  &none  &kp F7  &kp F8  &kp F9  &kp F12  &none
+&none  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &none    &none  &none  &kp F4  &kp F5  &kp F6  &kp F11  &none
+&none  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &none    &none  &none  &kp F1  &kp F2  &kp F3  &kp F10  &none
+&none  &none      &none     &sk LGUI  &none      &none    &none  &none  &none   &none   &none   &none
             >;
         };
 
@@ -252,24 +272,16 @@
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
         };
 
-        NeoSym {
+        NUM {
             bindings = <
-&trans  &trans       &trans       &trans       &trans       &trans                  &trans  &trans        &trans       &trans       &trans        &trans       &trans
-&trans  &shifted N1  &shifted N2  &shifted N3  &shifted N4  &shifted N5             &trans  &shifted N6   &shifted N7  &shifted N8  &shifted N9   &shifted N0  &trans
-&trans  &trans       &as GRAVE    &kp LS(SQT)  &as APOS     &kp PIPE                &trans  &kp QUESTION  &as MINUS    &as EQUAL    &kp LS(SEMI)  &trans       &trans
-&trans  &sk LCTRL    &sk LALT     &sk LGUI     &sk LSHFT    &kp NON_US_BACKSLASH    &trans  &kp SLASH     &as LBKT     &as RBKT     &trans        &trans       &trans
-&trans  &trans       &trans       &trans       &trans       &trans                  &trans  &trans        &trans       &trans       &trans        &trans
+&trans  &none                 &none            &none               &none            &none                   &mmv MOVE_UP     &none                  &none                      &none                    &none                    &none             &kp DELETE
+&trans  &none                 &as GRAVE        &as APOS            &kp COLON        &kp LEFT_PARENTHESIS    &mmv MOVE_DOWN   &kp RIGHT_PARENTHESIS  &as N7                     &as N8                   &as N9                   &as N0            &trans
+&trans  &none                 &kp COLON        &as EQUAL           &as MINUS        &kp LEFT_BRACKET        &mmv MOVE_LEFT   &kp RIGHT_BRACKET      &as N4                     &as N5                   &as N6                   &as DOT           &trans
+&trans  &hml LCTRL BACKSLASH  &hml LALT SLASH  &hml LGUI QUESTION  &hml LSHFT PIPE  &kp LEFT_BRACE          &mmv MOVE_RIGHT  &kp RIGHT_BRACE        &hmr RIGHT_SHIFT NUMBER_1  &hmr RIGHT_GUI NUMBER_2  &hmr RIGHT_ALT NUMBER_3  &hmr RCTRL COMMA  &trans
+&none   &trans                &trans           &trans              &trans           &sk LEFT_SHIFT          &mkp LCLK        &sk LEFT_SHIFT         &trans                     &sk LGUI                 &sk LALT                 &sk LCTRL
             >;
-        };
 
-        Flayer {
-            bindings = <
-&trans  &trans     &trans    &trans    &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans   &trans
-&trans  &trans     &trans    &trans    &trans     &trans    &trans  &trans  &kp F7  &kp F8  &kp F9  &kp F12  &trans
-&trans  &trans     &trans    &trans    &trans     &trans    &trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
-&trans  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &trans    &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-&trans  &trans     &trans    &sk LGUI  &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-            >;
+            sensor-bindings = <&inc_dec_kp C_NEXT C_PREVIOUS>;
         };
     };
 
