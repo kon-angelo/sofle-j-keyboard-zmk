@@ -42,12 +42,12 @@
 
         min {
             bindings = <&as ENTER>;
-            key-positions = <34 22>;
+            key-positions = <34 35>;
         };
 
         esc {
             bindings = <&kp ESC>;
-            key-positions = <34 35>;
+            key-positions = <34 22>;
         };
 
         tab {
@@ -56,13 +56,18 @@
         };
 
         bkspc {
-            bindings = <&kp BACKSPACE>;
+            bindings = <&kp ESCAPE>;
             key-positions = <20 21>;
         };
 
         tog_nav {
             bindings = <&tog 3>;
             key-positions = <16 22>;
+        };
+
+        bksp {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <21 22>;
         };
     };
 
@@ -132,6 +137,18 @@
         require-prior-idle-ms = <150>;
     };
 
+    lt2: lt2 {
+        compatible = "zmk,behavior-hold-tap";
+        label = "LT2";
+        bindings = <&mo>, <&kp>;
+
+        #binding-cells = <2>;
+        flavor = "balanced";
+        tapping-term-ms = <500>;
+        require-prior-idle-ms = <100>;
+        hold-trigger-key-positions = <21 22 23 34 35 36 47 48 49>;
+    };
+
     macros {
         shifted: shifted {
             compatible = "zmk,behavior-macro-one-param";
@@ -170,7 +187,7 @@
 &none           &kp Q         &kp W            &kp E         &kp R         &kp T     &kp DOWN_ARROW   &kp Y   &kp U          &kp I             &kp O          &kp P             &none
 &none           &kp A         &kp S            &tap_hml 1 D  &tap_hml 3 F  &kp G     &kp LEFT_ARROW   &kp H   &kp J          &kp K             &kp L          &kp SEMICOLON     &kp APOS
 &kp LEFT_SHIFT  &hml LCTRL Z  &hml LEFT_ALT X  &hml LMETA C  &hml LSHFT V  &kp B     &kp RIGHT_ARROW  &kp N   &hmr RSHIFT M  &hmr RMETA COMMA  &hmr RALT DOT  &hmr RCTRL SLASH  &sk RIGHT_SHIFT
-&kp C_MUTE      &none         &none            &sl 5         &sk LSHFT     &sl 2     &kp ENTER        &sl 4   &lt 4 SPACE    &tog 3            &none          &mo 6
+&kp C_MUTE      &none         &none            &sl 5         &sk LSHFT     &sl 2     &kp ENTER        &sl 2   &lt2 4 SPACE   &tog 3            &none          &mo 6
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
