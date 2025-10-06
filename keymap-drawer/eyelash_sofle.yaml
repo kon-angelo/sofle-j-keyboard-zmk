@@ -60,7 +60,7 @@ layers:
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: NeoSym, h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: NeoSym, h: '$$mdi:gesture-tap-hold$$'}
+  - master
   - {t: '$$mdi:keyboard-space$$', h: master}
   - {t: Navigation, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -148,11 +148,11 @@ layers:
   - '&as N1'
   - '&as N2'
   - '&as N3'
-  - '&as N4'
+  - {t: '&as N4', type: held alternate}
   - '&as N5'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&as N6'
-  - '&as N7'
+  - {t: '&as N7', type: held alternate}
   - '&as N8'
   - '&as N9'
   - '&as N0'
@@ -190,7 +190,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', type: held alternate}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -320,8 +320,8 @@ layers:
   - $$mdi:alpha-w-box$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:keyboard-space$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:keyboard-space$$', type: held alternate}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -533,3 +533,5 @@ combos:
   k: {t: Navigation, h: toggle}
 - p: [21, 22]
   k: {t: '$$mdi:backspace$$', type: backspace}
+- p: [17, 21]
+  k: {t: NeoSym, h: '$$mdi:gesture-tap-hold$$'}

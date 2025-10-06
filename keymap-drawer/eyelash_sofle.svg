@@ -642,10 +642,9 @@ rect.held, rect.combo.held {
 <g transform="translate(535, 294) rotate(-30.0)" class="key keypos-59">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#NeoSym">
-<text x="0" y="-4" class="key tap layer-activator">NeoSym</text>
-</a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="-8" y="9" height="15" width="15.0" class="key hold glyph mdi:gesture-tap-hold"/>
-</g>
+<a href="#master">
+<text x="0" y="-4" class="key tap layer-activator">master</text>
+</a></g>
 <g transform="translate(610, 283) rotate(-30.0)" class="key keypos-60">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
@@ -700,6 +699,14 @@ rect.held, rect.combo.held {
 <g class="combo backspace combopos-5">
 <rect rx="6" ry="6" x="686" y="74" width="28" height="26" class="combo backspace"/>
 <use href="#mdi:backspace" xlink:href="#mdi:backspace" x="691" y="78" height="18" width="18.0" class="combo backspace tap glyph mdi:backspace"/>
+</g>
+<g class="combo combopos-6">
+<path d="M462,91 l-191,0" class="combo"/>
+<path d="M462,91 l191,0" class="combo"/>
+<rect rx="6" ry="6" x="448" y="78" width="28" height="26" class="combo"/>
+<a href="#NeoSym">
+<text x="462" y="91" class="combo tap layer-activator">NeoSym</text>
+</a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="454" y="87" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
 </g>
 </g>
 </g>
@@ -1068,6 +1075,14 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="686" y="74" width="28" height="26" class="combo backspace"/>
 <use href="#mdi:backspace" xlink:href="#mdi:backspace" x="691" y="78" height="18" width="18.0" class="combo backspace tap glyph mdi:backspace"/>
 </g>
+<g class="combo combopos-6">
+<path d="M462,91 l-191,0" class="combo"/>
+<path d="M462,91 l191,0" class="combo"/>
+<rect rx="6" ry="6" x="448" y="78" width="28" height="26" class="combo"/>
+<a href="#NeoSym">
+<text x="462" y="91" class="combo tap layer-activator">NeoSym</text>
+</a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="454" y="87" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
+</g>
 </g>
 </g>
 <g transform="translate(40, 776)" class="layer-NeoSym">
@@ -1164,10 +1179,10 @@ rect.held, rect.combo.held {
 <tspan x="0" dy="-0.6em">&amp;as</tspan><tspan x="0" dy="1.2em">N3</tspan>
 </text>
 </g>
-<g transform="translate(252, 91)" class="key keypos-17">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">
+<g transform="translate(252, 91)" class="key held alternate keypos-17">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held alternate side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held alternate"/>
+<text x="0" y="-4" class="key held alternate tap">
 <tspan x="0" dy="-0.6em">&amp;as</tspan><tspan x="0" dy="1.2em">N4</tspan>
 </text>
 </g>
@@ -1190,10 +1205,10 @@ rect.held, rect.combo.held {
 <tspan x="0" dy="-0.6em">&amp;as</tspan><tspan x="0" dy="1.2em">N6</tspan>
 </text>
 </g>
-<g transform="translate(672, 91)" class="key keypos-21">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">
+<g transform="translate(672, 91)" class="key held alternate keypos-21">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held alternate side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held alternate"/>
+<text x="0" y="-4" class="key held alternate tap">
 <tspan x="0" dy="-0.6em">&amp;as</tspan><tspan x="0" dy="1.2em">N7</tspan>
 </text>
 </g>
@@ -1413,11 +1428,11 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key none"/>
 <use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-9" y="-13" height="18" width="18.0" class="key none tap glyph mdi:minus-circle-outline"/>
 </g>
-<g transform="translate(535, 294) rotate(-30.0)" class="key held alternate keypos-59">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held alternate side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held alternate"/>
-<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-9" y="-13" height="18" width="18.0" class="key held alternate tap glyph mdi:apple-keyboard-shift"/>
-<use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="-8" y="9" height="15" width="15.0" class="key held alternate hold glyph mdi:gesture-tap-hold"/>
+<g transform="translate(535, 294) rotate(-30.0)" class="key keypos-59">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:apple-keyboard-shift"/>
+<use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="-8" y="9" height="15" width="15.0" class="key hold glyph mdi:gesture-tap-hold"/>
 </g>
 <g transform="translate(610, 283) rotate(-30.0)" class="key trans keypos-60">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -1468,6 +1483,14 @@ rect.held, rect.combo.held {
 <g class="combo backspace combopos-5">
 <rect rx="6" ry="6" x="686" y="74" width="28" height="26" class="combo backspace"/>
 <use href="#mdi:backspace" xlink:href="#mdi:backspace" x="691" y="78" height="18" width="18.0" class="combo backspace tap glyph mdi:backspace"/>
+</g>
+<g class="combo combopos-6">
+<path d="M462,91 l-191,0" class="combo"/>
+<path d="M462,91 l191,0" class="combo"/>
+<rect rx="6" ry="6" x="448" y="78" width="28" height="26" class="combo"/>
+<a href="#NeoSym">
+<text x="462" y="91" class="combo tap layer-activator">NeoSym</text>
+</a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="454" y="87" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
 </g>
 </g>
 </g>
@@ -1846,6 +1869,14 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="686" y="74" width="28" height="26" class="combo backspace"/>
 <use href="#mdi:backspace" xlink:href="#mdi:backspace" x="691" y="78" height="18" width="18.0" class="combo backspace tap glyph mdi:backspace"/>
 </g>
+<g class="combo combopos-6">
+<path d="M462,91 l-191,0" class="combo"/>
+<path d="M462,91 l191,0" class="combo"/>
+<rect rx="6" ry="6" x="448" y="78" width="28" height="26" class="combo"/>
+<a href="#NeoSym">
+<text x="462" y="91" class="combo tap layer-activator">NeoSym</text>
+</a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="454" y="87" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1553)" class="layer-master">
@@ -2156,15 +2187,15 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key none"/>
 <use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-9" y="-13" height="18" width="18.0" class="key none tap glyph mdi:minus-circle-outline"/>
 </g>
-<g transform="translate(535, 294) rotate(-30.0)" class="key none keypos-59">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key none"/>
-<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-9" y="-13" height="18" width="18.0" class="key none tap glyph mdi:minus-circle-outline"/>
-</g>
-<g transform="translate(610, 283) rotate(-30.0)" class="key held keypos-60">
+<g transform="translate(535, 294) rotate(-30.0)" class="key held keypos-59">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held"/>
-<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-9" y="-13" height="18" width="18.0" class="key held tap glyph mdi:keyboard-space"/>
+<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-9" y="-13" height="18" width="18.0" class="key held tap glyph mdi:minus-circle-outline"/>
+</g>
+<g transform="translate(610, 283) rotate(-30.0)" class="key held alternate keypos-60">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held alternate side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held alternate"/>
+<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-9" y="-13" height="18" width="18.0" class="key held alternate tap glyph mdi:keyboard-space"/>
 </g>
 <g transform="translate(672, 259)" class="key none keypos-61">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none side"/>
@@ -2210,6 +2241,14 @@ rect.held, rect.combo.held {
 <g class="combo backspace combopos-5">
 <rect rx="6" ry="6" x="686" y="74" width="28" height="26" class="combo backspace"/>
 <use href="#mdi:backspace" xlink:href="#mdi:backspace" x="691" y="78" height="18" width="18.0" class="combo backspace tap glyph mdi:backspace"/>
+</g>
+<g class="combo combopos-6">
+<path d="M462,91 l-191,0" class="combo"/>
+<path d="M462,91 l191,0" class="combo"/>
+<rect rx="6" ry="6" x="448" y="78" width="28" height="26" class="combo"/>
+<a href="#NeoSym">
+<text x="462" y="91" class="combo tap layer-activator">NeoSym</text>
+</a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="454" y="87" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
 </g>
 </g>
 </g>
@@ -2566,6 +2605,14 @@ rect.held, rect.combo.held {
 <g class="combo backspace combopos-5">
 <rect rx="6" ry="6" x="686" y="74" width="28" height="26" class="combo backspace"/>
 <use href="#mdi:backspace" xlink:href="#mdi:backspace" x="691" y="78" height="18" width="18.0" class="combo backspace tap glyph mdi:backspace"/>
+</g>
+<g class="combo combopos-6">
+<path d="M462,91 l-191,0" class="combo"/>
+<path d="M462,91 l191,0" class="combo"/>
+<rect rx="6" ry="6" x="448" y="78" width="28" height="26" class="combo"/>
+<a href="#NeoSym">
+<text x="462" y="91" class="combo tap layer-activator">NeoSym</text>
+</a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="454" y="87" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
 </g>
 </g>
 </g>
@@ -2942,6 +2989,14 @@ rect.held, rect.combo.held {
 <g class="combo backspace combopos-5">
 <rect rx="6" ry="6" x="686" y="74" width="28" height="26" class="combo backspace"/>
 <use href="#mdi:backspace" xlink:href="#mdi:backspace" x="691" y="78" height="18" width="18.0" class="combo backspace tap glyph mdi:backspace"/>
+</g>
+<g class="combo combopos-6">
+<path d="M462,91 l-191,0" class="combo"/>
+<path d="M462,91 l191,0" class="combo"/>
+<rect rx="6" ry="6" x="448" y="78" width="28" height="26" class="combo"/>
+<a href="#NeoSym">
+<text x="462" y="91" class="combo tap layer-activator">NeoSym</text>
+</a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="454" y="87" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
 </g>
 </g>
 </g>
@@ -3343,6 +3398,14 @@ rect.held, rect.combo.held {
 <g class="combo backspace combopos-5">
 <rect rx="6" ry="6" x="686" y="74" width="28" height="26" class="combo backspace"/>
 <use href="#mdi:backspace" xlink:href="#mdi:backspace" x="691" y="78" height="18" width="18.0" class="combo backspace tap glyph mdi:backspace"/>
+</g>
+<g class="combo combopos-6">
+<path d="M462,91 l-191,0" class="combo"/>
+<path d="M462,91 l191,0" class="combo"/>
+<rect rx="6" ry="6" x="448" y="78" width="28" height="26" class="combo"/>
+<a href="#NeoSym">
+<text x="462" y="91" class="combo tap layer-activator">NeoSym</text>
+</a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="454" y="87" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
 </g>
 </g>
 </g>
