@@ -151,7 +151,6 @@
         flavor = "balanced";
         tapping-term-ms = <280>;
         require-prior-idle-ms = <100>;
-        hold-trigger-key-positions = <21 22 23 34 35 36 47 48 49 17 16 43 42 41 40>;
     };
 
     macros {
@@ -238,11 +237,11 @@
 
         master {
             bindings = <
-&none  &none      &none      &none                 &none                     &none    &none  &none       &none              &none              &none    &none  &none
-&none  &none      &none      &kp LG(Z)             &kp LG(LS(Z))             &none    &none  &none       &kp LG(ENTER)      &kp ENTER          &none    &none  &none
-&none  &kp LG(A)  &none      &sk LA(LC(LEFT_GUI))  &sk LS(LA(LC(LEFT_GUI)))  &none    &none  &kp DELETE  &kp ENTER          &kp BACKSPACE      &kp TAB  &none  &none
-&none  &kp LG(Z)  &kp LG(X)  &kp LG(C)             &kp LG(V)                 &none    &none  &none       &kp LG(BACKSPACE)  &kp LA(BACKSPACE)  &none    &none  &none
-&none  &none      &none      &none                 &caps_word                &none    &none  &none       &kp SPACE          &none              &none    &none
+&none  &none      &none      &none                 &none                     &none             &none  &none       &none              &none              &none    &none  &none
+&none  &none      &none      &kp LG(Z)             &kp LG(LS(Z))             &none             &none  &none       &kp LG(ENTER)      &kp ESCAPE         &none    &none  &none
+&none  &kp LG(A)  &none      &sk LA(LC(LEFT_GUI))  &sk LS(LA(LC(LEFT_GUI)))  &none             &none  &kp DELETE  &kp ENTER          &kp BACKSPACE      &kp TAB  &none  &none
+&none  &kp LG(Z)  &kp LG(X)  &kp LG(C)             &kp LG(V)                 &none             &none  &none       &kp LG(BACKSPACE)  &kp LA(BACKSPACE)  &none    &none  &none
+&none  &none      &none      &none                 &caps_word                &kp LEFT_SHIFT    &none  &none       &kp SPACE          &none              &none    &none
             >;
         };
 
