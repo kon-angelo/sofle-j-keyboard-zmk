@@ -25,6 +25,11 @@
     lazy;
 };
 
+&lt {
+    tapping-term-ms = <100>;
+    bindings = <&sk>, <&kp>;
+};
+
 / {
     scroll_encoder: scroll_encoder {
         compatible = "zmk,behavior-sensor-rotate";
