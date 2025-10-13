@@ -691,6 +691,12 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="686" y="74" width="28" height="26" class="combo enter"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="691" y="78" height="18" width="18.0" class="combo enter tap glyph mdi:keyboard-return"/>
 </g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="210" y="74" width="28" height="26" class="combo"/>
+<a href="#numpad">
+<text x="224" y="88" class="combo tap layer-activator">numpad</text>
+</a><text x="224" y="98" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 388)" class="layer-VI">
@@ -1049,6 +1055,12 @@ rect.held, rect.combo.held {
 <g class="combo enter combopos-4">
 <rect rx="6" ry="6" x="686" y="74" width="28" height="26" class="combo enter"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="691" y="78" height="18" width="18.0" class="combo enter tap glyph mdi:keyboard-return"/>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="210" y="74" width="28" height="26" class="combo"/>
+<a href="#numpad">
+<text x="224" y="88" class="combo tap layer-activator">numpad</text>
+</a><text x="224" y="98" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1442,6 +1454,12 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="686" y="74" width="28" height="26" class="combo enter"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="691" y="78" height="18" width="18.0" class="combo enter tap glyph mdi:keyboard-return"/>
 </g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="210" y="74" width="28" height="26" class="combo"/>
+<a href="#numpad">
+<text x="224" y="88" class="combo tap layer-activator">numpad</text>
+</a><text x="224" y="98" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1165)" class="layer-Navigation">
@@ -1811,6 +1829,12 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="686" y="74" width="28" height="26" class="combo enter"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="691" y="78" height="18" width="18.0" class="combo enter tap glyph mdi:keyboard-return"/>
 </g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="210" y="74" width="28" height="26" class="combo"/>
+<a href="#numpad">
+<text x="224" y="88" class="combo tap layer-activator">numpad</text>
+</a><text x="224" y="98" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1553)" class="layer-master">
@@ -2167,6 +2191,12 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="686" y="74" width="28" height="26" class="combo enter"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="691" y="78" height="18" width="18.0" class="combo enter tap glyph mdi:keyboard-return"/>
 </g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="210" y="74" width="28" height="26" class="combo"/>
+<a href="#numpad">
+<text x="224" y="88" class="combo tap layer-activator">numpad</text>
+</a><text x="224" y="98" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1941)" class="layer-Flayer">
@@ -2514,6 +2544,12 @@ rect.held, rect.combo.held {
 <g class="combo enter combopos-4">
 <rect rx="6" ry="6" x="686" y="74" width="28" height="26" class="combo enter"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="691" y="78" height="18" width="18.0" class="combo enter tap glyph mdi:keyboard-return"/>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="210" y="74" width="28" height="26" class="combo"/>
+<a href="#numpad">
+<text x="224" y="88" class="combo tap layer-activator">numpad</text>
+</a><text x="224" y="98" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -2882,6 +2918,12 @@ rect.held, rect.combo.held {
 <g class="combo enter combopos-4">
 <rect rx="6" ry="6" x="686" y="74" width="28" height="26" class="combo enter"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="691" y="78" height="18" width="18.0" class="combo enter tap glyph mdi:keyboard-return"/>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="210" y="74" width="28" height="26" class="combo"/>
+<a href="#numpad">
+<text x="224" y="88" class="combo tap layer-activator">numpad</text>
+</a><text x="224" y="98" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -3276,6 +3318,12 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="686" y="74" width="28" height="26" class="combo enter"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="691" y="78" height="18" width="18.0" class="combo enter tap glyph mdi:keyboard-return"/>
 </g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="210" y="74" width="28" height="26" class="combo"/>
+<a href="#numpad">
+<text x="224" y="88" class="combo tap layer-activator">numpad</text>
+</a><text x="224" y="98" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 3106)" class="layer-numpad">
@@ -3641,6 +3689,12 @@ rect.held, rect.combo.held {
 <g class="combo enter combopos-4">
 <rect rx="6" ry="6" x="686" y="74" width="28" height="26" class="combo enter"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="691" y="78" height="18" width="18.0" class="combo enter tap glyph mdi:keyboard-return"/>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="210" y="74" width="28" height="26" class="combo"/>
+<a href="#numpad">
+<text x="224" y="88" class="combo tap layer-activator">numpad</text>
+</a><text x="224" y="98" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
