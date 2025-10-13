@@ -64,6 +64,13 @@
             bindings = <&kp ENTER>;
             key-positions = <21 22>;
         };
+
+        numpad {
+            bindings = <&tog 8>;
+            key-positions = <17 16>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <100>;
+        };
     };
 
     hml: homerow_mods_left {
@@ -135,12 +142,14 @@
     lt2: lt2 {
         compatible = "zmk,behavior-hold-tap";
         label = "LT2";
-        bindings = <&sl>, <&kp>;
+        bindings = <&mo>, <&kp>;
 
         #binding-cells = <2>;
         flavor = "tap-preferred";
-        tapping-term-ms = <100>;
+        tapping-term-ms = <150>;
         hold-trigger-key-positions = <21 22 23 36 35 34 47 48 49 33 17 16 29 30 40 41 42 43>;
+        require-prior-idle-ms = <50>;
+        retro-tap;
     };
 
     macros {
