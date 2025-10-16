@@ -38,7 +38,7 @@ layers:
   - J
   - K
   - L
-  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-shift$$
   - {t: Z, h: '$$mdi:apple-keyboard-control$$'}
@@ -161,24 +161,24 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&as GRAVE'
   - {t: '''', s: '"'}
-  - '&as DOUBLE_QUOTES'
-  - {t: '[', s: '{'}
+  - '&as SINGLE_QUOTE'
+  - '&as LEFT_BRACKET'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: ']', s: '}'}
   - '&as MINUS'
   - '&as EQUAL'
-  - {t: Sft+;, s: 'Sft+:'}
+  - ':'
   - {t: ;, s: ':'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: LGUI, h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: \, s: '|'}
+  - {t: '[', h: '$$mdi:apple-keyboard-shift$$', s: '{'}
+  - '&as BACKSLASH'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: /, s: '?'}
-  - {t: '|', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: ']', h: '$$mdi:apple-keyboard-shift$$', s: '}'}
   - {t: ',', h: LGUI, s: <}
   - {t: ., h: '$$mdi:apple-keyboard-option$$'}
   - {t: '?', h: '$$mdi:apple-keyboard-control$$'}
@@ -588,7 +588,7 @@ layers:
 combos:
 - p: [34, 35]
   k: '&as ESCAPE'
-- p: [34, 22]
+- p: [30, 29]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
 - p: [33, 34]
   k: $$mdi:keyboard-tab$$
@@ -596,5 +596,5 @@ combos:
   k: {t: '$$mdi:keyboard-return$$', type: enter}
 - p: [21, 22]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
-- p: [17, 16]
+- p: [16, 15]
   k: {t: numpad, h: toggle}
