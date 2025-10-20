@@ -160,15 +160,15 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&as GRAVE'
-  - {t: '''', s: '"'}
+  - '&as SQT'
   - '&as SINGLE_QUOTE'
   - '&as LEFT_BRACKET'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: ']', s: '}'}
+  - '&as RIGHT_BRACKET'
   - '&as MINUS'
   - '&as EQUAL'
   - ':'
-  - {t: ;, s: ':'}
+  - '&as SEMICOLON'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
@@ -580,7 +580,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: numpad, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
