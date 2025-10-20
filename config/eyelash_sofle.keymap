@@ -142,10 +142,10 @@
         bindings = <&mo>, <&kp>;
 
         #binding-cells = <2>;
-        flavor = "tap-preferred";
+        flavor = "balanced";
         tapping-term-ms = <180>;
         hold-trigger-key-positions = <35 36 22 48 34>;
-        require-prior-idle-ms = <100>;
+        require-prior-idle-ms = <30>;
         hold-trigger-on-release;
     };
 
@@ -211,7 +211,7 @@
             bindings = <
 &none  &none      &none      &none     &none                   &none               &none  &none              &none                    &none           &none                 &none               &none
 &none  &as N1     &as N2     &as N3    &as N4                  &as N5              &none  &as N6             &as N7                   &as N8          &as N9                &as N0              &none
-&none  &none      &as GRAVE  &kp SQT   &as SINGLE_QUOTE        &as LEFT_BRACKET    &none  &kp RIGHT_BRACKET  &as MINUS                &as EQUAL       &kp COLON             &kp SEMICOLON       &none
+&none  &none      &as GRAVE  &as SQT   &as SINGLE_QUOTE        &as LEFT_BRACKET    &none  &as RIGHT_BRACKET  &as MINUS                &as EQUAL       &kp COLON             &as SEMICOLON       &none
 &none  &sk LCTRL  &sk LALT   &sk LGUI  &mt LSHFT LEFT_BRACKET  &as BACKSLASH       &none  &kp SLASH          &mt LSHFT RIGHT_BRACKET  &mt LGUI COMMA  &mt RIGHT_ALT PERIOD  &mt RCTRL QUESTION  &none
 &none  &none      &none      &none     &none                   &none               &none  &sk LEFT_SHIFT     &trans                   &none           &none                 &none
             >;
@@ -284,7 +284,7 @@
 &none   &none  &none  &none  &none  &none             &none  &kp EQUAL  &kp N7  &kp N8  &kp N9  &kp N0     &none
 &none   &none  &none  &none  &none  &none             &none  &kp MINUS  &kp N4  &kp N5  &kp N6  &kp DOT    &none
 &tog 8  &none  &none  &none  &none  &none             &none  &kp SLASH  &kp N1  &kp N2  &kp N3  &kp COMMA  &none
-&none   &none  &none  &none  &none  &kp LEFT_SHIFT    &none  &none      &tog 8  &none   &none   &none
+&none   &none  &none  &none  &none  &kp LEFT_SHIFT    &none  &kp ENTER  &tog 8  &none   &none   &none
             >;
         };
     };
