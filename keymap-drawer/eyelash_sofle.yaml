@@ -600,3 +600,5 @@ combos:
   k: numpad
 - p: [15, 16, 17]
   k: {t: numpad, h: toggle}
+- p: [30, 16]
+  k: {t: Navigation, h: toggle}
