@@ -103,7 +103,7 @@ layers:
   - {t: 'Ctl+]', s: 'Ctl+}'}
   - Ctl+I
   - Ctl+O
-  - Sft+F6
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -168,7 +168,7 @@ layers:
   - '&as MINUS'
   - '&as EQUAL'
   - ':'
-  - '&as SEMICOLON'
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
@@ -177,7 +177,7 @@ layers:
   - {t: '[', h: '$$mdi:apple-keyboard-shift$$', s: '{'}
   - '&as BACKSLASH'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: /, s: '?'}
+  - '&as SLASH'
   - {t: ']', h: '$$mdi:apple-keyboard-shift$$', s: '}'}
   - {t: ',', h: LGUI, s: <}
   - {t: ., h: '$$mdi:apple-keyboard-option$$'}
@@ -536,8 +536,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -597,4 +597,6 @@ combos:
 - p: [21, 22]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
 - p: [16, 15]
+  k: numpad
+- p: [15, 16, 17]
   k: {t: numpad, h: toggle}
