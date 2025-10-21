@@ -77,6 +77,12 @@
             bindings = <&tog 8>;
             key-positions = <15 16 17>;
         };
+
+        tog-nav {
+            bindings = <&tog 3>;
+            key-positions = <30 16>;
+            require-prior-idle-ms = <100>;
+        };
     };
 
     hml: homerow_mods_left {
