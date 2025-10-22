@@ -133,7 +133,7 @@
         tapping-term-ms = <280>;
         flavor = "balanced";
         hold-trigger-on-release;
-        require-prior-idle-ms = <100>;
+        require-prior-idle-ms = <50>;
     };
 
     tap_hmr: tap_hmr {
