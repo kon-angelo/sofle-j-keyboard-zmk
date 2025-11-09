@@ -64,6 +64,8 @@
         bksp {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <21 22>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <100>;
         };
 
         numpad {
@@ -87,6 +89,8 @@
         foob {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <22 23>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <100>;
         };
 
         reset {
