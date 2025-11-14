@@ -608,4 +608,3 @@ combos:
   k: {t: Base, h: toggle}
 - p: [30, 16]
   k: {t: Flayer, h: toggle}
-  l: [Base]
