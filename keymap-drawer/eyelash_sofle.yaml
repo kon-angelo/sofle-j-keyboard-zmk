@@ -223,10 +223,10 @@ layers:
   - '&as N0'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&as NON_US_BACKSLASH'
+  - '&as BACKSLASH'
   - '&as GRAVE'
   - '&as SQT'
-  - '&as BACKSLASH'
+  - '&as SLASH'
   - '&as LEFT_BRACKET'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&as RIGHT_BRACKET'
@@ -600,14 +600,12 @@ combos:
   k: numpad
 - p: [15, 16, 17]
   k: {t: numpad, h: toggle}
-- p: [30, 16]
+- p: [34, 22]
   k: {t: Navigation, h: toggle}
 - p: [22, 21]
   k: {t: ']', s: '}'}
-- p: [14, 15, 16, 17, 21, 22, 23, 24]
+- p: [14, 15, 16, 17]
   k: {t: Base, h: toggle}
-- p: [34, 22]
-  k: '"'
-- p: [17, 16, 15, 14]
+- p: [30, 16]
   k: {t: Flayer, h: toggle}
   l: [Base]
