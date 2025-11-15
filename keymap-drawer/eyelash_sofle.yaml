@@ -594,16 +594,12 @@ combos:
   k: $$mdi:keyboard-tab$$
 - p: [20, 21]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
-- p: [16, 17]
-  k: {t: '[', s: '{'}
 - p: [16, 15]
   k: numpad
 - p: [15, 16, 17]
   k: {t: numpad, h: toggle}
 - p: [34, 22]
   k: {t: Navigation, h: toggle}
-- p: [22, 21]
-  k: {t: ']', s: '}'}
 - p: [14, 15, 16, 17]
   k: {t: Base, h: toggle}
 - p: [30, 16]
