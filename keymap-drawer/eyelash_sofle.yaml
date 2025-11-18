@@ -50,8 +50,8 @@ layers:
   - N
   - {t: M, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ',', h: RMETA, s: <}
-  - {t: ., h: '$$mdi:apple-keyboard-control$$', s: '>'}
-  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: ., h: '$$mdi:apple-keyboard-shift$$', s: '>'}
+  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - $$mdi:volume-off$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
