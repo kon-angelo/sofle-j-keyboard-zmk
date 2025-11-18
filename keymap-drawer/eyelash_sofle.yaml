@@ -305,9 +305,9 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - LGUI
   - $$mdi:apple-keyboard-option$$
-  - '|'
+  - <
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '?'
+  - '>'
   - $$mdi:apple-keyboard-option$$
   - LGUI
   - $$mdi:apple-keyboard-shift$$
@@ -472,8 +472,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
+  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -596,11 +596,13 @@ combos:
   k: {t: '$$mdi:keyboard-return$$', type: enter}
 - p: [16, 15]
   k: numpad
-- p: [15, 16, 17]
+- p: [15, 16, 57]
   k: {t: numpad, h: toggle}
 - p: [34, 22]
   k: {t: Navigation, h: toggle}
 - p: [14, 15, 16, 17]
   k: {t: Base, h: toggle}
-- p: [30, 16]
+- p: [16, 17, 57]
   k: {t: Flayer, h: toggle}
+- p: [16, 17]
+  k: Flayer
