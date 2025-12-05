@@ -509,8 +509,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">F</text>
-<a href="#Nav">
-<text x="0" y="24" class="key hold layer-activator">Nav</text>
+<a href="#nav">
+<text x="0" y="24" class="key hold layer-activator">nav</text>
 </a></g>
 <g transform="translate(308, 147)" class="key keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -648,8 +648,8 @@ rect.held, rect.combo.held {
 <g transform="translate(389, 294) rotate(30.0)" class="key keypos-57">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#NeoSym">
-<text x="0" y="-4" class="key tap layer-activator">NeoSym</text>
+<a href="#Sym">
+<text x="0" y="-4" class="key tap layer-activator">Sym</text>
 </a></g>
 <g transform="translate(462, 91)" class="key enter keypos-58">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key enter side"/>
@@ -660,8 +660,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-return"/>
-<a href="#NeoSymShift">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 60%">NeoSymShi…</tspan></text>
+<a href="#Sym2">
+<text x="0" y="24" class="key hold layer-activator">Sym2</text>
 </a></g>
 <g transform="translate(610, 283) rotate(-30.0)" class="key keypos-60">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -708,60 +708,60 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="154" y="74" width="28" height="26" class="combo"/>
-<a href="#numpad">
-<text x="168" y="88" class="combo tap layer-activator">numpad</text>
+<a href="#num">
+<text x="168" y="88" class="combo tap layer-activator">num</text>
 </a></g>
 <g class="combo combopos-5">
 <path d="M196,89 l-37,2" class="combo"/>
 <path d="M196,89 l37,2" class="combo"/>
 <rect rx="6" ry="6" x="182" y="76" width="28" height="26" class="combo"/>
-<a href="#numpad">
-<text x="196" y="89" class="combo tap layer-activator">numpad</text>
+<a href="#num">
+<text x="196" y="89" class="combo tap layer-activator">num</text>
 </a><text x="196" y="100" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-6">
 <path d="M252,89 l-37,-3" class="combo"/>
 <path d="M252,89 l37,2" class="combo"/>
 <rect rx="6" ry="6" x="238" y="76" width="28" height="26" class="combo"/>
-<a href="#FN">
-<text x="252" y="89" class="combo tap layer-activator">FN</text>
+<a href="#fn">
+<text x="252" y="89" class="combo tap layer-activator">fn</text>
 </a><text x="252" y="100" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="210" y="74" width="28" height="26" class="combo"/>
-<a href="#FN">
-<text x="224" y="88" class="combo tap layer-activator">FN</text>
+<a href="#fn">
+<text x="224" y="88" class="combo tap layer-activator">fn</text>
 </a></g>
 <g class="combo combopos-8">
 <rect rx="6" ry="6" x="210" y="186" width="28" height="26" class="combo"/>
-<a href="#Mouse">
-<text x="224" y="200" class="combo tap layer-activator">Mouse</text>
+<a href="#mouse">
+<text x="224" y="200" class="combo tap layer-activator">mouse</text>
 </a></g>
 <g class="combo combopos-9">
 <path d="M196,201 l37,2" class="combo"/>
 <path d="M196,201 l-37,2" class="combo"/>
 <rect rx="6" ry="6" x="182" y="188" width="28" height="26" class="combo"/>
-<a href="#Mouse">
-<text x="196" y="201" class="combo tap layer-activator">Mouse</text>
+<a href="#mouse">
+<text x="196" y="201" class="combo tap layer-activator">mouse</text>
 </a><text x="196" y="212" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-10">
 <rect rx="6" ry="6" x="266" y="190" width="28" height="26" class="combo"/>
-<a href="#Media">
-<text x="280" y="203" class="combo tap layer-activator">Media</text>
+<a href="#media">
+<text x="280" y="203" class="combo tap layer-activator">media</text>
 </a></g>
 <g class="combo combopos-11">
 <path d="M252,145 l37,2" class="combo"/>
 <path d="M252,145 l-37,-3" class="combo"/>
 <rect rx="6" ry="6" x="238" y="132" width="28" height="26" class="combo"/>
-<a href="#Nav">
-<text x="252" y="145" class="combo tap layer-activator">Nav</text>
+<a href="#nav">
+<text x="252" y="145" class="combo tap layer-activator">nav</text>
 </a><text x="252" y="156" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
-<g transform="translate(40, 388)" class="layer-NeoSym">
-<text x="0" y="28" class="label" id="NeoSym">NeoSym:</text>
+<g transform="translate(40, 388)" class="layer-Sym">
+<text x="0" y="28" class="label" id="Sym">Sym:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1147,18 +1147,18 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="154" y="74" width="28" height="26" class="combo"/>
-<a href="#numpad">
-<text x="168" y="88" class="combo tap layer-activator">numpad</text>
+<a href="#num">
+<text x="168" y="88" class="combo tap layer-activator">num</text>
 </a></g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="210" y="74" width="28" height="26" class="combo"/>
-<a href="#FN">
-<text x="224" y="88" class="combo tap layer-activator">FN</text>
+<a href="#fn">
+<text x="224" y="88" class="combo tap layer-activator">fn</text>
 </a></g>
 </g>
 </g>
-<g transform="translate(40, 776)" class="layer-NeoSymShift">
-<text x="0" y="28" class="label" id="NeoSymShift">NeoSymShift:</text>
+<g transform="translate(40, 776)" class="layer-Sym2">
+<text x="0" y="28" class="label" id="Sym2">Sym2:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key none keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none side"/>
@@ -1555,13 +1555,13 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="154" y="74" width="28" height="26" class="combo"/>
-<a href="#numpad">
-<text x="168" y="88" class="combo tap layer-activator">numpad</text>
+<a href="#num">
+<text x="168" y="88" class="combo tap layer-activator">num</text>
 </a></g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="210" y="74" width="28" height="26" class="combo"/>
-<a href="#FN">
-<text x="224" y="88" class="combo tap layer-activator">FN</text>
+<a href="#fn">
+<text x="224" y="88" class="combo tap layer-activator">fn</text>
 </a></g>
 </g>
 </g>
@@ -1919,13 +1919,13 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="154" y="74" width="28" height="26" class="combo"/>
-<a href="#numpad">
-<text x="168" y="88" class="combo tap layer-activator">numpad</text>
+<a href="#num">
+<text x="168" y="88" class="combo tap layer-activator">num</text>
 </a></g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="210" y="74" width="28" height="26" class="combo"/>
-<a href="#FN">
-<text x="224" y="88" class="combo tap layer-activator">FN</text>
+<a href="#fn">
+<text x="224" y="88" class="combo tap layer-activator">fn</text>
 </a></g>
 </g>
 </g>
@@ -2283,18 +2283,18 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="154" y="74" width="28" height="26" class="combo"/>
-<a href="#numpad">
-<text x="168" y="88" class="combo tap layer-activator">numpad</text>
+<a href="#num">
+<text x="168" y="88" class="combo tap layer-activator">num</text>
 </a></g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="210" y="74" width="28" height="26" class="combo"/>
-<a href="#FN">
-<text x="224" y="88" class="combo tap layer-activator">FN</text>
+<a href="#fn">
+<text x="224" y="88" class="combo tap layer-activator">fn</text>
 </a></g>
 </g>
 </g>
-<g transform="translate(40, 1941)" class="layer-numpad">
-<text x="0" y="28" class="label" id="numpad">numpad:</text>
+<g transform="translate(40, 1941)" class="layer-num">
+<text x="0" y="28" class="label" id="num">num:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key none keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none side"/>
@@ -2653,26 +2653,26 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="154" y="74" width="28" height="26" class="combo"/>
-<a href="#numpad">
-<text x="168" y="88" class="combo tap layer-activator">numpad</text>
+<a href="#num">
+<text x="168" y="88" class="combo tap layer-activator">num</text>
 </a></g>
 <g class="combo combopos-5">
 <path d="M196,89 l-37,2" class="combo"/>
 <path d="M196,89 l37,2" class="combo"/>
 <rect rx="6" ry="6" x="182" y="76" width="28" height="26" class="combo"/>
-<a href="#numpad">
-<text x="196" y="89" class="combo tap layer-activator">numpad</text>
+<a href="#num">
+<text x="196" y="89" class="combo tap layer-activator">num</text>
 </a><text x="196" y="100" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="210" y="74" width="28" height="26" class="combo"/>
-<a href="#FN">
-<text x="224" y="88" class="combo tap layer-activator">FN</text>
+<a href="#fn">
+<text x="224" y="88" class="combo tap layer-activator">fn</text>
 </a></g>
 </g>
 </g>
-<g transform="translate(40, 2329)" class="layer-FN">
-<text x="0" y="28" class="label" id="FN">FN:</text>
+<g transform="translate(40, 2329)" class="layer-fn">
+<text x="0" y="28" class="label" id="fn">fn:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key none keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none side"/>
@@ -3027,26 +3027,26 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="154" y="74" width="28" height="26" class="combo"/>
-<a href="#numpad">
-<text x="168" y="88" class="combo tap layer-activator">numpad</text>
+<a href="#num">
+<text x="168" y="88" class="combo tap layer-activator">num</text>
 </a></g>
 <g class="combo combopos-5">
 <path d="M252,89 l-37,-3" class="combo"/>
 <path d="M252,89 l37,2" class="combo"/>
 <rect rx="6" ry="6" x="238" y="76" width="28" height="26" class="combo"/>
-<a href="#FN">
-<text x="252" y="89" class="combo tap layer-activator">FN</text>
+<a href="#fn">
+<text x="252" y="89" class="combo tap layer-activator">fn</text>
 </a><text x="252" y="100" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="210" y="74" width="28" height="26" class="combo"/>
-<a href="#FN">
-<text x="224" y="88" class="combo tap layer-activator">FN</text>
+<a href="#fn">
+<text x="224" y="88" class="combo tap layer-activator">fn</text>
 </a></g>
 </g>
 </g>
-<g transform="translate(40, 2718)" class="layer-Nav">
-<text x="0" y="28" class="label" id="Nav">Nav:</text>
+<g transform="translate(40, 2718)" class="layer-nav">
+<text x="0" y="28" class="label" id="nav">nav:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -3416,26 +3416,26 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="154" y="74" width="28" height="26" class="combo"/>
-<a href="#numpad">
-<text x="168" y="88" class="combo tap layer-activator">numpad</text>
+<a href="#num">
+<text x="168" y="88" class="combo tap layer-activator">num</text>
 </a></g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="210" y="74" width="28" height="26" class="combo"/>
-<a href="#FN">
-<text x="224" y="88" class="combo tap layer-activator">FN</text>
+<a href="#fn">
+<text x="224" y="88" class="combo tap layer-activator">fn</text>
 </a></g>
 <g class="combo combopos-6">
 <path d="M252,145 l37,2" class="combo"/>
 <path d="M252,145 l-37,-3" class="combo"/>
 <rect rx="6" ry="6" x="238" y="132" width="28" height="26" class="combo"/>
-<a href="#Nav">
-<text x="252" y="145" class="combo tap layer-activator">Nav</text>
+<a href="#nav">
+<text x="252" y="145" class="combo tap layer-activator">nav</text>
 </a><text x="252" y="156" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
-<g transform="translate(40, 3106)" class="layer-Mouse">
-<text x="0" y="28" class="label" id="Mouse">Mouse:</text>
+<g transform="translate(40, 3106)" class="layer-mouse">
+<text x="0" y="28" class="label" id="mouse">mouse:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key none keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none side"/>
@@ -3787,26 +3787,26 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="154" y="74" width="28" height="26" class="combo"/>
-<a href="#numpad">
-<text x="168" y="88" class="combo tap layer-activator">numpad</text>
+<a href="#num">
+<text x="168" y="88" class="combo tap layer-activator">num</text>
 </a></g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="210" y="74" width="28" height="26" class="combo"/>
-<a href="#FN">
-<text x="224" y="88" class="combo tap layer-activator">FN</text>
+<a href="#fn">
+<text x="224" y="88" class="combo tap layer-activator">fn</text>
 </a></g>
 <g class="combo combopos-6">
 <path d="M196,201 l37,2" class="combo"/>
 <path d="M196,201 l-37,2" class="combo"/>
 <rect rx="6" ry="6" x="182" y="188" width="28" height="26" class="combo"/>
-<a href="#Mouse">
-<text x="196" y="201" class="combo tap layer-activator">Mouse</text>
+<a href="#mouse">
+<text x="196" y="201" class="combo tap layer-activator">mouse</text>
 </a><text x="196" y="212" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
-<g transform="translate(40, 3494)" class="layer-Media">
-<text x="0" y="28" class="label" id="Media">Media:</text>
+<g transform="translate(40, 3494)" class="layer-media">
+<text x="0" y="28" class="label" id="media">media:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key none keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none side"/>
@@ -4158,18 +4158,18 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="154" y="74" width="28" height="26" class="combo"/>
-<a href="#numpad">
-<text x="168" y="88" class="combo tap layer-activator">numpad</text>
+<a href="#num">
+<text x="168" y="88" class="combo tap layer-activator">num</text>
 </a></g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="210" y="74" width="28" height="26" class="combo"/>
-<a href="#FN">
-<text x="224" y="88" class="combo tap layer-activator">FN</text>
+<a href="#fn">
+<text x="224" y="88" class="combo tap layer-activator">fn</text>
 </a></g>
 </g>
 </g>
-<g transform="translate(40, 3882)" class="layer-Mod">
-<text x="0" y="28" class="label" id="Mod">Mod:</text>
+<g transform="translate(40, 3882)" class="layer-mod">
+<text x="0" y="28" class="label" id="mod">mod:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key none keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none side"/>
@@ -4531,13 +4531,13 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="154" y="74" width="28" height="26" class="combo"/>
-<a href="#numpad">
-<text x="168" y="88" class="combo tap layer-activator">numpad</text>
+<a href="#num">
+<text x="168" y="88" class="combo tap layer-activator">num</text>
 </a></g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="210" y="74" width="28" height="26" class="combo"/>
-<a href="#FN">
-<text x="224" y="88" class="combo tap layer-activator">FN</text>
+<a href="#fn">
+<text x="224" y="88" class="combo tap layer-activator">fn</text>
 </a></g>
 </g>
 </g>
@@ -4910,13 +4910,13 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="154" y="74" width="28" height="26" class="combo"/>
-<a href="#numpad">
-<text x="168" y="88" class="combo tap layer-activator">numpad</text>
+<a href="#num">
+<text x="168" y="88" class="combo tap layer-activator">num</text>
 </a></g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="210" y="74" width="28" height="26" class="combo"/>
-<a href="#FN">
-<text x="224" y="88" class="combo tap layer-activator">FN</text>
+<a href="#fn">
+<text x="224" y="88" class="combo tap layer-activator">fn</text>
 </a></g>
 </g>
 </g>

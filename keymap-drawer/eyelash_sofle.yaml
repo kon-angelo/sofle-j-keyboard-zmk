@@ -31,7 +31,7 @@ layers:
   - A
   - {t: S, h: VI}
   - {t: D, h: master}
-  - {t: F, h: Nav}
+  - {t: F, h: nav}
   - G
   - $$mdi:arrow-left-bold$$
   - H
@@ -58,14 +58,14 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - LGUI
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
-  - NeoSym
+  - Sym
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-return$$', h: NeoSymShift}
+  - {t: '$$mdi:keyboard-return$$', h: Sym2}
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - System
-  NeoSym:
+  Sym:
   - F11
   - F1
   - F2
@@ -130,7 +130,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  NeoSymShift:
+  Sym2:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -325,7 +325,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  numpad:
+  num:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -390,7 +390,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  FN:
+  fn:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -455,7 +455,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  Nav:
+  nav:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -520,7 +520,7 @@ layers:
   - {t: System, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  Mouse:
+  mouse:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -585,7 +585,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  Media:
+  media:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -650,7 +650,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  Mod:
+  mod:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -790,24 +790,24 @@ combos:
 - p: [14, 15, 16, 17]
   k: {t: Base, h: toggle}
 - p: [16, 15]
-  k: numpad
+  k: num
 - p: [15, 16, 17]
-  k: {t: numpad, h: toggle}
-  l: [Base, numpad]
+  k: {t: num, h: toggle}
+  l: [Base, num]
 - p: [16, 17, 18]
-  k: {t: FN, h: toggle}
-  l: [Base, FN]
+  k: {t: fn, h: toggle}
+  l: [Base, fn]
 - p: [16, 17]
-  k: FN
+  k: fn
 - p: [42, 43]
-  k: Mouse
+  k: mouse
   l: [Base]
 - p: [43, 42, 41]
-  k: {t: Mouse, h: toggle}
-  l: [Base, Mouse]
+  k: {t: mouse, h: toggle}
+  l: [Base, mouse]
 - p: [44, 43]
-  k: Media
+  k: media
   l: [Base]
 - p: [30, 31, 29]
-  k: {t: Nav, h: toggle}
-  l: [Base, Nav]
+  k: {t: nav, h: toggle}
+  l: [Base, nav]
