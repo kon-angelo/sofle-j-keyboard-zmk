@@ -159,7 +159,7 @@
 
         #binding-cells = <2>;
         hold-trigger-key-positions = <7 8 9 10 11 12 20 21 22 23 24 25 33 34 35 36 37 38 46 47 48 49 50 51 60 61 62 63 59>;
-        tapping-term-ms = <280>;
+        tapping-term-ms = <200>;
         flavor = "balanced";
         require-prior-idle-ms = <100>;
         hold-trigger-on-release;
@@ -172,7 +172,7 @@
 
         #binding-cells = <2>;
         hold-trigger-key-positions = <0 1 2 3 4 5 13 14 15 16 17 18 26 27 28 29 30 31 39 40 41 42 43 44 53 54 55 56 57>;
-        tapping-term-ms = <280>;
+        tapping-term-ms = <200>;
         flavor = "balanced";
         require-prior-idle-ms = <100>;
         hold-trigger-on-release;
