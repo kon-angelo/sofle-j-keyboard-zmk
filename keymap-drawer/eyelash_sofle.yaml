@@ -31,7 +31,7 @@ layers:
   - A
   - {t: S, h: VI}
   - {t: D, h: master}
-  - {t: F, h: System}
+  - {t: F, h: Nav}
   - G
   - $$mdi:arrow-left-bold$$
   - H
@@ -486,7 +486,7 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - LGUI
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:apple-keyboard-shift$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:arrow-left-bold$$
@@ -746,7 +746,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&soft_off'
-  - {t: '&soft_off', type: held}
+  - '&soft_off'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -779,7 +779,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
 combos:
 - p: [34, 35]
   k: '&as ESCAPE'
@@ -808,3 +808,6 @@ combos:
 - p: [44, 43]
   k: Media
   l: [Base]
+- p: [30, 31, 29]
+  k: {t: Nav, h: toggle}
+  l: [Base, Nav]
