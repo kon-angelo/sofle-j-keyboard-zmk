@@ -3,13 +3,12 @@
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
-#include <dt-bindings/zmk/mouse.h>
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
@@ -137,6 +136,11 @@
             require-prior-idle-ms = <280>;
             layers = <0 7>;
         };
+
+        media_tog {
+            bindings = <&tog 9>;
+            key-positions = <44 43 42>;
+        };
     };
 
     hml: homerow_mods_left {
@@ -207,7 +211,7 @@
         bindings = <&mo>, <&kp>;
 
         #binding-cells = <2>;
-        flavor = "balanced";
+        flavor = "tap-preferred";
         tapping-term-ms = <180>;
         hold-trigger-key-positions = <35 36 22 34 48 49 47 21 23>;
         require-prior-idle-ms = <80>;
@@ -269,11 +273,11 @@
 
         Base {
             bindings = <
-&kp TILDE       &as N1     &as N2         &as N3         &as N4         &as N5    &kp UP_ARROW     &as N6       &as N7     &as N8     &as N9      &as N0         &kp BACKSPACE
-&kp ESCAPE      &kp Q      &kp W          &kp E          &kp R          &kp T     &kp DOWN_ARROW   &kp Y        &kp U      &kp I      &kp O       &kp P          &kp NON_US_BACKSLASH
-&kp TAB         &kp A      &tap_left 4 S  &tap_left 3 D  &tap_left 7 F  &kp G     &kp LEFT_ARROW   &kp H        &kp J      &kp K      &kp L       &kp BACKSPACE  &kp ENTER
-&kp LEFT_SHIFT  &kp Z      &kp X          &kp C          &kp V          &kp B     &kp RIGHT_ARROW  &kp N        &kp M      &kp COMMA  &kp PERIOD  &kp ENTER      &sk RIGHT_SHIFT
-&kp C_MUTE      &kp LCTRL  &kp LALT       &kp LGUI       &sk LSHFT      &mo 1     &kp ENTER        &lt 2 ENTER  &kp SPACE  &kp RCMD   &kp RALT    &mo 11
+&kp TILDE       &as N1     &as N2         &as N3         &as N4         &as N5    &kp UP_ARROW     &as N6       &as N7               &as N8     &as N9      &as N0         &kp BACKSPACE
+&kp ESCAPE      &kp Q      &kp W          &kp E          &kp R          &kp T     &kp DOWN_ARROW   &kp Y        &kp U                &kp I      &kp O       &kp P          &kp NON_US_BACKSLASH
+&kp TAB         &kp A      &tap_left 4 S  &tap_left 3 D  &tap_left 7 F  &kp G     &kp LEFT_ARROW   &kp H        &kp J                &kp K      &kp L       &kp BACKSPACE  &kp ENTER
+&kp LEFT_SHIFT  &kp Z      &kp X          &kp C          &kp V          &kp B     &kp RIGHT_ARROW  &kp N        &kp M                &kp COMMA  &kp PERIOD  &kp ENTER      &sk RIGHT_SHIFT
+&kp C_MUTE      &kp LCTRL  &kp LALT       &kp LGUI       &sk LSHFT      &mo 1     &kp ENTER        &lt 2 ENTER  &master_key 3 SPACE  &kp RCMD   &kp RALT    &mo 11
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -286,7 +290,7 @@
 &none    &as N1     &as N2     &as N3    &as N4     &as N5              &none  &as N6             &as N7     &as N8     &as N9         &as N0     &none
 &none    &sk LCTRL  &sk LALT   &sk LGUI  &sk LSHFT  &as LEFT_BRACKET    &none  &as RIGHT_BRACKET  &sk RSHFT  &sk RGUI   &sk RALT       &sk RCTRL  &none
 &none    &kp BSLH   &kp GRAVE  &kp APOS  &kp FSLH   &kp LESS_THAN       &none  &kp GREATER_THAN   &kp MINUS  &kp EQUAL  &shifted SEMI  &kp BSPC   &none
-&none    &none      &none      &none     &trans     &kp LEFT_SHIFT      &none  &kp LEFT_SHIFT     &trans     &none      &none          &none
+&none    &none      &none      &none     &trans     &kp LEFT_SHIFT      &none  &mo 2              &trans     &none      &none          &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_NEXT C_PREV>;
@@ -295,11 +299,11 @@
 
         ShiftSym {
             bindings = <
-&none  &none          &none           &none          &none          &none             &none  &none           &none           &none           &none        &none          &none
-&none  &shifted N1    &shifted N2     &shifted N3    &shifted N4    &shifted N5       &none  &shifted N6     &shifted N7     &shifted N8     &shifted N9  &shifted N0    &none
-&none  &sk LCTRL      &sk LALT        &sk LGUI       &sk LSHFT      &shifted LBKT     &none  &shifted RBKT   &sk RSHFT       &sk RGUI        &sk RALT     &sk RCTRL      &none
-&none  &shifted BSLH  &shifted GRAVE  &shifted APOS  &shifted FSLH  &shifted N9       &none  &shifted N0     &shifted MINUS  &shifted EQUAL  &kp SEMI     &shifted BSPC  &none
-&none  &none          &none           &none          &trans         &kp LEFT_SHIFT    &none  &kp LEFT_SHIFT  &trans          &none           &none        &none
+&none  &none          &none           &none          &none          &none            &none  &none           &none           &none           &none        &none          &none
+&none  &shifted N1    &shifted N2     &shifted N3    &shifted N4    &shifted N5      &none  &shifted N6     &shifted N7     &shifted N8     &shifted N9  &shifted N0    &none
+&none  &sk LCTRL      &sk LALT        &sk LGUI       &sk LSHFT      &shifted LBKT    &none  &shifted RBKT   &sk RSHFT       &sk RGUI        &sk RALT     &sk RCTRL      &none
+&none  &shifted BSLH  &shifted GRAVE  &shifted APOS  &shifted FSLH  &shifted N9      &none  &shifted N0     &shifted MINUS  &shifted EQUAL  &kp SEMI     &shifted BSPC  &none
+&none  &none          &none           &none          &trans         &mo 1            &none  &kp LEFT_SHIFT  &trans          &none           &none        &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_NEXT C_PREV>;
@@ -308,11 +312,11 @@
 
         Master {
             bindings = <
-&none       &none          &none  &none                 &none                     &none           &none  &none          &none              &none           &none          &none  &none
-&none       &none          &none  &kp LG(MINUS)         &kp LG(EQUAL)             &none           &none  &none          &kp LG(Z)          &kp LC(ESCAPE)  &kp LG(Z)      &none  &none
-&none       &kp LG(SPACE)  &none  &sk LA(LC(LEFT_GUI))  &sk LS(LA(LC(LEFT_GUI)))  &none           &none  &kp LG(GRAVE)  &kp ENTER          &kp BACKSPACE   &kp TAB        &none  &none
-&caps_word  &none          &none  &kp LG(SPACE)         &kp LG(LS(SPACE))         &kp LG(J)       &none  &none          &kp LA(BACKSPACE)  &kp DELETE      &kp LG(ENTER)  &none  &none
-&none       &none          &none  &none                 &kp LEFT_SHIFT            &kp LEFT_GUI    &none  &kp LALT       &kp LCTRL          &none           &none          &none
+&none       &none          &none  &none                 &none                     &none            &none  &none          &none              &none                 &none          &none  &none
+&none       &none          &none  &none                 &kp LG(MINUS)             &kp LG(EQUAL)    &none  &none          &kp LG(Z)          &kp LC(LEFT_BRACKET)  &kp LG(Z)      &none  &none
+&none       &kp LG(SPACE)  &none  &sk LA(LC(LEFT_GUI))  &sk LS(LA(LC(LEFT_GUI)))  &none            &none  &kp LG(GRAVE)  &kp ENTER          &kp BACKSPACE         &kp TAB        &none  &none
+&caps_word  &none          &none  &kp LG(SPACE)         &kp LG(LS(SPACE))         &kp LG(J)        &none  &none          &kp LA(BACKSPACE)  &kp DELETE            &kp LG(ENTER)  &none  &none
+&none       &none          &none  &none                 &kp LEFT_SHIFT            &kp LEFT_GUI     &none  &kp LALT       &kp LCTRL          &none                 &none          &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_NEXT C_PREV>;
@@ -421,5 +425,3 @@
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
 };
-
-
