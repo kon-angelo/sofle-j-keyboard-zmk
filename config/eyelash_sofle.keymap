@@ -77,36 +77,36 @@
         };
 
         num {
-            bindings = <&mo 5>;
+            bindings = <&mo 6>;
             key-positions = <16 15>;
             timeout-ms = <50>;
             require-prior-idle-ms = <280>;
         };
 
         num_tog {
-            bindings = <&tog 5>;
+            bindings = <&tog 6>;
             key-positions = <15 16 17>;
             require-prior-idle-ms = <280>;
-            layers = <0 5>;
-        };
-
-        fn-tog {
-            bindings = <&tog 6>;
-            key-positions = <16 17 18>;
-            require-prior-idle-ms = <280>;
-            timeout-ms = <50>;
             layers = <0 6>;
         };
 
+        fn-tog {
+            bindings = <&tog 7>;
+            key-positions = <16 17 18>;
+            require-prior-idle-ms = <280>;
+            timeout-ms = <50>;
+            layers = <0 7>;
+        };
+
         fn {
-            bindings = <&mo 6>;
+            bindings = <&mo 7>;
             key-positions = <16 17>;
             require-prior-idle-ms = <280>;
             timeout-ms = <50>;
         };
 
         mouse {
-            bindings = <&mo 8>;
+            bindings = <&mo 9>;
             key-positions = <42 43>;
             timeout-ms = <50>;
             require-prior-idle-ms = <280>;
@@ -114,15 +114,15 @@
         };
 
         mouse_tog {
-            bindings = <&tog 8>;
+            bindings = <&tog 9>;
             key-positions = <43 42 41>;
             timeout-ms = <50>;
             require-prior-idle-ms = <280>;
-            layers = <0 8>;
+            layers = <0 9>;
         };
 
         media {
-            bindings = <&mo 9>;
+            bindings = <&mo 10>;
             key-positions = <44 43>;
             timeout-ms = <50>;
             require-prior-idle-ms = <280>;
@@ -130,15 +130,15 @@
         };
 
         nav_tog {
-            bindings = <&tog 7>;
+            bindings = <&tog 8>;
             key-positions = <30 31 29>;
             timeout-ms = <50>;
             require-prior-idle-ms = <280>;
-            layers = <0 7>;
+            layers = <0 8>;
         };
 
         media_tog {
-            bindings = <&tog 9>;
+            bindings = <&tog 10>;
             key-positions = <44 43 42>;
         };
     };
@@ -275,9 +275,9 @@
             bindings = <
 &kp TILDE       &as N1     &as N2         &as N3         &as N4         &as N5    &kp UP_ARROW     &as N6       &as N7               &as N8     &as N9      &as N0         &kp BACKSPACE
 &kp ESCAPE      &kp Q      &kp W          &kp E          &kp R          &kp T     &kp DOWN_ARROW   &kp Y        &kp U                &kp I      &kp O       &kp P          &kp NON_US_BACKSLASH
-&kp TAB         &kp A      &tap_left 4 S  &tap_left 3 D  &tap_left 7 F  &kp G     &kp LEFT_ARROW   &kp H        &kp J                &kp K      &kp L       &kp BACKSPACE  &kp ENTER
+&kp TAB         &kp A      &tap_left 5 S  &tap_left 3 D  &tap_left 8 F  &kp G     &kp LEFT_ARROW   &kp H        &kp J                &kp K      &kp L       &kp BACKSPACE  &kp ENTER
 &kp LEFT_SHIFT  &kp Z      &kp X          &kp C          &kp V          &kp B     &kp RIGHT_ARROW  &kp N        &kp M                &kp COMMA  &kp PERIOD  &kp ENTER      &sk RIGHT_SHIFT
-&kp C_MUTE      &kp LCTRL  &kp LALT       &kp LGUI       &sk LSHFT      &mo 1     &kp ENTER        &lt 2 ENTER  &master_key 3 SPACE  &kp RCMD   &kp RALT    &mo 11
+&kp C_MUTE      &kp LCTRL  &kp LALT       &kp LGUI       &sk LSHFT      &mo 1     &kp ENTER        &lt 4 ENTER  &master_key 3 SPACE  &kp RCMD   &kp RALT    &mo 12
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -323,6 +323,19 @@
             label = "master";
         };
 
+        NeoMaster {
+            label = "neomaster";
+            bindings = <
+&none       &none      &none     &none     &none           &none           &none  &none          &none      &none     &none     &none      &none
+&none       &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT       &none           &none  &none          &kp LSHFT  &kp LGUI  &kp LALT  &kp LCTRL  &none
+&none       &sk LCTRL  &sk LALT  &sk LGUI  &sk LSHFT       &none           &none  &kp LG(GRAVE)  &sk LSHFT  &sk LGUI  &sk LALT  &sk LCTRL  &none
+&caps_word  &none      &none     &none     &none           &none           &none  &none          &none      &none     &none     &none      &none
+&none       &none      &none     &none     &kp LEFT_SHIFT  &kp LEFT_GUI    &none  &kp LALT       &kp LCTRL  &none     &none     &none
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_NEXT C_PREV>;
+        };
+
         Vi {
             bindings = <
 &none  &none  &none  &none  &none          &none    &none  &none              &none                  &none       &none          &none  &none
@@ -366,7 +379,7 @@
 &trans         &none      &none     &none     &none           &none             &mmv MOVE_DOWN   &kp LG(LS(LEFT_BRACKET))  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LG(LS(RIGHT_BRACKET))  &none  &trans
 &trans         &kp LCTRL  &kp LALT  &kp LGUI  &kp LEFT_SHIFT  &none             &mmv MOVE_LEFT   &kp LEFT                  &kp DOWN              &kp UP                 &kp RIGHT                  &none  &trans
 &trans         &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT       &none             &mmv MOVE_RIGHT  &kp HOME                  &kp LG(PG_DN)         &kp PG_UP              &kp END                    &none  &trans
-&kp C_AC_ZOOM  &trans     &trans    &trans    &kp LEFT_SHIFT  &kp LEFT_SHIFT    &mkp MB1         &enter_to_0               &to 0                 &tog 11                &none                      &none
+&kp C_AC_ZOOM  &trans     &trans    &trans    &kp LEFT_SHIFT  &kp LEFT_SHIFT    &mkp MB1         &enter_to_0               &to 0                 &tog 12                &none                      &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
