@@ -144,7 +144,7 @@
         };
 
         cmd {
-            bindings = <&kp LEFT_GUI>;
+            bindings = <&sk LEFT_GUI>;
             key-positions = <47 48>;
             timeout-ms = <150>;
             require-prior-idle-ms = <80>;
@@ -152,16 +152,16 @@
         };
 
         alt {
-            bindings = <&kp LEFT_ALT>;
+            bindings = <&sk LEFT_ALT>;
             key-positions = <48 49>;
             timeout-ms = <150>;
             require-prior-idle-ms = <80>;
             layers = <0>;
         };
 
-        shift {
-            bindings = <&kp LEFT_SHIFT>;
-            key-positions = <46 47>;
+        ctrl {
+            bindings = <&kp LCTRL>;
+            key-positions = <49 50>;
             timeout-ms = <150>;
             require-prior-idle-ms = <80>;
             layers = <0>;
@@ -180,6 +180,14 @@
             key-positions = <48 49 50>;
             timeout-ms = <150>;
             require-prior-idle-ms = <80>;
+            layers = <0>;
+        };
+
+        cmd2 {
+            bindings = <&kp LGUI>;
+            key-positions = <43 42>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <200>;
             layers = <0>;
         };
     };
