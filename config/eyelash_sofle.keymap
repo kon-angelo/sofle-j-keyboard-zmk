@@ -190,6 +190,14 @@
             require-prior-idle-ms = <200>;
             layers = <0>;
         };
+
+        shgui {
+            bindings = <&sk LS(LGUI)>;
+            key-positions = <46 47 48>;
+            timeout-ms = <80>;
+            require-prior-idle-ms = <280>;
+            layers = <0>;
+        };
     };
 
     hml: homerow_mods_left {
@@ -350,7 +358,7 @@
             bindings = <
 &none  &none          &none           &none          &none          &none            &none  &none           &none           &none           &none        &none           &none
 &none  &shifted N1    &shifted N2     &shifted N3    &shifted N4    &shifted N5      &none  &shifted N6     &shifted N7     &shifted N8     &shifted N9  &shifted N0     &none
-&none  &sk LCTRL      &sk LALT        &sk LGUI       &sk LSHFT      &shifted LBKT    &none  &shifted RBKT   &sk RSHFT       &sk RGUI        &sk RALT     &sk RCTRL       &none
+&none  &kp LCTRL      &kp LALT        &kp LGUI       &kp LSHFT      &shifted LBKT    &none  &shifted RBKT   &kp LSHFT       &kp LGUI        &kp LALT     &kp LCTRL       &none
 &none  &shifted BSLH  &shifted GRAVE  &shifted APOS  &shifted FSLH  &shifted N9      &none  &shifted N0     &shifted MINUS  &shifted EQUAL  &kp SEMI     &shifted SLASH  &none
 &none  &none          &none           &none          &trans         &mo 1            &none  &kp LEFT_SHIFT  &trans          &none           &none        &none
             >;
