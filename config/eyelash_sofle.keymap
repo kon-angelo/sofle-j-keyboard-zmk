@@ -268,7 +268,7 @@
         bindings = <&mo>, <&kp>;
 
         #binding-cells = <2>;
-        flavor = "tap-preferred";
+        flavor = "balanced";
         tapping-term-ms = <280>;
         hold-trigger-key-positions = <35 36 22 34 48 49 47 21 23>;
         require-prior-idle-ms = <80>;
@@ -331,7 +331,7 @@
         Base {
             bindings = <
 &kp TILDE       &as N1     &as N2         &as N3         &as N4         &as N5    &kp UP_ARROW     &as N6       &as N7               &as N8     &as N9      &as N0         &kp BACKSPACE
-&kp ESCAPE      &kp Q      &kp W          &kp E          &kp R          &kp T     &kp DOWN_ARROW   &kp Y        &kp U                &kp I      &kp O       &kp P          &kp NON_US_BACKSLASH
+&kp ESCAPE      &kp Q      &kp W          &tap_left 5 E  &kp R          &kp T     &kp DOWN_ARROW   &kp Y        &kp U                &kp I      &kp O       &kp P          &kp NON_US_BACKSLASH
 &kp TAB         &kp A      &tap_left 4 S  &tap_left 3 D  &tap_left 7 F  &kp G     &kp LEFT_ARROW   &kp H        &kp J                &kp K      &kp L       &kp BACKSPACE  &kp ENTER
 &kp LEFT_SHIFT  &kp Z      &kp X          &kp C          &kp V          &kp B     &kp RIGHT_ARROW  &kp N        &kp M                &kp COMMA  &kp PERIOD  &kp ENTER      &sk RIGHT_SHIFT
 &kp C_MUTE      &kp LCTRL  &kp LALT       &kp LGUI       &sk LSHFT      &mo 1     &kp ENTER        &lt 2 ENTER  &master_key 3 SPACE  &kp RCMD   &kp RALT    &mo 10
@@ -343,11 +343,11 @@
 
         Sym {
             bindings = <
-&kp F11  &kp F1     &kp F2     &kp F3    &kp F4     &kp F5              &none  &kp F6             &kp F7     &kp F8    &kp F9         &kp F10    &kp F12
-&none    &as N1     &as N2     &as N3    &as N4     &as N5              &none  &as N6             &as N7     &as N8    &as N9         &as N0     &none
-&none    &sk LCTRL  &sk LALT   &sk LGUI  &sk LSHFT  &as LEFT_BRACKET    &none  &as RIGHT_BRACKET  &sk RSHFT  &sk RGUI  &sk RALT       &sk RCTRL  &none
-&none    &kp BSLH   &kp GRAVE  &kp APOS  &kp EQUAL  &kp PIPE            &none  &kp QUESTION       &kp MINUS  &kp SQT   &shifted SEMI  &kp SLASH  &none
-&none    &none      &none      &none     &trans     &kp LEFT_SHIFT      &none  &mo 2              &trans     &none     &none          &none
+&kp F11  &kp F1     &kp F2     &kp F3    &kp F4     &kp F5              &none  &kp F6             &kp F7     &kp F8        &kp F9         &kp F10    &kp F12
+&none    &as N1     &as N2     &as N3    &as N4     &as N5              &none  &as N6             &as N7     &as N8        &as N9         &as N0     &none
+&none    &sk LCTRL  &sk LALT   &sk LGUI  &sk LSHFT  &as LEFT_BRACKET    &none  &as RIGHT_BRACKET  &sk RSHFT  &sk RGUI      &sk RALT       &sk RCTRL  &none
+&none    &kp BSLH   &kp GRAVE  &kp APOS  &kp EQUAL  &kp PIPE            &none  &kp QUESTION       &kp MINUS  &shifted SQT  &shifted SEMI  &kp SLASH  &none
+&none    &none      &none      &none     &trans     &kp LEFT_SHIFT      &none  &mo 2              &trans     &none         &none          &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_NEXT C_PREV>;
@@ -356,11 +356,11 @@
 
         ShiftSym {
             bindings = <
-&none  &none          &none           &none          &none           &none            &none  &none           &none           &none         &none        &none           &none
-&none  &shifted N1    &shifted N2     &shifted N3    &shifted N4     &shifted N5      &none  &shifted N6     &shifted N7     &shifted N8   &shifted N9  &shifted N0     &none
-&none  &kp LCTRL      &kp LALT        &kp LGUI       &kp LSHFT       &shifted LBKT    &none  &shifted RBKT   &kp LSHFT       &kp LGUI      &kp LALT     &kp LCTRL       &none
-&none  &shifted BSLH  &shifted GRAVE  &shifted APOS  &shifted EQUAL  &shifted N9      &none  &shifted N0     &shifted MINUS  &shifted SQT  &kp SEMI     &shifted SLASH  &none
-&none  &none          &none           &none          &trans          &mo 1            &none  &kp LEFT_SHIFT  &trans          &none         &none        &none
+&none  &none          &none           &none          &none           &none            &none  &none           &none           &none        &none        &none           &none
+&none  &shifted N1    &shifted N2     &shifted N3    &shifted N4     &shifted N5      &none  &shifted N6     &shifted N7     &shifted N8  &shifted N9  &shifted N0     &none
+&none  &kp LCTRL      &kp LALT        &kp LGUI       &kp LSHFT       &shifted LBKT    &none  &shifted RBKT   &sk LSHFT       &sk LGUI     &sk LALT     &sk LCTRL       &none
+&none  &shifted BSLH  &shifted GRAVE  &shifted APOS  &shifted EQUAL  &shifted N9      &none  &shifted N0     &shifted MINUS  &sk SQT      &kp SEMI     &shifted SLASH  &none
+&none  &none          &none           &none          &trans          &mo 1            &none  &kp LEFT_SHIFT  &trans          &none        &none        &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_NEXT C_PREV>;
