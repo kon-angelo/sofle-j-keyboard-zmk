@@ -33,7 +33,6 @@
 
     quick-release;
     lazy;
-    release-after-ms = <600>;
 };
 
 / {
@@ -163,7 +162,7 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <22 21>;
             timeout-ms = <150>;
-            require-prior-idle-ms = <80>;
+            require-prior-idle-ms = <200>;
             layers = <0>;
         };
 
@@ -376,7 +375,7 @@
 &none  &none          &none           &none          &none           &none            &none  &none           &none           &none        &none        &none           &none
 &none  &shifted N1    &shifted N2     &shifted N3    &shifted N4     &shifted N5      &none  &shifted N6     &shifted N7     &shifted N8  &shifted N9  &shifted N0     &none
 &none  &kp LCTRL      &kp LALT        &kp LGUI       &kp LSHFT       &shifted LBKT    &none  &shifted RBKT   &sk LSHFT       &sk LGUI     &sk LALT     &sk LCTRL       &none
-&none  &shifted BSLH  &shifted GRAVE  &shifted APOS  &shifted EQUAL  &shifted N9      &none  &shifted N0     &shifted MINUS  &sk SQT      &kp SEMI     &shifted SLASH  &none
+&none  &shifted BSLH  &shifted GRAVE  &shifted APOS  &shifted EQUAL  &shifted N9      &none  &shifted N0     &shifted MINUS  &kp SQT      &kp SEMI     &shifted SLASH  &none
 &none  &none          &none           &none          &trans          &mo 1            &none  &kp LEFT_SHIFT  &trans          &none        &none        &none
             >;
 
@@ -412,11 +411,11 @@
 
         Num {
             bindings = <
-&none  &none      &none     &none     &none      &none     &none  &none        &none      &none   &none   &none          &none
-&none  &none      &none     &none     &none      &none     &none  &none        &kp N7     &kp N8  &kp N9  &kp N0         &none
-&none  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &none     &none  &kp DOT      &kp N4     &kp N5  &kp N6  &kp BACKSPACE  &none
-&none  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &none     &none  &kp COMMA    &kp N1     &kp N2  &kp N3  &kp COMMA      &none
-&none  &none      &none     &none     &trans     &trans    &none  &enter_to_0  &spc_to_0  &none   &none   &none
+&none  &none      &none     &none     &none         &none             &none  &none        &none      &none   &none   &none          &none
+&none  &none      &none     &none     &none         &none             &none  &none        &kp N7     &kp N8  &kp N9  &kp N0         &none
+&none  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT     &none             &none  &kp DOT      &kp N4     &kp N5  &kp N6  &kp BACKSPACE  &none
+&none  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT     &none             &none  &kp COMMA    &kp N1     &kp N2  &kp N3  &kp COMMA      &none
+&none  &none      &none     &none     &sk LEFT_GUI  &sk LEFT_SHIFT    &none  &enter_to_0  &spc_to_0  &none   &none   &none
             >;
 
             label = "num";
