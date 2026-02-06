@@ -386,11 +386,11 @@
 
         Master {
             bindings = <
-&none       &none          &none  &none                 &none                     &none            &none  &none                 &none              &none          &none          &none      &none
-&none       &none          &none  &none                 &kp LG(MINUS)             &kp LG(EQUAL)    &none  &kp LC(LEFT_BRACKET)  &kp LG(V)          &kp LG(C)      &kp LG(P)      &kp LG(X)  &none
-&none       &kp LG(SPACE)  &none  &sk LA(LC(LEFT_GUI))  &sk LS(LA(LC(LEFT_GUI)))  &none            &none  &kp LG(GRAVE)         &kp ENTER          &kp BACKSPACE  &kp TAB        &none      &none
-&caps_word  &none          &none  &kp LG(SPACE)         &kp LG(LS(SPACE))         &kp LG(LS(J))    &none  &none                 &kp LA(BACKSPACE)  &kp DELETE     &kp LG(ENTER)  &none      &none
-&none       &none          &none  &none                 &kp LEFT_SHIFT            &kp LEFT_GUI     &none  &kp LALT              &kp LCTRL          &none          &none          &none
+&none       &none          &none  &none                 &none                 &none                   &none  &none                 &none              &none          &none          &none                 &none
+&none       &none          &none  &none                 &kp LG(MINUS)         &kp LG(EQUAL)           &none  &kp LC(LEFT_BRACKET)  &kp LG(V)          &kp LG(C)      &kp LG(X)      &kp LG(A)             &none
+&none       &kp LG(SPACE)  &none  &sk LA(LC(LEFT_GUI))  &sk LA(LC(LEFT_GUI))  &sk LS(LA(LC(LGUI)))    &none  &kp LG(GRAVE)         &kp ENTER          &kp BACKSPACE  &kp TAB        &kp LC(LEFT_BRACKET)  &none
+&caps_word  &none          &none  &kp LG(SPACE)         &kp LG(LS(SPACE))     &kp LG(LS(J))           &none  &none                 &kp LA(BACKSPACE)  &kp DELETE     &kp LG(ENTER)  &none                 &none
+&none       &none          &none  &none                 &kp LEFT_SHIFT        &kp LEFT_GUI            &none  &kp LALT              &kp LCTRL          &none          &none          &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_NEXT C_PREV>;
