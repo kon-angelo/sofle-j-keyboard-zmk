@@ -107,7 +107,7 @@
 
         mouse {
             bindings = <&mo 8>;
-            key-positions = <42 43>;
+            key-positions = <42 41>;
             timeout-ms = <50>;
             require-prior-idle-ms = <280>;
             layers = <0>;
@@ -142,22 +142,6 @@
             key-positions = <44 43 42>;
         };
 
-        cmd {
-            bindings = <&sk LEFT_GUI>;
-            key-positions = <47 48>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <80>;
-            layers = <0>;
-        };
-
-        alt {
-            bindings = <&sk LEFT_ALT>;
-            key-positions = <48 49>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <80>;
-            layers = <0>;
-        };
-
         ctrl {
             bindings = <&kp BACKSPACE>;
             key-positions = <22 21>;
@@ -166,35 +150,11 @@
             layers = <0>;
         };
 
-        cmdalt {
-            bindings = <&sk LA(LEFT_GUI)>;
-            key-positions = <47 48 49>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <80>;
-            layers = <0>;
-        };
-
         altctrl {
             bindings = <&sk LC(LALT)>;
             key-positions = <48 49 50>;
             timeout-ms = <150>;
             require-prior-idle-ms = <80>;
-            layers = <0>;
-        };
-
-        cmd2 {
-            bindings = <&sk LGUI>;
-            key-positions = <43 42>;
-            timeout-ms = <80>;
-            require-prior-idle-ms = <300>;
-            layers = <0>;
-        };
-
-        shgui {
-            bindings = <&sk LS(LGUI)>;
-            key-positions = <46 47 48>;
-            timeout-ms = <80>;
-            require-prior-idle-ms = <280>;
             layers = <0>;
         };
     };
@@ -273,6 +233,16 @@
         hold-trigger-on-release;
         quick-tap-ms = <40>;
         require-prior-idle-ms = <50>;
+    };
+
+    sk2: sk2 {
+        compatible = "zmk,behavior-sticky-key";
+        label = "SK2";
+        bindings = <&kp>;
+        #binding-cells = <1>;
+        release-after-ms = <1000>;
+        quick-release;
+        ignore-modifiers;
     };
 
     macros {
@@ -360,11 +330,11 @@
 
         Sym {
             bindings = <
-&kp F11  &kp F1     &kp F2     &kp F3    &kp F4     &kp F5              &none  &kp F6             &kp F7     &kp F8        &kp F9         &kp F10    &kp F12
-&none    &as N1     &as N2     &as N3    &as N4     &as N5              &none  &as N6             &as N7     &as N8        &as N9         &as N0     &none
-&none    &sk LCTRL  &sk LALT   &sk LGUI  &sk LSHFT  &as LEFT_BRACKET    &none  &as RIGHT_BRACKET  &sk RSHFT  &sk RGUI      &sk RALT       &sk RCTRL  &kp BACKSPACE
-&none    &kp BSLH   &kp GRAVE  &kp APOS  &kp EQUAL  &kp PIPE            &none  &kp QUESTION       &kp MINUS  &shifted SQT  &shifted SEMI  &kp SLASH  &none
-&none    &none      &none      &none     &trans     &kp LEFT_SHIFT      &none  &mo 2              &trans     &none         &none          &none
+&kp F11  &kp F1      &kp F2     &kp F3     &kp F4      &kp F5              &none  &kp F6             &kp F7      &kp F8        &kp F9         &kp F10     &kp F12
+&none    &as N1      &as N2     &as N3     &as N4      &as N5              &none  &as N6             &as N7      &as N8        &as N9         &as N0      &none
+&none    &sk2 LCTRL  &sk2 LALT  &sk2 LGUI  &sk2 LSHFT  &as LEFT_BRACKET    &none  &as RIGHT_BRACKET  &sk2 LSHFT  &sk2 LGUI     &sk2 LALT      &sk2 LCTRL  &kp BACKSPACE
+&none    &kp BSLH    &kp GRAVE  &kp APOS   &kp EQUAL   &kp PIPE            &none  &kp QUESTION       &kp MINUS   &shifted SQT  &shifted SEMI  &kp SLASH   &none
+&none    &none       &none      &none      &trans      &kp LEFT_SHIFT      &none  &mo 2              &trans      &none         &none          &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_NEXT C_PREV>;
@@ -375,7 +345,7 @@
             bindings = <
 &none  &none          &none           &none          &none           &none            &none  &none           &none           &none        &none        &none           &none
 &none  &shifted N1    &shifted N2     &shifted N3    &shifted N4     &shifted N5      &none  &shifted N6     &shifted N7     &shifted N8  &shifted N9  &shifted N0     &none
-&none  &kp LCTRL      &kp LALT        &kp LGUI       &kp LSHFT       &shifted LBKT    &none  &shifted RBKT   &sk LSHFT       &sk LGUI     &sk LALT     &sk LCTRL       &none
+&none  &sk2 LCTRL     &sk2 LALT       &sk2 LGUI      &sk2 LSHFT      &shifted LBKT    &none  &shifted RBKT   &sk2 RSHFT      &sk2 LGUI    &sk2 LALT    &sk2 LCTRL      &none
 &none  &shifted BSLH  &shifted GRAVE  &shifted APOS  &shifted EQUAL  &shifted N9      &none  &shifted N0     &shifted MINUS  &kp SQT      &kp SEMI     &shifted SLASH  &none
 &none  &none          &none           &none          &trans          &mo 1            &none  &kp LEFT_SHIFT  &trans          &none        &none        &none
             >;
@@ -386,11 +356,11 @@
 
         Master {
             bindings = <
-&none       &none          &none  &none                 &none                 &none                   &none  &none                 &none              &none          &none          &none                 &none
-&none       &none          &none  &none                 &kp LG(MINUS)         &kp LG(EQUAL)           &none  &kp LC(LEFT_BRACKET)  &kp LG(V)          &kp LG(C)      &kp LG(X)      &kp LG(A)             &none
-&none       &kp LG(SPACE)  &none  &sk LA(LC(LEFT_GUI))  &sk LA(LC(LEFT_GUI))  &sk LS(LA(LC(LGUI)))    &none  &kp LG(GRAVE)         &kp ENTER          &kp BACKSPACE  &kp TAB        &kp LC(LEFT_BRACKET)  &none
-&caps_word  &none          &none  &kp LG(SPACE)         &kp LG(LS(SPACE))     &kp LG(LS(J))           &none  &none                 &kp LA(BACKSPACE)  &kp DELETE     &kp LG(ENTER)  &none                 &none
-&none       &none          &none  &none                 &kp LEFT_SHIFT        &kp LEFT_GUI            &none  &kp LALT              &kp LCTRL          &none          &none          &none
+&none       &none          &none  &none                 &none                 &none                   &none  &none          &none              &none          &none          &none                 &none
+&none       &none          &none  &none                 &kp LG(MINUS)         &kp LG(EQUAL)           &none  &kp LG(A)      &kp LG(C)          &kp LG(V)      &kp LG(X)      &kp LG(A)             &none
+&none       &kp LG(SPACE)  &none  &sk LA(LC(LEFT_GUI))  &sk LA(LC(LEFT_GUI))  &sk LS(LA(LC(LGUI)))    &none  &kp LG(GRAVE)  &kp ENTER          &kp BACKSPACE  &kp TAB        &kp LC(LEFT_BRACKET)  &none
+&caps_word  &none          &none  &kp LG(SPACE)         &kp LG(LS(SPACE))     &kp LG(LS(J))           &none  &none          &kp LA(BACKSPACE)  &kp DELETE     &kp LG(ENTER)  &none                 &none
+&none       &none          &none  &none                 &kp LEFT_SHIFT        &kp LEFT_GUI            &none  &kp LALT       &kp LCTRL          &none          &none          &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_NEXT C_PREV>;
@@ -400,7 +370,7 @@
         Vi {
             bindings = <
 &none  &none  &none  &none  &none          &none    &none  &none              &none                  &none       &none          &none  &none
-&none  &none  &none  &none  &none          &none    &none  &sk DOUBLE_QUOTES  &kp LG(Z)              &kp RC(T)   &kp LG(LS(Z))  &none  &none
+&none  &none  &none  &none  &kp LC(LG(C))  &none    &none  &sk DOUBLE_QUOTES  &kp LG(Z)              &kp RC(T)   &kp LG(LS(Z))  &none  &none
 &none  &none  &none  &none  &kp LC(SPACE)  &none    &none  &sk GRAVE          &kp LC(RIGHT_BRACKET)  &kp LC(I)   &kp LC(O)      &none  &none
 &none  &none  &none  &none  &none          &none    &none  &none              &none                  &kp LS(F6)  &none          &none  &none
 &none  &none  &none  &none  &none          &none    &none  &none              &none                  &none       &none          &none
