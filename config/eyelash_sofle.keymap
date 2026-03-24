@@ -269,9 +269,7 @@
             bindings = <&kp LEFT_SHIFT &kp RIGHT_SHIFT &kp LCTRL &kp RIGHT_CONTROL &kp LALT &kp RALT &kp LGUI &kp RGUI>;
             label = "UNSTICK";
         };
-    };
 
-    macros {
         SHIFT_MCLK: SHIFT_MCLK {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
