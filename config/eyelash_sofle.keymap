@@ -343,11 +343,11 @@
 
         Vi {
             bindings = <
-&none  &none  &none  &none  &none          &none    &none  &none              &none                  &none       &none          &none  &none
-&none  &none  &none  &none  &kp LC(LG(C))  &none    &none  &sk DOUBLE_QUOTES  &kp LG(Z)              &kp RC(T)   &kp LG(LS(Z))  &none  &none
-&none  &none  &none  &none  &kp LC(SPACE)  &none    &none  &sk GRAVE          &kp LC(RIGHT_BRACKET)  &kp LC(I)   &kp LC(O)      &none  &none
-&none  &none  &none  &none  &none          &none    &none  &none              &none                  &kp LS(F6)  &none          &none  &none
-&none  &none  &none  &none  &none          &none    &none  &none              &none                  &none       &none          &none
+&none  &none  &none  &none  &none          &none    &none  &none              &none                  &none          &none                 &none      &none
+&none  &none  &none  &none  &kp LC(LG(C))  &none    &none  &sk DOUBLE_QUOTES  &kp LG(Z)              &kp LS(RG(Z))  &kp LG(LS(Z))         &none      &none
+&none  &none  &none  &none  &kp LC(SPACE)  &none    &none  &sk GRAVE          &kp LC(RIGHT_BRACKET)  &kp LC(I)      &kp LC(O)             &kp RC(T)  &none
+&none  &none  &none  &none  &none          &none    &none  &none              &kp RC(C)              &kp LS(F6)     &kp LC(LEFT_BRACKET)  &none      &none
+&none  &none  &none  &none  &none          &none    &none  &none              &none                  &none          &none                 &none
             >;
 
             sensor-bindings = <&inc_dec_kp LG(EQUAL) LG(MINUS)>;
