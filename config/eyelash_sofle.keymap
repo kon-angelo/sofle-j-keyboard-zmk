@@ -137,7 +137,7 @@
 
         ctrlspace {
             bindings = <&kp LC(SPACE)>;
-            key-positions = <20 21>;
+            key-positions = <23 22>;
             require-prior-idle-ms = <350>;
             layers = <0>;
             timeout-ms = <40>;
