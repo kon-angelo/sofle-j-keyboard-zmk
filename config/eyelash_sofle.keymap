@@ -76,13 +76,6 @@
             key-positions = <14 15 16 17>;
         };
 
-        num_tog {
-            bindings = <&tog 5>;
-            key-positions = <16 17 18>;
-            require-prior-idle-ms = <280>;
-            layers = <0 5>;
-        };
-
         fn-tog {
             bindings = <&tog 6>;
             key-positions = <16 17 15>;
@@ -130,8 +123,8 @@
             layers = <0 7>;
         };
 
-        media_tog {
-            bindings = <&tog 9>;
+        num_tog {
+            bindings = <&tog 5>;
             key-positions = <44 43 42>;
         };
 
